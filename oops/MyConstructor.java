@@ -6,6 +6,7 @@ public class MyConstructor {
 			System.out.println("Obj is now created");
 		}
 		public static void main(String[] args) {
+			@SuppressWarnings("unused")
 			MyConstructor  obj = new MyConstructor();
 	}
 

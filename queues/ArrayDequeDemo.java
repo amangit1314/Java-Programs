@@ -1,4 +1,4 @@
-package dataStructure;
+package queues;
 import java.util.*;
 public class ArrayDequeDemo {
 

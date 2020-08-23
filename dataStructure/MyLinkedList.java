@@ -1,6 +1,6 @@
 package dataStructure;
 import java.util.LinkedList;
-public class LinkedListDemo {
+public class MyLinkedList {
 
 	public static void main(String[] args) {
 		// Create a linked list
