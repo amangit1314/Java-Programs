@@ -19,7 +19,7 @@ public class Insertion_In_BinaryTree {
 	    static Node root; 
 	    static Node temp = root; 
 	      
-	    //Inorder traversal of a binary tree
+	    //In-order traversal of a binary tree
 	    static void inorder(Node temp) 
 	    { 
 	        if (temp == null) 
