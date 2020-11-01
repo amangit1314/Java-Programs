@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package basicProblems;
 
 public class Palindrome_Number {
@@ -11,3 +12,14 @@ public class Palindrome_Number {
 	}
 
 }
+=======
+package basicProblems;
+
+public class Palindrome_Number {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+>>>>>>> master

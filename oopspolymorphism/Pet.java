@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package oopspolymorphism;
 
 public class Pet extends Animal{
@@ -7,3 +8,14 @@ public class Pet extends Animal{
 	}
 	
 }
+=======
+package oopspolymorphism;
+
+public class Pet extends Animal{
+
+	public void walk() {
+		System.out.println("pet is walking");
+	}
+	
+}
+>>>>>>> master
