@@ -6,17 +6,12 @@ public class Swap_two_numbers {
 		
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int swap;
-		System.out.println( " elements before swapping " + a + " " + b );
-				
-				swap = a;
-				a = b;
-				b= swap;
-
-		System.out.println( " elements after  swapping " + a + " " + b );
+		int a = sc.nextInt() , b = sc.nextInt() , swap;
 		
-
+		System.out.println( " elements before swapping " + a + " " + b );
+		swap = a;
+		a = b;
+		b = swap;
+		System.out.println( " elements after  swapping " + a + " " + b );
 	}
 }

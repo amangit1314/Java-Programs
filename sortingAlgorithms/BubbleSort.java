@@ -1,5 +1,6 @@
 package sortingAlgorithms;
 
+//Program to demonstrate the bubble sort algorithm
 public class BubbleSort {
 	
 	void bubbleSort(int a[]) {
@@ -9,7 +10,7 @@ public class BubbleSort {
 		{
 			for(int j=0;j<n-i-1;j++) 
 			{
-				if(a[j]>a[j+1]) {
+				if(a[j] > a[j+1]) {
 				//swap a[j+1] and a[i]
 					int temp = a[j];
 					a[j] = a[j+1];
