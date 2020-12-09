@@ -1,3 +1,6 @@
+package trees;
+import java.util.*;
+
 /*
  * Check if generic tree contain element x
  * 
@@ -29,8 +32,6 @@
  * false
  */
 
-package trees;
-import java.util.*;
 
 public class Problem_01 {
 	//	TreeNode class 
@@ -71,8 +72,10 @@ public class Problem_01 {
                 
                 queue.add(null);
             }
+            
             else{
-               		 if(frontNode.data==x)
+            	
+               	if(frontNode.data==x)
            			 		return true;
                 System.out.print(frontNode.data+" ");
                 

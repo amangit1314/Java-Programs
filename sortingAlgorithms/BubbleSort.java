@@ -1,6 +1,6 @@
 package sortingAlgorithms;
 
-//Program to demonstrate the bubble sort algorithm
+//Program to demonstrate the bubble sort algorithm...
 public class BubbleSort {
 	
 	void bubbleSort(int a[]) {

@@ -1,5 +1,6 @@
 package oopsEncapsulation;
 
+//Student class short name as S
 public class S {
 	
 	/*we have to put the variables private to achieve encapsulation*/

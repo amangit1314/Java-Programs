@@ -1,5 +1,6 @@
 package queues;
 import java.util.*;
+//program inside queue package 
 public class ArrayDequeDemo {
 
 	public static void main(String[] args) {

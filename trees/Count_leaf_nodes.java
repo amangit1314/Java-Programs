@@ -16,16 +16,16 @@ import java.util.*;
 
 public class Count_leaf_nodes {
 
-	  class TreeNode<T> {
+	  class BinaryTreeNode<T> {
 			T data;
-			ArrayList<TreeNode<T>> children;
+			ArrayList<BinaryTreeNode<T>> children;
 
-			TreeNode(T data){
+			BinaryTreeNode(T data){
 				this.data = data;
-				children = new ArrayList<TreeNode<T>>();
+				children = new ArrayList<BinaryTreeNode<T>>();
 			}
 		
-			public int countLeafNodes(TreeNode<Integer> root){
+			public int countLeafNodes(BinaryTreeNode<Integer> root){
 			
 				int leaf = 0;
 	        
@@ -35,7 +35,7 @@ public class Count_leaf_nodes {
 				if (root.children.size() == 0)
 					return 1;
 	    
-				for (TreeNode<Integer> child : root.children) 
+				for (BinaryTreeNode<Integer> child : root.children) 
 					leaf += countLeafNodes(child);
 	  	
 				return leaf ;
