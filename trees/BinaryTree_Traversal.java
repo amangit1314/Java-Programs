@@ -1,20 +1,21 @@
 package trees;
 
 //java program for different tree traversals
-/*
- * Class containing left and right child of current node and key value
- */
-//class Node{
-//	int key;
-//	Node left, right;
-//	
-//	public Node(int item) {
-//		key = item;
-//		left = right = null;
-//	}
-//}
 
 public class BinaryTree_Traversal {
+
+	/*
+ 	* Class containing left and right child of current node and key value
+ 	*/
+	class Node{
+		int key;
+		Node left, right;
+		
+		public Node(int item) {
+			key = item;
+					left = right = null;
+		}
+	}
 	
 	//root of binary Tree
 	Node root;
@@ -75,11 +76,11 @@ public class BinaryTree_Traversal {
 		
 		BinaryTree_Traversal tree = new BinaryTree_Traversal();
 		
-		tree.root = new Node(1);
-		tree.root.left = new Node(2);
-		tree.root.right = new Node(3);
-		tree.root.left.left = new Node(4);
-		tree.root.left.right = new Node(5);
+		tree.new Node(1);
+		tree.new Node(2);
+		tree.new Node(3);
+		tree.new Node(4);
+		tree.new Node(5);
 		
 		System.out.println("Preorder traversal of binary tree is ");
 		tree.printPreorder();
