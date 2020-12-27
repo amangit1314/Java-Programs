@@ -70,7 +70,7 @@ public class Postfix {
         Scanner sc = new Scanner(System.in);
         String exp = sc.nextLine();
         sc.close();
-
+        @SuppressWarnings("unused")
         Postfix p = new Postfix();
         System.out.println(infixToPostfix(exp));
     }

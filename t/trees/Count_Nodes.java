@@ -15,7 +15,7 @@ class Node {
 	}
 }
 
-public class FindFullNodesInABinaryTree {
+public class Count_Nodes {
 
 	Node root;
 
@@ -47,7 +47,7 @@ public class FindFullNodesInABinaryTree {
 	}
 
 	public static void main(String[] args) {
-		FindFullNodesInABinaryTree tree_level = new FindFullNodesInABinaryTree();
+		Count_Nodes tree_level = new Count_Nodes();
 		tree_level.root = new Node(2);
 		tree_level.root.left = new Node(7);
 		tree_level.root.right = new Node(5);
