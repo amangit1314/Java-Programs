@@ -34,8 +34,8 @@ import java.util.Arrays;
 
 public class Array_Problem_12 {
 	
-	static int arr1[] = new int[] {1, 5 , 9, 10, 15, 20};
-	static int arr2[] = new int[] {2, 3, 8, 13};
+	static int[] arr1 = new int[] {1, 5 , 9, 10, 15, 20};
+	static int[] arr2 = new int[] {2, 3, 8, 13};
 	
 	static void merge(int m , int n) {
 		

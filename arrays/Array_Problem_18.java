@@ -1,15 +1,10 @@
 package arrays;
 
-/*
- * find all pairs on integer array whose sum is equal to given number
- *                     OR
- * Equal_Sum_Pairs_of_Array                   
- */
-
+/* Problem Title :->   find all pairs on integer array whose sum is equal to given number     OR	 Equal_Sum_Pairs_of_Array */
 public class Array_Problem_18 {
 
 	//function to find & print the sum & elements
-	static void pairs_value(int iA[], int iN) {
+	static void pairs_value(int[] iA, int iN) {
 		System.out.println("Pairs of elements & their sum : ");
 		
 		//loop to iterate & find the pair of elements whose sum is equal

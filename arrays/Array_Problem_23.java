@@ -1,12 +1,9 @@
 package arrays;
 
-/*
- * Java program for maximum product sub-array problem
- */
-
+/* Problem Title :-> Java program for maximum product sub-array problem */
 public class Array_Problem_23 {
 
-	    static void maxSubArraySum(int a[], int size) 
+	    static void maxSubArraySum(int[] a, int size)
 	    { 
 	        int max_so_far = Integer.MIN_VALUE, 
 	        max_ending_here = 0,start = 0, 
@@ -37,7 +34,7 @@ public class Array_Problem_23 {
 	    // Driver code 
 	    public static void main(String[] args) 
 	    { 
-	        int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 }; 
+	        int[] a = { -2, -3, 4, -1, -2, 1, 5, -3 };
 	        int n = a.length; 
 	        maxSubArraySum(a, n); 
 	    } 
