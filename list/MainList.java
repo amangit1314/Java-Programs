@@ -1,18 +1,18 @@
 package list;
+
 public class MainList {
 
 	public static void main(String[] args) {
-		
-		MyLL myll = new MyLL();
-		
-		
-		myll.add(0);
-		myll.add(1);
-		myll.add(2);
-		myll.add(3);
-		myll.add(4);
-		
-		myll.print();
+
+		MyLL<String> myLL = new MyLL<>();
+
+		for (int i = 0; i < 10; i++) {
+			// add method use to add a element in the last node of the linked list
+			myLL.add(i + "added");
+
+		}
+// print method use to print the linked list
+		myLL.print();
 	}
-	
+
 }

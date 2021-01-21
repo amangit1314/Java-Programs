@@ -3,7 +3,7 @@ package trees;
 class BinarySearchTree { 
 	  
     /* Class containing left and right child of current node and key value*/
-    class Node { 
+    static class Node {
         int key; 
         Node left, right; 
   
@@ -31,7 +31,7 @@ class BinarySearchTree {
   
         /* If the tree is empty, return a new node */
         if (root == null) { 
-            root = new Node(key); 
+            root = new Node(key);
             return root; 
         } 
   

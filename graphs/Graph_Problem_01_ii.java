@@ -1,18 +1,18 @@
-package dataStructures.graphs;
+package graphs;
 import java.util.*;
 
-public class Graph {
+public class Graph_Problem_01_ii {
 	
 	private LinkedList<Integer> adj[];
 	
 	@SuppressWarnings("unchecked")
-	public Graph(int v) {
+	public Graph_Problem_01_ii(int v) {
+		
 		//array of Linked List
 		adj = new LinkedList[v]; 
 		
-		for(int i=0;i<v;i++) {
+		for(int i = 0; i < v; i++) 
 			adj[i] = new LinkedList<Integer>();
-		}
 	}
 	
 	public void addEdge(int source, int destination) {
@@ -21,19 +21,21 @@ public class Graph {
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter number of vertices and edges");
+		Scanner sc = new Scanner(System.in);
+		
 		int v = sc.nextInt();
 		int e = sc.nextInt();
 		
-		Graph graph = new Graph(v);
+		Graph_Problem_01_ii graph_Problem_01_ii = new Graph_Problem_01_ii(v);
+		
 		System.out.println("Enter " + e + " edges");
 		
 		for(int i=0;i<e;i++) {
 			int source = sc.nextInt();
 			int destination = sc.nextInt();
-			graph.addEdge(source,  destination);
+			graph_Problem_01_ii.addEdge(source,  destination);
 		}
 		
 		sc.close();

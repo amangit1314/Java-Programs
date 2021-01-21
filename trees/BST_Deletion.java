@@ -4,7 +4,7 @@ package trees;
 class BST_Deletion{ 
 	
  	// Class to make a Node
-	 class Node { 
+	static class Node {
 		     int key; 
 		     Node left, right; 
 		
@@ -83,7 +83,7 @@ class BST_Deletion{
 	     /* If the tree is empty, return a new node */
 	     if (root == null) 
 	     { 
-	         root = new Node(key); 
+	         root = new Node(key);
 	         return root; 
 	     } 
 	
