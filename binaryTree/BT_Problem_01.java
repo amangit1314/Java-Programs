@@ -4,12 +4,13 @@ import java.util.*;
 // Find Level order traversal of binary tree
 class Node{
 	int data;
+	int hd;
 	Node left, right;
 	
 	public Node(int item) {
 		data = item;
-		left = null;
-		right = null;
+		hd = Integer.MAX_VALUE;
+		left = right = null;
 	}
 }
 public class BT_Problem_01 {
