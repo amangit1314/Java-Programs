@@ -1,20 +1,22 @@
 package binaryTree;
+
 import java.util.*;
+import java.util.Map.Entry;
 
 /*	
  * Problem Title :- Write a Java program to find Bottom View of Tree. 
  */
-public class BT_Problem_12 {
 
+class Tree{
 	Node root;
 	
-	public BT_Problem_12() {}
+	public Tree() {}
 	
-	public BT_Problem_12(Node node){
+	public Tree(Node node){
 		root = node;
 	}
 	
-	private void BottomView() {
+	void bottomView() {
 		
 		if(root == null)
 			return;
@@ -54,11 +56,30 @@ public class BT_Problem_12 {
 		Set<Entry<Integer, Integer>> set = map.entrySet();
 		
 		Iterator<Entry<Integer, Integer>> iterator = set.iterator();
+		
+		while(iterator.hasNext()) {
+			Map.Entry<Integer, Integer> me = iterator.next();
+			System.out.print(me.getValue() + " ");
+		}
 	}
-	
+}
+
+public class BT_Problem_12 {
 	
 	public static void main(String[] args) {
+		Node root = new Node(20);
+		root.left = new Node(8);
+		root.right = new Node(22);
+		root.left.left = new Node(5);
+		root.left.right = new Node(3);
+		root.right.left = new Node(4);
+		root.right.right = new Node(25);
+		root.left.right.left = new Node(10);
+		root.left.right.right = new Node(14);
 		
+		Tree tree = new Tree(root);
+		System.out.println("Bottom view of the given binary tree: ");
+		tree.bottomView();
 	}
 
 }
