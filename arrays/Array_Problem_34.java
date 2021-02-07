@@ -1,5 +1,4 @@
 package arrays;
-import java.lang.*;
 
 /* Problem Title :-> Minimum swaps required bring elements less equal K together */
 public class Array_Problem_34 {

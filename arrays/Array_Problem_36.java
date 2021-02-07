@@ -53,12 +53,13 @@ public class Array_Problem_36 {
     }
 
     /* Driver program to test above function */
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 
         int[] a1 = {1, 12, 15, 26, 38};
         int[] a2 = {2, 13, 17, 30, 45};
 
-        int n1 = a1.length,n2 = a2.length;
+        int n1 = a1.length, n2 = a2.length;
 
         System.out.println("Median is " + getMedian(a1, a2, n1));
 
