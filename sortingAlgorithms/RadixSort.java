@@ -13,8 +13,8 @@ class RadixSort {
 		return mx; 
 	} 
 
- // A function to do counting sort of arr[] according to 
- // the digit represented by exp. 
+ // A function to do counting sort of array[] according to 
+ // the digit represented by exponential. 
  	static void countSort(int arr[], int n, int exp) { 
      	int output[] = new int[n]; // output array 
      	int i; 
@@ -43,15 +43,15 @@ class RadixSort {
     	 arr[i] = output[i]; 
  		} 
 
- // The main function to that sorts arr[] of size n using 
- // Radix Sort 
+     // The main function to that sorts arr[] of size n using Radix Sort 
  	static void radixsort(int arr[], int n) { 
      // Find the maximum number to know number of digits 
      int m = getMax(arr, n); 
 
-     // Do counting sort for every digit. Note that instead 
-     // of passing digit number, exp is passed. exp is 10^i 
-     // where i is current digit number 
+     /* Do counting sort for every digit. 
+     *  Note that instead of passing digit number, exponential is passed.
+     *  exponential is 10^i  where i is current digit number .
+     */
      for (int exp = 1; m/exp > 0; exp *= 10) 
          countSort(arr, n, exp); 
  	} 
@@ -71,3 +71,4 @@ class RadixSort {
  		print(arr, n); 
  	} 
 }
+ 

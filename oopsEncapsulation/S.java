@@ -1,5 +1,6 @@
 package oopsEncapsulation;
 
+//Student class short name as S
 public class S {
 	
 	/*we have to put the variables private to achieve encapsulation*/
@@ -18,13 +19,11 @@ public class S {
 	}
 	
 	//getter methods
-		public int getAge() {
-			return age;
-		}
+	public int getAge() {
+		return age;
+	}
 		
-		public String getName() {
-			return name;
-		}
-		
-	
+	public String getName() {
+		return name;
+	}
 }

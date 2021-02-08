@@ -1,5 +1,6 @@
 package searchingAlgorithms;
 
+//Binary Search Algorithm
 public class BinarySearch {
 
 	 // Returns index of x if it is present in arr[l.. 
