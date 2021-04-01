@@ -5,15 +5,13 @@ public class Array_Problem_1 {
 		
 	static void rvereseArray(int arr[],int start, int end)
 	{
-	int temp;
-	  
-		while (start < end)
-		{
-		    temp = arr[start]; 
-		    arr[start] = arr[end];
-		    arr[end] = temp;
-		    start++;
-		    end--;
+		int temp;
+		while(start < end){
+			temp = arr[end];
+			arr[end] = arr[start];
+			a[start] = temp;
+			start++;
+			end--;
 		} 
 	}     
 	
