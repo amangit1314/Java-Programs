@@ -1,5 +1,3 @@
-package binary_search_tree;
-
 public class Find_a_value_in_bst {
 
     class Node {
