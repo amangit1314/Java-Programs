@@ -1,3 +1,5 @@
+package binary_search_tree;
+
 /**
  * Deletion_of_a_node_in_bst
  */

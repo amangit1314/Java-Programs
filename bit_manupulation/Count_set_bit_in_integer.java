@@ -1,6 +1,4 @@
-package bit_manipulation;
-
-import java.io.*;
+package bit_manupulation;
 
 public class Count_set_bit_in_integer {
     /*
