@@ -1,7 +1,7 @@
 package binaryTree;
 import java.util.*;
 /*	
- * Problem Title :- In-order Traversal of a tree both using Recursion
+ * Problem Title :- In-order Traversal of a tree without using Recursion
  */
 // Class to print the in-order traversal
 public class BT_Problem_06_a {
