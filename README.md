@@ -5,4 +5,6 @@ This is a repository where, I will upload and keep up to date my Java, DataStruc
 2. Java The Complete Reference by Herberth Schildt.
 3. Algorithms by Sedwig.
 4. Algorithms by Cormen.
-<a href="https://www.java.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/3291/3291697.png" alt="java" width="40" height="40"/> </a>
+<p>
+  <a href="https://www.java.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/3291/3291697.png" alt="java" width="40" height="40"/> </a>
+  </p>
