@@ -3,7 +3,7 @@ package searchingAlgorithms;
 //Binary Search Algorithm
 public class BinarySearch {
 
-	 // Returns index of x if it is present in arr[l.. 
+	 // Returns index of x if it is present in a[l.. 
     // r], else return -1 
     int binarySearch(int arr[], int l, int r, int x) 
     { 
@@ -16,7 +16,7 @@ public class BinarySearch {
                 return mid; 
   
             // If element is smaller than mid, then 
-            // it can only be present in left subarray 
+            // it can only be present in left sub array 
             if (arr[mid] > x) 
                 return binarySearch(arr, l, mid - 1, x); 
   

@@ -2,7 +2,7 @@ package binaryTree;
 import java.util.*;
 import java.util.Map.Entry;
 /*
- * Problem Title :- Diagnol Traversal of a Binary tree
+ * Problem Title :- Daignol Traversal of a Binary tree
  */
 public class BT_Problem_15 {
 
