@@ -1,8 +1,7 @@
 # Java-Programs
-This is a repository where, I will upload and keep up to date my Java, DataStructure and algorithms code and question regarding to them,which i practiced on eclipse & IntelliJ with help of Books and programming websites. The books I prefer and use for learning java and algorithms are:
+- This is a full fledged repository for learning Java Language & DSA for Placement Prepration.
+- Here, I will upload the solutions of 450 Questions of (DataStructure & Algorithms Cracker Sheet) By LOVE BABBAR Bhaiya.
+- I have practiced all my codes on Eclipse. You can also practice some beginner problems which are also included in it.
+- Along with 450 questions, I have also include OOP's Concept's Code in this repository.
 
-1. Java for Dummies.
-2. Java The Complete Reference by Herberth Schildt.
-3. Algorithms by Sedwig.
-4. Algorithms by Cormen.
-<a href="https://www.java.com" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/3291/3291697.png" alt="java" width="40" height="40"/> </a>
+![logo512](https://user-images.githubusercontent.com/65482419/118401608-f1490e80-b683-11eb-9e58-af14ae9a5cab.png)
