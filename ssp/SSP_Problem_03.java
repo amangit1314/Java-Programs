@@ -8,12 +8,9 @@ public class SSP_Problem_03 {
 	 * otherwise returns -1.
 	 */
 	static int search(int[] a, int l, int h, int key) {
-		if(l > h)
-			return -1;
-		
+		if(l > h) 		return -1;
 		int mid = (l + h) / 2;
-		if(a[mid] == key)
-			return mid;
+		if(a[mid] == key) 		return mid;
 		
 		/* If a[1...mid] first sub-array is sorted */
 		if(a[l] <= a[mid]) {
