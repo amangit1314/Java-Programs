@@ -29,7 +29,7 @@ public class Infix_To_Postfix {
             char c = exp.charAt(i);
 
             if(Character.isLetterOrDigit(c))
-                result += c;
+                result = result + c;
 
             else if(c == '(')
                 stack.push(c);

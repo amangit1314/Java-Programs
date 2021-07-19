@@ -2,7 +2,7 @@ package array;
 import java.util.*;
 
 //Language: Java
-//Time Complexity: O(n) 3 Linear traversals.
+//Time Complexity: O(n)3 Linear traversals.
 //Space Complexity: O(n) Array of candies.
 
 public class Candy_Distribution_Problem{
@@ -41,7 +41,6 @@ public class Candy_Distribution_Problem{
 		}
 	
 	public static void main(String[] args) {
-		@SuppressWarnings("unused")
 		int[] ratings = {12 , 34 , 45 , 67 , 43 , 75};
 	}
 	

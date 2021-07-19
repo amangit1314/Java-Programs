@@ -14,7 +14,7 @@ public class Array_Problem_3 {
 	  
 	// A simple function to find median of arr[]. This is called 
 	// only for an array of size 5 in this program. 
-	static int findMedian(int arr[], int i,int n) 
+	static int findMedian(int[] arr, int i,int n)
 	{ 
 	    if(i <= n) 
 	        Arrays.sort(arr, i, n); // Sort the array 
@@ -23,11 +23,11 @@ public class Array_Problem_3 {
 	    return arr[n/2]; // Return middle element 
 	} 
 	  
-	// Returns k'th smallest element 
+	// Returns k^th smallest element
 	// in arr[l..r] in worst case 
 	// linear time. ASSUMPTION: ALL  
 	// ELEMENTS IN ARR[] ARE DISTINCT 
-	static int kthSmallest(int arr[], int l, int r, int k) 
+	static int kthSmallest(int[] arr, int l, int r, int k)
 	{ 
 	    // If k is smaller than  
 	    // number of elements in array 
@@ -68,7 +68,7 @@ public class Array_Problem_3 {
 	        if (pos-l > k - 1) // If position is more, recur for left 
 	            return kthSmallest(arr, l, pos - 1, k); 
 	  
-	        // Else recur for right subarray 
+	        // Else recur for right sub array
 	        return kthSmallest(arr, pos + 1, r, k - pos + l - 1); 
 	    } 
 	  
@@ -76,32 +76,25 @@ public class Array_Problem_3 {
 	    return Integer.MAX_VALUE; 
 	} 
 	  
-	static int[] swap(int []arr, int i, int j) 
-	{ 
+	static void swap(int []arr, int i, int j) {
 	    int temp = arr[i]; 
 	    arr[i] = arr[j]; 
-	    arr[j] = temp; 
-	    return arr; 
-	} 
+	    arr[j] = temp;
+	}
 	  
 	// It searches for x in arr[l..r], and  
 	// partitions the array around x. 
-	static int partition(int arr[], int l, 
-	                        int r, int x) 
-	{ 
+	static int partition(int[] arr, int l, int r, int x) {
 	    // Search for x in arr[l..r] and move it to end 
 	    int i; 
 	    for (i = l; i < r; i++) 
-	        if (arr[i] == x) 
-	        break; 
+	        if (arr[i] == x) 	break;
 	    swap(arr, i, r); 
 	  
 	    // Standard partition algorithm 
 	    i = l; 
-	    for (int j = l; j <= r - 1; j++) 
-	    { 
-	        if (arr[j] <= x) 
-	        { 
+	    for (int j = l; j <= r - 1; j++) {
+	        if (arr[j] <= x) {
 	            swap(arr, i, j); 
 	            i++; 
 	        } 
@@ -111,12 +104,10 @@ public class Array_Problem_3 {
 	} 
 	  
 	// Driver code 
-	public static void main(String[] args) 
-	{ 
-	    int arr[] = {12, 3, 5, 7, 4, 19, 26}; 
+	public static void main(String[] args) {
+	    int[] arr = {12, 3, 5, 7, 4, 19, 26};
 	    int n = arr.length, k = 3; 
-	    System.out.println("K'th smallest element is "
+	    System.out.println("K^th smallest element is "
 	        + kthSmallest(arr, 0, n - 1, k)); 
-	} 
-
+	}
 }
