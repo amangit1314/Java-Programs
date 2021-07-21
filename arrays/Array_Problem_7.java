@@ -4,39 +4,31 @@ package arrays;
  * Write a program to cyclically rotate an array by one.
  */
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Array_Problem_7 {
-	
-		//function to rotate the elements of an array
-	
-		void rotateL(int a[], int d, int n) {
-			for(int i= 0;i<d;i++) 
-				rotateLByOne(a,n);
-		}
-		
-		// rotate the array by left by one
-		
-		void rotateLByOne(int a[],int n) {
-			int i,temp;
-			temp = a[0];
-			for(i =0;i<n-1;i++)
-				a[i] = a[i+1];
-			a[i] = temp;
-		} 
-		
-		// a utility function to display the elements  of array
-		
-		void printArray(int a[],int n) {
-			for(int i=0;i<n;i++) 
-				System.out.print(a[i]+" ");	
-		}
-		
-		// driver method of the program
-		public static void main(String[] args) {
-			
-			Array_Problem_7 rotate = new Array_Problem_7();
-			
-			int a[] = {2,4,6,8,10,12,14,16,18,20};
-			rotate.rotateL(a, 3, 10);
-			rotate.printArray(a , 10);
-		}
+
+	static void rotate(int[] a){
+		int x = a[a.length-1], i;
+		for (i = a.length-1; i > 0; i--)
+			a[i] = a[i-1];
+		a[0] = x;
+	}
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] a = new int[n];
+		for (int i = 0; i < n; i++)
+			a[i] = sc.nextInt();
+
+		System.out.println("Given Array is");
+		System.out.println(Arrays.toString(a));
+
+		rotate(a);
+
+		System.out.println("Rotated Array is");
+		System.out.println(Arrays.toString(a));
+	}
 }

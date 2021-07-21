@@ -10,12 +10,11 @@ import java.util.Arrays;
 public class Array_Problem_6 {
 
 	
-	 void printUnion(int arr1[], int arr2[], int m, int n)
-	    {
+	 void printUnion(int[] arr1, int[] arr2, int m, int n) {
 	        // Before finding union, make sure arr1[0..m-1]
 	        // is smaller
 	        if (m > n) {
-	            int tempp[] = arr1;
+	            int[] tempp = arr1;
 	            arr1 = arr2;
 	            arr2 = tempp;
 	 
@@ -41,13 +40,13 @@ public class Array_Problem_6 {
 	    }
 	 
 	    // Prints intersection of arr1[0..m-1] and arr2[0..n-1]
-	    void printIntersection(int arr1[], int arr2[], int m,
-	                           int n)
+	    void printIntersection(int[] arr1, int[] arr2, int m,
+							   int n)
 	    {
 	        // Before finding intersection, make sure
 	        // arr1[0..m-1] is smaller
 	        if (m > n) {
-	            int tempp[] = arr1;
+	            int[] tempp = arr1;
 	            arr1 = arr2;
 	            arr2 = tempp;
 	 
@@ -71,8 +70,7 @@ public class Array_Problem_6 {
 	    // A recursive binary search function. It returns
 	    // location of x in given array arr[l..r] is present,
 	    // otherwise -1
-	    int binarySearch(int arr[], int l, int r, int x)
-	    {
+	    int binarySearch(int[] arr, int l, int r, int x) {
 	        if (r >= l) {
 	            int mid = l + (r - l) / 2;
 	 
@@ -97,21 +95,23 @@ public class Array_Problem_6 {
 	    }
 	 
 	    // Driver code
-	    public static void main(String[] args)
-	    {
+	    public static void main(String[] args) {
+
 	        Array_Problem_6 u_i= new Array_Problem_6();
 	        
-	        int arr1[] = { 7, 1, 5, 2, 3, 6 };
-	        int arr2[] = { 3, 8, 6, 20, 7 };
+	        int[] arr1 = { 7, 1, 5, 2, 3, 6 };
+	        int[] arr2 = { 3, 8, 6, 20, 7 };
+
 	        int m = arr1.length;
 	        int n = arr2.length;
 	       
 	        // Function call
 	        System.out.println("Union of two arrays is ");
 	        u_i.printUnion(arr1, arr2, m, n);
-	        System.out.println("");
-	        System.out.println(
-	            "Intersection of two arrays is ");
+
+	        System.out.println();
+
+	        System.out.println("Intersection of two arrays is ");
 	        u_i.printIntersection(arr1, arr2, m, n);
 	    }
 	}
