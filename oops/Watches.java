@@ -1,8 +1,7 @@
 package oops;
 
-public abstract class Watches {
+public abstract  class Watches {
+    public void Digital() {
 
-	public abstract void Digital();
-	public abstract void Royal();
-
+    }
 }
