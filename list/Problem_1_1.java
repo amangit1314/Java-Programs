@@ -36,7 +36,7 @@ public class Problem_1_1 {
 	
 	void printList(Node node) {
 		while(node != null) {
-			System.out.println(node.data + " ");
+ 			System.out.println(node.data + " ");
 			node = node.next;
 		}
 	}

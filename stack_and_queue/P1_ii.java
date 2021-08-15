@@ -7,8 +7,7 @@ import static java.lang.System.exit;
 class StackUsingLinkedlist {
 
   // A linked list node
-  private class Node {
-
+  private static class Node {
       int data; // integer data
       Node link; // reference variable Node type
   }
@@ -69,7 +68,7 @@ class StackUsingLinkedlist {
   public void display() {
       // check for stack underflow
       if (top == null) {
-          System.out.printf("\nStack Underflow");
+          System.out.print("\nStack Underflow");
           exit(1);
       } else {
           Node temp = top;
@@ -86,7 +85,7 @@ class StackUsingLinkedlist {
 }
 
 //main class
-public class Stack_Queue_Problem_01_ii {
+public class P1_ii {
   public static void main(String[] args) {
       // create Object of Implementing class
       StackUsingLinkedlist obj = new StackUsingLinkedlist();

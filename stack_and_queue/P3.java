@@ -2,12 +2,12 @@ package stack_and_queue;
 
 //Implement two stack in an array
 
-public class Stack_Queue_Problem_03 {
+public class P3 {
 
 	int size, top1, top2;
 	int[] a;
 
-	Stack_Queue_Problem_03(int n) {
+	P3(int n) {
 		a = new int[n];
 		size = n;
 		top1 = -1;
@@ -60,7 +60,7 @@ public class Stack_Queue_Problem_03 {
 
 	public static void main(String[] args) {
 
-		Stack_Queue_Problem_03 ts = new Stack_Queue_Problem_03(5);
+		P3 ts = new P3(5);
 		ts.push1(5);
 		ts.push2(10);
 		ts.push2(15);

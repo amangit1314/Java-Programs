@@ -2,7 +2,7 @@ package stack_and_queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Parenthesis_Checker_Problem {
+public class P6 {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {

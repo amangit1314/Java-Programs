@@ -1,8 +1,12 @@
 package stack_and_queue;
 
-//Queue From Scratch using Array
+//Implement Queue From Scratch using Array
 class Queue {
-    int front, rear, size, capacity, array[];
+    int front;
+    int rear;
+    int size;
+    int capacity;
+    int[] array;
 
     public Queue(int capacity) {
         this.capacity = capacity;
@@ -50,7 +54,7 @@ class Queue {
     }
 }
 
-public class Stack_Queue_Problem_02_i {
+public class P2_i {
 
     public static void main(String[] args) {
         Queue queue = new Queue(1000);
