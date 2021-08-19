@@ -16,7 +16,7 @@ public class Word_Break_PUB {
 			
 			if(sentence2.contains(substring)) {
 				String newSentence = sentence + " " + substring;
-				backtrack(newSentence.trim(), A.substring( i + 1, A.length()), sentence2, result);
+				backtrack(newSentence.trim(), A.substring( i + 1), sentence2, result);
 			}
 		}
 	}
