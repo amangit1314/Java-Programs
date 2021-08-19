@@ -1,4 +1,4 @@
-# Java Placement Prepration DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[120/450]
+# Java Placement Prepration DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[124/450]
 🐼 This is a full fledged repository for learning Java Language & DSA for Placement Prepration.
 
 💪 Here you can find will the solutions of **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya.
