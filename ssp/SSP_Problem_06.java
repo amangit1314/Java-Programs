@@ -12,7 +12,6 @@ public class SSP_Problem_06 {
     // structure defining a point
     static class point {
         int x, y;
-        point() {}
 
         public point(int x, int y) {
             this.x = x;
