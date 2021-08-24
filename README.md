@@ -5,7 +5,7 @@
 >>>>>>> 9ec6f48496015b867a559d1d4562b61f5df50050
 🐼 This is a full fledged repository for learning Java Language & DSA for Placement Prepration.
 
-💪 Here you can find will the solutions of **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya.
+💪 Here you can find the solution's of **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya.
 
 👊 You can also practice some beginner problems which are also included in it.
 
