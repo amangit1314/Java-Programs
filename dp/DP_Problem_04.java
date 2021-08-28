@@ -2,7 +2,7 @@ package dp;
 
 import java.util.Scanner;
 
-// Problem Title => Permutation CoefficientProblem
+// Problem Title => Permutation Coefficient Problem
 public class DP_Problem_04 {
 	static int permutationCoeff(int n, int k){
 		int Fn = 1, Fk = 1;
