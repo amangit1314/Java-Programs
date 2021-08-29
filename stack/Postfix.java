@@ -1,77 +1,57 @@
 package stack;
 
-import java.util.*;
+// Problem Title => Java program to evaluate value of a postfix expression
 
-//Program to convert infix to postfix
+import java.util.*;
+import java.util.Stack;
+
 public class Postfix {
 
-    static int Prec(char ch) {
-        switch (ch) {
-            case '+':
-            case '-':
-                return 1;
+    // Method to evaluate value of a postfix expression
+    static int evaluatePostfix(String exp) {
+        //create a stack
+        Stack<Integer> stack = new Stack<>();
 
-            case '*':
-            case '/':
-                return 2;
-
-            case '^':
-                return 3;
-        }
-
-        return -1;
-    }
-
-    static String infixToPostfix(String exp) {
-
-        String result = new String(" ");
-        Stack<Character> stack = new Stack<>();
-
-        for (int i = 0; i < exp.length(); ++i) {
-
+        // Scan all characters one by one
+        for(int i = 0; i < exp.length(); i++) {
             char c = exp.charAt(i);
 
-            if (Character.isLetterOrDigit(c))
-                result += c;
+            // If the scanned character is an operand (number here), push it to the stack.
+            if(Character.isDigit(c))
+                stack.push(c - '0');
 
-            else if (c == '(')
-                stack.push(c);
-
-            else if (c == ')') {
-                while (!stack.isEmpty() && stack.peek() != '(')
-                    result += stack.pop();
-
-                stack.pop();
-            }
-
+            // If the scanned character is an operator, pop two elements from stack apply the operator
             else {
-                while (!stack.isEmpty() && Prec(c) <= Prec(stack.peek())) {
-                    result += stack.pop();
+                int val1 = stack.pop();
+                int val2 = stack.pop();
+
+                switch(c) {
+                    case '+':
+                        stack.push(val2+val1);
+                        break;
+
+                    case '-':
+                        stack.push(val2- val1);
+                        break;
+
+                    case '/':
+                        stack.push(val2/val1);
+                        break;
+
+                    case '*':
+                        stack.push(val2*val1);
+                        break;
                 }
             }
-
-            stack.push(c);
         }
-
-        while (!stack.isEmpty()) {
-
-            if (stack.peek() == '(')
-                return "Invalid Expression";
-
-            result += stack.pop();
-        }
-
-        return result;
+        return stack.pop();
     }
 
+    // Driver program to test above functions
     public static void main(String[] args) {
-
-        //Taking String "exe" input
         Scanner sc = new Scanner(System.in);
         String exp = sc.nextLine();
-        sc.close();
-        @SuppressWarnings("unused")
-        Postfix p = new Postfix();
-        System.out.println(infixToPostfix(exp));
+        // String exp="231*+9-";
+        System.out.println("postfix evaluation: "+evaluatePostfix(exp));
     }
 }

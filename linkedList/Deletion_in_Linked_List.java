@@ -2,8 +2,11 @@ package linkedList;
 
 class LinkedList 
 { 
-    Node head;  // head of list 
-  
+    Node head;  // head of list
+
+    public void detectAndRemoveLoop(Problem_4.Node head) {
+    }
+
     /* Linked list Node*/
     static class Node
     { 

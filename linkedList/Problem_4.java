@@ -1,24 +1,27 @@
 package linkedList;
 
-import java.util.HashSet;
+// Problem Title => Write a program to Detect & Remove loop in a linked list.
+// Java program to detect and remove loop in linked list
 
-// Problem Title => Write a program to Delete loop in a linked list.
 public class Problem_4 {
 
     static Node head;
 
-    static class Node{
+    static class Node {
         int data;
         Node next;
-        public Node(int d) {
-            this.data = d;
+
+        Node(int d) {
+            data = d;
             next = null;
         }
     }
 
     // Function that detects loop in the list
-    int detectAndRemoveLoop(Node node) {
+    void detectAndRemoveLoop(Node node) {
+
         Node slow = node, fast = node;
+
         while (slow != null && fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
@@ -26,42 +29,37 @@ public class Problem_4 {
             // If slow and fast meet at same point then loop is present
             if (slow == fast) {
                 removeLoop(slow, node);
-                return 1;
+                return;
             }
         }
-        return 0;
     }
 
     // Function to remove loop
     void removeLoop(Node loop, Node curr) {
-        Node ptr1 = null, ptr2 = null;
+        Node ptr1, ptr2 = null;
 
-        /* Set a pointer to the beginning of the Linked List
-         and move it one by one to find the first node which
-         is part of the Linked List */
+		/* Set a pointer to the beginning of the Linked List
+		and move it one by one to find the first node which
+		is part of the Linked List */
         ptr1 = curr;
-        while (1 == 1) {
+        while (true) {
 
-            /* Now start a pointer from loop_node and check
-             if it ever reaches ptr2 */
+			/* Now start a pointer from loop_node and check if it ever reaches ptr2 */
             ptr2 = loop;
-            while (ptr2.next != loop && ptr2.next != ptr1) {
+            while (ptr2.next != loop && ptr2.next != ptr1)
                 ptr2 = ptr2.next;
-            }
 
-            /* If ptr2 reahced ptr1 then there is a loop. So
-             break the loop */
-            if (ptr2.next == ptr1) {
+			/* If ptr2 reached ptr1 then there is a loop.
+			 So break the loop */
+            if (ptr2.next == ptr1)
                 break;
-            }
 
-            /* If ptr2 did't reach ptr1 then try the next
-             * node after ptr1 */
+            /* If ptr2 did not reach ptr1 then try the next node after ptr1 */
             ptr1 = ptr1.next;
         }
 
-        /* After the end of loop ptr2 is the last node of
-         the loop. So make next of ptr2 as NULL */
+		/* After the end of loop ptr2 is the last node of
+		the loop. So make next of ptr2 as NULL */
         ptr2.next = null;
     }
 
@@ -74,19 +72,25 @@ public class Problem_4 {
     }
 
     // Driver code
-    public static void main(String[] args)
-    {
-        LinkedList list = new LinkedList();
-        list.head = new LinkedList.Node(50);
-        list.head.next = new LinkedList.Node(20);
-        list.head.next.next = new LinkedList.Node(15);
-        list.head.next.next.next = new LinkedList.Node(4);
-        list.head.next.next.next.next = new LinkedList.Node(10);
+    public static void main(String[] args) {
+        Problem_4 list = new Problem_4();
+        head = new Node(50);
+        head.next = new Node(20);
+        head.next.next = new Node(15);
+        head.next.next.next = new Node(4);
+        head.next.next.next.next = new Node(10);
 
         // Creating a loop for testing
         head.next.next.next.next.next = head.next.next;
+
         list.detectAndRemoveLoop(head);
         System.out.println("Linked List after removing loop : ");
         list.printList(head);
     }
 }
+
+// This code has been contributed by Aman Soni
+
+
+// Time Complexity => O(n).
+// Space Complexity => O(n).
