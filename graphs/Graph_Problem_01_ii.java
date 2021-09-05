@@ -3,16 +3,15 @@ import java.util.*;
 
 public class Graph_Problem_01_ii {
 	
-	private LinkedList<Integer> adj[];
-	
-	@SuppressWarnings("unchecked")
+	private final LinkedList<Integer>[] adj;
+
 	public Graph_Problem_01_ii(int v) {
 		
 		//array of Linked List
-		adj = new LinkedList[v]; 
+		adj = new LinkedList[v];
 		
 		for(int i = 0; i < v; i++) 
-			adj[i] = new LinkedList<Integer>();
+			adj[i] = new LinkedList<>();
 	}
 	
 	public void addEdge(int source, int destination) {
@@ -32,7 +31,7 @@ public class Graph_Problem_01_ii {
 		
 		System.out.println("Enter " + e + " edges");
 		
-		for(int i=0;i<e;i++) {
+		for(int i = 0; i < e; i++) {
 			int source = sc.nextInt();
 			int destination = sc.nextInt();
 			graph_Problem_01_ii.addEdge(source,  destination);

@@ -15,7 +15,7 @@ public class Graph_Problem_01_i {
 		
 		for(int i = 0; i < adj.size(); i++) {
 			
-			System.out.println("\n Adjacency list of vertex" + i);
+			System.out.println("\nAdjacency list of vertex " + i);
 			System.out.print("head");
 			
 			for(int j = 0; j < adj.get(i).size(); j++)
@@ -30,10 +30,10 @@ public class Graph_Problem_01_i {
 		
 		// Creating a graph with 5 vertices
 		int V = 5;
-		ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>(V);
+		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(V);
 		
 		for(int i = 0; i < V; i++)
-			adj.add(new ArrayList<Integer>());
+			adj.add(new ArrayList<>());
 		
 		// Adding edges one by one 
 		addEdge(adj, 0, 1);
