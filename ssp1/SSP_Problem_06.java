@@ -1,4 +1,4 @@
-package ssp;
+package ssp1;
 
 public class SSP_Problem_06 {
 

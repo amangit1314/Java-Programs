@@ -1,20 +1,13 @@
-package ssp.ssp;
+package ssp;
 
-// Problem TItle => Implement stack from scratch
-public class Problem_1 {
-    public static void main(String[] args) {
+// Problem TItle => Implement stack from scratch using Array
 
-    }
-}
-
-/**
- * Stack
- */
 class Stack {
     static final int MAX = 100;
     int top;
     int[] a = new int[MAX];
 
+    // Constructor
     Stack() {
         top = -1;
     }
@@ -23,7 +16,7 @@ class Stack {
         return (top < 0);
     }
 
-    boolean pop(int x) {
+    boolean push(int x) {
         if (top >= (MAX - 1)) {
             System.out.println("Stack Overflow");
             return false;
@@ -34,7 +27,7 @@ class Stack {
         }
     }
 
-    int push() {
+    int pop() {
         if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
@@ -55,8 +48,21 @@ class Stack {
     }
 
     void print() {
-        for (int i = top; i > -1; i--) {
+        for (int i = top; i > -1; i--)
             System.out.print(" " + a[i]);
-        }
+
+    }
+}
+
+public class Problem_1_1 {
+    public static void main(String[] args) {
+        Stack s = new Stack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println("Top element is :" + s.peek());
+        System.out.print("Elements present in stack :");
+        s.print();
     }
 }
