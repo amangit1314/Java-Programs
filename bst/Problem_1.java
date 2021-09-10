@@ -1,6 +1,6 @@
-package binarySearchTree;
 
-public class Find_a_value_in_bst {
+
+public class Problem_1 {
 
     class Node {
         int key;
@@ -15,7 +15,7 @@ public class Find_a_value_in_bst {
     Node root;
 
     // ! Constructor
-    Find_a_value_in_bst() {
+    Problem_1() {
         root = null;
     }
 
@@ -52,7 +52,7 @@ public class Find_a_value_in_bst {
     }
 
     public static void main(String[] args) {
-        Find_a_value_in_bst tree = new Find_a_value_in_bst();
+        Problem_1 tree = new Problem_1();
         tree.insert(50);
         tree.insert(30);
         tree.insert(20);

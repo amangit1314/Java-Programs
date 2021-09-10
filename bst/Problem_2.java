@@ -1,9 +1,7 @@
-package binarySearchTree;
 
-/**
- * Deletion_of_a_node_in_bst
- */
-public class Deletion_of_a_node_in_bst {
+
+// Problem Title => Deletion_of_a_node_in_bst
+public class Problem_2 {
     class Node {
         int key;
         Node left, right;
@@ -16,7 +14,7 @@ public class Deletion_of_a_node_in_bst {
 
     Node root;
 
-    Deletion_of_a_node_in_bst() {
+    Problem_2() {
         root = null;
     }
 
@@ -81,7 +79,7 @@ public class Deletion_of_a_node_in_bst {
     }
 
     public static void main(String[] args) {
-        Deletion_of_a_node_in_bst tree = new Deletion_of_a_node_in_bst();
+        Problem_2 tree = new Problem_2();
         // * Let us create following BST
         // ? 50
         // ? / \
