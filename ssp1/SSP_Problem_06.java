@@ -1,6 +1,6 @@
 package ssp1;
 //Problem Title => Optimum location of point to minimize total distance
-
+ 
 public class SSP_Problem_06 {
 
     static double sq(double x) {

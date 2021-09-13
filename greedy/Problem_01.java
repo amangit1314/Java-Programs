@@ -2,7 +2,7 @@ package greedy;
 
 // Problem Title => Activity Selection Problem
 
-public class Greedy_Problem_01 {
+public class Problem_01 {
 
 	/*
 	 * Prints a maximum set of activities that can be done by a single person,
