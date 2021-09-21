@@ -34,10 +34,8 @@ class Stack{
             System.out.println("Stack overflow");
             return 0;
         }
-        else{
-            char x = a[top--];
-            return x;
-        }
+        else
+            return a[top--];
     }
 }
 public class P7 {

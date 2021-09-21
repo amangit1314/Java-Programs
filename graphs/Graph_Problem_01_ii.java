@@ -1,9 +1,9 @@
 package graphs;
 import java.util.*;
-
+// Problem Title :-> Create a Graph, print it using Linked List
 public class Graph_Problem_01_ii {
 	
-	private final LinkedList<Integer>[] adj;
+	final LinkedList<Integer>[] adj;
 
 	public Graph_Problem_01_ii(int v) {
 		

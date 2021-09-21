@@ -1,3 +1,5 @@
+package ssp1;
+
 // Problem Title => Majority Element
 public class SSP_Problem_08 {
 
@@ -31,14 +33,11 @@ public class SSP_Problem_08 {
             if (a[i] == cand)
                 count++;
         }
-        if (count > size / 2)
-            return true;
-        else
-            return false;
+        return count > size / 2;
     }
     public static void main(String[] args) {
-        MajorityElement majorelement = new MajorityElement();
-        int a[] = new int[] { 1, 3, 3, 1, 2 };
+        SSP_Problem_08 majorelement = new SSP_Problem_08();
+        int[] a = new int[] { 1, 3, 3, 1, 2 };
 
         // Function call
         int size = a.length;
