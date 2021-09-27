@@ -1,69 +1,66 @@
 package stack_and_queue;
+import java.util.*;
 
-import java.util.Scanner;
+// Java program for checking balanced brackets
+public class P6 {
 
-//public class P6 {
-//
-//	public static void main(String[] args) {
-//
-//		Scanner sc = new Scanner(System.in);
-//		int t = sc.nextInt();
-//
-//		while(t-- != 0) {
-//			String s = sc.nextLine();
-//			Stack<Character> stack = new Stack<Character>();
-//
-//			boolean isBalanced = true;
-//
-//			for(int i = 0 ; i < s.length() ; i++) {
-//				char ch = s.charAt(i);
-//				if(ch == '(' || ch == '{' || ch == '[') {
-//					stack.push(ch);
-//					continue;
-//				}
-//
-//				if(stack.isEmpty()) {
-//					isBalanced = false;
-//					break;
-//				}
-//
-//				if(ch == ')') {
-//					if(stack.peek() == '(')
-//						stack.pop();
-//					else {
-//						isBalanced = false;
-//						break;
-//					}
-//				}
-//
-//				if(ch == '}') {
-//					if(stack.peek() == '{')
-//						stack.pop();
-//
-//					else {
-//						isBalanced = false;
-//						break;
-//					}
-//				}
-//
-//				if(ch == ']') {
-//					if(stack.peek() == '[') {
-//						stack.pop();
-//					}else {
-//						isBalanced = false;
-//						break;
-//					}
-//				}
-//			}
-//
-//			if(!stack.isEmpty())
-//				isBalanced = false;
-//
-//			if(isBalanced)
-//				System.out.println("isBalanced");
-//
-//			else
-//				System.out.println("not balanced");
-//		}
-//	}
-//}
+    // function to check if brackets are balanced
+    static boolean areBracketsBalanced(String expr) {
+        // Using ArrayDeque is faster than using Stack class
+        Deque<Character> stack = new ArrayDeque<Character>();
+
+        // Traversing the Expression
+        for (int i = 0; i < expr.length(); i++)
+        {
+            char x = expr.charAt(i);
+
+            if (x == '(' || x == '[' || x == '{')
+            {
+                // Push the element in the stack
+                stack.push(x);
+                continue;
+            }
+
+            // If current character is not opening
+            // bracket, then it must be closing. So stack
+            // cannot be empty at this point.
+            if (stack.isEmpty())
+                return false;
+            char check;
+            switch (x) {
+                case ')':
+                    check = stack.pop();
+                    if (check == '{' || check == '[')
+                        return false;
+                    break;
+
+                case '}':
+                    check = stack.pop();
+                    if (check == '(' || check == '[')
+                        return false;
+                    break;
+
+                case ']':
+                    check = stack.pop();
+                    if (check == '(' || check == '{')
+                        return false;
+                    break;
+            }
+        }
+
+        // Check Empty Stack
+        return (stack.isEmpty());
+    }
+
+    // Driver code
+    public static void main(String[] args)
+    {
+        String expr = "([{}])";
+
+        // Function call
+        if (areBracketsBalanced(expr))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
+    }
+}

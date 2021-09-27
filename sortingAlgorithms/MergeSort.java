@@ -25,13 +25,12 @@ public class MergeSort {
         // Copy data to temp arrays
         for (int i = 0; i < n1; ++i){
             L[i] = arr[l + i];
-            count++;
         }
 
 
         for (int j = 0; j < n2; ++j){
             R[j] = arr[m + 1 + j];
-            count++;
+
         }
 
         // Merge the temp arrays
@@ -51,7 +50,7 @@ public class MergeSort {
                 j++;
             }
             k++;
-//            count++;
+            count++;
         }
 
         // Copy remaining elements of L[] (Left array) if any
@@ -59,6 +58,8 @@ public class MergeSort {
             arr[k] = L[i];
             i++;
             k++;
+            count++;
+//251024
         }
 
         // Copy remaining elements of R[] (Right array) if any
@@ -66,6 +67,7 @@ public class MergeSort {
             arr[k] = R[j];
             j++;
             k++;
+            count++;
         }
     }
 
