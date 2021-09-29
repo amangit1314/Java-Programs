@@ -1,5 +1,3 @@
-
-<<<<<<< HEAD
 # Java Placement Preparation DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[178/450]
 
 🐼 This is a full fled-ged repository for learning Java Language & DSA for Placement Preparation.
