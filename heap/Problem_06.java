@@ -1,9 +1,9 @@
-package miscellaneous;
+package heap;
 
 import java.util.Arrays;
 
 // Problem Title => Merge K sorted Array's given in form of Matrix[n*n]
-public class MergeKArr {
+public class Problem_06 {
 
     static void merge(int[][] mat, int k, int[] temp){
         int i,j,t=0;
