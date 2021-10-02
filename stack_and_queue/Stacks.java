@@ -1,8 +1,8 @@
-package stack;
+package stack_and_queue;
 
 // Problem Title => Implement Stack from Scratch
 
-public class Stack {
+public class Stacks {
 
     static class MyStack{
         static final int MAX = 1000;

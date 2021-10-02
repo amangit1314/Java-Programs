@@ -1,4 +1,4 @@
-package ssp1;
+package ssp;
 //Problem Title => Optimum location of point to minimize total distance
  
 public class SSP_Problem_06 {

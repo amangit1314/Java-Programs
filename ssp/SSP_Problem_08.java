@@ -1,4 +1,4 @@
-package ssp1;
+package ssp;
 
 // Problem Title => Majority Element
 public class SSP_Problem_08 {

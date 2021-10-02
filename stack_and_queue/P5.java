@@ -1,21 +1,32 @@
-package ssp;
+package stack_and_queue;
 
-// Problem Title => 
-public class Problem_5 {
+// Problem Title => Implement "N" stack's in an Array
+public class P5 {
+
     // A Java class to represent k stacks in a single array of size n
     static class KStack {
-        int arr[]; // Array of size n to store actual content to be stored in stacks
-        int top[]; // Array of size k to store indexes of top elements of stacks
-        int next[]; // Array of size n to store next entry in all stacks
-                    // and free list
+
+        // Array of size n to store actual content to be stored in stacks
+        int[] arr;
+
+        // Array of size k to store indexes of top elements of stacks
+        int[] top;
+
+        // Array of size n to store next entry in all stacks and free list
+        int[] next;
+
         int n, k;
-        int free; // To store beginning index of free list
+
+        // To store beginning index of free list
+        int free;
 
         // constructor to create k stacks in an array of size n
         KStack(int k1, int n1) {
+
             // Initialize n and k, and allocate memory for all arrays
             k = k1;
             n = n1;
+
             arr = new int[n];
             top = new int[k];
             next = new int[n];
@@ -28,7 +39,9 @@ public class Problem_5 {
             free = 0;
             for (int i = 0; i < n - 1; i++)
                 next[i] = i + 1;
-            next[n - 1] = -1; // -1 is used to indicate end of free list
+
+            // -1 is used to indicate end of free list
+            next[n - 1] = -1;
         }
 
         // A utility function to check if there is space available
@@ -44,7 +57,8 @@ public class Problem_5 {
                 return;
             }
 
-            int i = free; // Store index of first free slot
+            // Store index of first free slot
+            int i = free;
 
             // Update index of free slot to index of next slot in free list
             free = next[i];
@@ -57,7 +71,7 @@ public class Problem_5 {
             arr[i] = item;
         }
 
-        // To pop an from stack number 'sn' where sn is from 0 to k-1
+        // To pop a from stack number 'sn' where sn is from 0 to k-1
         int pop(int sn) {
             // Underflow check
             if (isEmpty(sn)) {
@@ -68,7 +82,8 @@ public class Problem_5 {
             // Find index of top item in stack number 'sn'
             int i = top[sn];
 
-            top[sn] = next[i]; // Change top to store next of previous top
+            // Change top to store next of previous top
+            top[sn] = next[i];
 
             // Attach the previous top to the beginning of free list
             next[i] = free;

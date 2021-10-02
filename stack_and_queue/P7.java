@@ -42,7 +42,7 @@ public class P7 {
 
     public static void reverse(StringBuffer str){
         int n = str.length();
-        Stack obj = new Stack(n);
+        Stacks obj = new Stacks(n);
 
         // Push all characters of string to stack
         int i;

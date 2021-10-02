@@ -1,4 +1,4 @@
-package ssp1;
+package ssp;
 import java.util.Scanner;
 //  Problem Title => Find first and last occurrence of an elements in given sorted array
 

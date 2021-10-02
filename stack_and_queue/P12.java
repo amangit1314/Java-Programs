@@ -1,11 +1,11 @@
-package stack;
+package stack_and_queue;
 
 // Problem Title => Java program to evaluate value of a postfix expression
 
 import java.util.*;
 import java.util.Stack;
 
-public class Postfix {
+public class P12 {
 
     // Method to evaluate value of a postfix expression
     static int evaluatePostfix(String exp) {

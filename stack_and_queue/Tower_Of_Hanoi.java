@@ -1,4 +1,4 @@
-package stack;
+package stack_and_queue;
 
 /*
  * Stack Application :- Tower of Hanoi Problem(Puzzle 1)

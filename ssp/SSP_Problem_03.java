@@ -1,4 +1,4 @@
-package ssp1;
+package ssp;
 
 import java.util.Scanner;
 

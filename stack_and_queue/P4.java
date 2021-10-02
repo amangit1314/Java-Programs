@@ -1,29 +1,24 @@
-package ssp;
-// Problem Title =>  
+package stack_and_queue;
 
-/*
- * Java Program to implement a stack that supports findMiddle() and deleteMiddle
- * in O(1) time
- */
+// Problem Title => Java Program to implement a stack that supports findMiddle() and deleteMiddle in O(1) time
 
-public class Problem_4 {
+public class P4 {
+
     /* A Doubly Linked List Node */
-    class DLLNode {
+    static class DLLNode {
         DLLNode prev;
         int data;
         DLLNode next;
-
+        // Constructor
         DLLNode(int d) {
             data = d;
         }
     }
 
-    /*
-     * Representation of the stack data structure that supports findMiddle() in O(1)
-     * time. The Stack is implemented using Doubly Linked List. It maintains pointer
-     * to head node, pointer to middle node and count of nodes
-     */
-    class myStack {
+     // Representation of the stack data structure that supports findMiddle() in O(1) time.
+     // The Stack is implemented using Doubly Linked List.
+     // It maintains pointer to head node, pointer to middle node and count of nodes.
+    static class myStack {
         DLLNode head;
         DLLNode mid;
         int count;
@@ -53,12 +48,10 @@ public class Problem_4 {
         /* Increment count of items in stack */
         ms.count += 1;
 
-        /*
-         * Change mid pointer in two cases 1) Linked List is empty 2) Number of nodes in
-         * linked list is odd
-         */
+        // Change mid_pointer in two cases 1) Linked List is empty 2) Number of nodes in linked list is odd
         if (ms.count == 1) 
             ms.mid = new_DLLNode;
+
         else {
             ms.head.prev = new_DLLNode;
 
@@ -82,16 +75,15 @@ public class Problem_4 {
         int item = head.data;
         ms.head = head.next;
 
-        // If linked list doesn't become empty, update prev
-        // of new head as NULL
+        // If linked list doesn't become empty,
+        // update prev of new head as NULL
         if (ms.head != null)
             ms.head.prev = null;
 
         ms.count -= 1;
 
-        // update the mid pointer when we have even number
-        // of elements in the stack, i,e move down the mid
-        // pointer.
+        // update the mid_pointer when we have even_number of elements in the stack,
+        // i,e move down the mid_pointer.
         if (ms.count % 2 == 0)
             ms.mid = ms.mid.next;
 
@@ -108,8 +100,8 @@ public class Problem_4 {
     }
 
     // Driver program to test functions of myStack
-    public static void main(String args[]) {
-        Problem_4 ob = new Problem_4();
+    public static void main(String[] args) {
+        P4 ob = new P4();
         myStack ms = ob.createMyStack();
         ob.push(ms, 11);
         ob.push(ms, 22);
