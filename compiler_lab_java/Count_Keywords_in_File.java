@@ -20,8 +20,8 @@ public class Count_Keywords_in_File {
 
         while(sc.hasNext()){
             String word = sc.next();
-            for(int i = 0; i < keywords.length; i++){
-                if(word.equals(keywords[i])){
+            for (String keyword : keywords) {
+                if (word.equals(keyword)) {
                     count++;
                 }
             }
