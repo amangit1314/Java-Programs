@@ -8,7 +8,7 @@ public class MergeSort {
     int count = 0;
 
     public static int getRandomValue(int Min, int Max) {
-        // Get and return the random integer within Min and Max
+        // Get and return the random integer within Min and Max15011520
         return ThreadLocalRandom.current().nextInt(Min, Max + 1);
     }
 
