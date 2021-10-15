@@ -8,8 +8,7 @@ public class Test implements ActionListener {
     JTextField tf1, tf2, tf3;
     JButton b1, b2;
 
-    Test()
-    {
+    Test() {
         JFrame f = new JFrame();
         tf1 = new JTextField();
         tf1.setBounds(50,50,150,20);
@@ -49,9 +48,8 @@ public class Test implements ActionListener {
         int b = Integer.parseInt(s2);
         int c = 0;
 
-        if(e.getSource() == b1){
+        if(e.getSource() == b1)
             c = a+b;
-        }
 
         else
             if(e.getSource() == b2)
