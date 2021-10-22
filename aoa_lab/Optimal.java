@@ -1,4 +1,4 @@
-package miscellaneous;
+package aoa_lab;
 // Java program to implement Optimal File Merge Pattern
 
 import java.util.*;
