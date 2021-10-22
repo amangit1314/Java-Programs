@@ -1,4 +1,4 @@
-package miscellaneous;
+package aoa_lab;
 
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
