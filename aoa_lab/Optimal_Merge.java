@@ -1,4 +1,4 @@
-package miscellaneous;
+package aoa_lab;
 import java.util.*;
 
 public class Optimal_Merge {
