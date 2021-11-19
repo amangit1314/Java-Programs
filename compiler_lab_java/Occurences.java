@@ -13,7 +13,7 @@ public class Occurences {
         Scanner scanner = new Scanner(file);
 
         while(sc.hasNext()){
-//            char current = sc.next();
+        // char current = sc.next();
         }
     }
 }
