@@ -15,12 +15,11 @@ public class String_is_Keyword {
         for (String keyword : keywords) {
             if (word.equals(keyword)) {
                 System.out.println(word + " is a keyword");
-                break;
             }
             else{
                 System.out.println(word + " is not a keyword");
-                break;
             }
+            break;
         }
     }
 }
