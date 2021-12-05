@@ -53,12 +53,11 @@ class Main {
                 System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getInt(3));
             }
 
-            // Executing query
+             // Executing query
             if (m == 1)
                 System.out.println("inserted successfully : " + sql);
             else
                 System.out.println("insertion failed");
-23
 
             // Closing the connections
             con.close();

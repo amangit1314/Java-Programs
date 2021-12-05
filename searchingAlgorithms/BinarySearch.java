@@ -71,6 +71,8 @@ public class BinarySearch {
 
         else{
             count++;
+            System.out.println("Comparisons => ");
+            System.out.print(count);
             System.out.println("Element found ✔ at index => " + result);
         }
 
