@@ -9,7 +9,7 @@ public class Array_Problem_2 {
         int max;
     }
  
-    static Pair getMinMax(int arr[], int n) {
+    static Pair getMinMax(int[] arr, int n) {
         Pair minmax = new  Pair();
         int i;
  
@@ -20,8 +20,7 @@ public class Array_Problem_2 {
             return minmax;
         }
  
-        /* If there are more than one elements, then initialize min 
-    and max*/
+        /* If there are more than one element, then initialize min and max*/
         if (arr[0] > arr[1]) {
             minmax.max = arr[0];
             minmax.min = arr[1];
@@ -31,19 +30,18 @@ public class Array_Problem_2 {
         }
  
         for (i = 2; i < n; i++) {
-            if (arr[i] > minmax.max) {
+            if (arr[i] > minmax.max)
                 minmax.max = arr[i];
-            } else if (arr[i] < minmax.min) {
+            else if (arr[i] < minmax.min)
                 minmax.min = arr[i];
-            }
         }
  
         return minmax;
     }
  
     /* Driver program to test above function */
-    public static void main(String args[]) {
-        int arr[] = {1000, 11, 445, 1, 330, 3000};
+    public static void main(String[] args) {
+        int[] arr = {1000, 11, 445, 1, 330, 3000};
         int n = 6;
         Pair minmax = getMinMax(arr, n);
         System.out.printf("\nMinimum element is %d", minmax.min);

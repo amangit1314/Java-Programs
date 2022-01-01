@@ -1,6 +1,6 @@
 package arrays;
 
-//Java program to reverse the given array
+//Java program to reverse the given array 1/365
 public class Array_Problem_1 {
 
 	public static void reverseArray(int[] arr, int start, int end) {
