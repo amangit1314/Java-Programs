@@ -1,0 +1,5 @@
+Question ==> Why strings are immutable in Java?
+Answer ==>
+            String is Immutable in Java because String objects are cached in String pool.
+            Since cached String literals are shared between multiple clients there is always a risk,
+            where one client's action would affect all another client.
