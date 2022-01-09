@@ -1,76 +1,36 @@
 package strings;
-// Problem Title => Word Wrap Problem [Imp]
+import java.util.*;
+// Problem Title => EDIT Distance [Very Imp]
 public class Problem_14 {
 
-    static void solveWordWrap(int[] a, int n, int k){
-        int i, j;
-        int curr_len;
-        int cost;
-        int[] dp = new int[n];
-        int[] ans = new int[n];
-        dp[n-1] = 0;
-        ans[n - 1] = n - 1;
+    static int min(int x, int y, int z){
+        if (x <= y && x <= z)
+            return x;
+        if (y <= x && y <= z)
+            return y;
+        else
+            return z;
+    }
 
-        for(i = n - 2; i >= 0; i--){
-            curr_len = -1;
-            dp[i] = Integer.MAX_VALUE;
+    static int editDistance(String str1, String str2, int m, int n){
+        if(m == 0)  return n;
+        if(n == 0)  return n;
+        if(str1.charAt(m - 1) == str2.charAt(n - 1))
+            return editDistance(str1, str2, m - 1, n - 1);
 
-            // Keep on adding words in
-            // current line by iterating
-            // from starting word up to
-            // last word in arr.
-            for (j = i; j < n; j++) {
+        return 1
+                + min(editDistance(str1, str2, m, n - 1), // Insert
+                editDistance(str1, str2, m - 1, n), // Remove
+                editDistance(str1, str2, m - 1, n - 1) // Replace
+        );
 
-                // Update number of characters
-                // in current line. arr[j] is
-                // number of characters in
-                // current word and 1
-                // represents space character
-                // between two words.
-                curr_len += (a[j] + 1);
-
-                // If limit of characters
-                // is violated then no more
-                // words can be added to
-                // current line.
-                if (curr_len > k)
-                    break;
-
-                // If current word that is
-                // added to line is last
-                // word of arr then current
-                // line is last line. Cost of
-                // last line is 0. Else cost
-                // is square of extra spaces
-                // plus cost of putting line
-                // breaks in rest of words
-                // from j+1 to n-1.
-                if (j == n - 1)
-                    cost = 0;
-                else
-                    cost = (k - curr_len) *
-                            (k - curr_len) +
-                            dp[j + 1];
-
-                // Check if this arrangement gives minimum cost for line starting with word arr[i].
-                if (cost < dp[i]) {
-                    dp[i] = cost;
-                    ans[i] = j;
-                }
-            }
-        }
-
-        // Print starting index and ending index of words present in each line.
-        i = 0;
-        while (i < n) {
-            System.out.print((i + 1) + " " + (ans[i] + 1) + " ");
-            i = ans[i] + 1;
-        }
     }
     public static void main(String[] args) {
-        int[] a = {3, 2, 2, 5};
-        int n = a.length;
-        int M = 6;
-        solveWordWrap(a, n, M);
+
+        Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+
+        System.out.println(editDistance(str1, str2, str1.length(), str2.length()));
     }
 }

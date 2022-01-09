@@ -1,7 +1,7 @@
 package graphs;
 import java.util.*;
 
-// Problem Title => Dijkstra's Algorithm (Find Shortest Path)
+// Problem Title => Dijkstra's Algorithm (Find The Shortest Path)
 public class Graph_Problem_12 {
     // finding vertex with min distance,
     // from set of non-included vertices in the shortest path tree

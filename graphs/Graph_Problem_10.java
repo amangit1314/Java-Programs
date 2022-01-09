@@ -1,6 +1,6 @@
 package graphs;
 import java.util.*;
-
+// Problem Title => making wired connections
 public class Graph_Problem_10 {
     // Function to visit the nodes of a graph
     public static void DFS(HashMap<Integer, ArrayList<Integer> > adj, int node, boolean[] visited) {

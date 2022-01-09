@@ -1,99 +1,73 @@
 package graphs;
+
 import java.util.*;
 
-// Problem Title => Minimum time taken by each job to be completed given by a Directed Acyclic Graph
+// Problem Statement => Find a topological sequence of a directed acyclic graph.
 public class Graph_Problem_13 {
-    static final int maxN = 100000;
 
-    // Adjacency List to store the graph
-    @SuppressWarnings("unchecked")
-    static Vector<Integer> []graph = new Vector[maxN];
+    // Vertices
+    private final int V;
 
-    // Array to store the in-degree of node
-    static int[] indegree = new int[maxN];
+    // Adjacency List
+    private final ArrayList<ArrayList<Integer> > adj;
 
-    // Array to store the time in which the job i can be done
-    static int []job = new int[maxN];
-
-    // Function to add directed edge between two vertices
-    static void addEdge(int u, int v) {
-
-        // Insert edge from u to v
-        graph[u].add(v);
-
-        // Increasing the indegree of vertex v
-        indegree[v]++;
+    // Constructor
+    Graph_Problem_13(int v){
+        V = v;
+        adj = new ArrayList<>(v);
+        for(int i = 0; i < v; i++)
+            adj.add(new ArrayList<>());
     }
 
-    // Function to find the minimum time needed by each node to get the task
-    static void printOrder(int n, int m) {
-
-        // Find the topological sort order using the indegree approach Queue to store the nodes while processing
-        Queue<Integer> q = new LinkedList<>();
-
-        // Pushing all the vertex in the queue whose in-degree is 0 Update the time of the jobs who don't require any job to be completed before this job
-        for(int i = 1; i <= n; i++) {
-            if (indegree[i] == 0) {
-                q.add(i);
-                job[i] = 1;
-            }
-        }
-
-        // Iterate until queue is empty
-        while (!q.isEmpty()) {
-
-            // Get front element of queue
-            int cur = q.peek();
-
-            // Pop the front element
-            q.remove();
-
-            for(int adj : graph[cur]) {
-
-                // Decrease in-degree of the current node
-                indegree[adj]--;
-
-                // Push its adjacent elements
-                if (indegree[adj] == 0){
-                    job[adj] = 1 + job[cur];
-                    q.add(adj);
-                }
-            }
-        }
-
-        // Print the time to complete
-        // the job
-        for(int i = 1; i <= n; i++)
-            System.out.print(job[i] + " ");
-        System.out.print("\n");
+    // Function to add an edge into the graph
+    void addEdge(int v, int w){
+        adj.get(v).add(w);
     }
 
-    // Driver Code
+    // A recursive function to add an edge into the graph
+    void topological_Order_Util(int v, boolean[] visited, Stack<Integer> stack){
+        visited[v] = true;
+        Integer i;
+
+        for (Integer integer : adj.get(v)) {
+            i = integer;
+            if (!visited[i])
+                topological_Order_Util(i, visited, stack);
+        }
+        stack.push(v);
+    }
+
+    void topological_Order(){
+        Stack<Integer> stack = new Stack<>();
+        boolean[] visited = new boolean[V];
+        for(int i = 0; i < V; i++)
+            if(!visited[i])
+                topological_Order_Util(i, visited, stack);
+        while(!stack.empty())
+            System.out.print(stack.pop() + " ");
+    }
+
     public static void main(String[] args) {
-        // Given Nodes N and edges M
-        int n, m;
-        n = 10;
-        m = 13;
 
-        for(int i = 0; i < graph.length; i++)
-            graph[i] = new Vector<Integer>();
+        Scanner sc = new Scanner(System.in);
 
-        // Given directed edges of graph
-        addEdge(1, 3);
-        addEdge(1, 4);
-        addEdge(1, 5);
-        addEdge(2, 3);
-        addEdge(2, 8);
-        addEdge(2, 9);
-        addEdge(3, 6);
-        addEdge(4, 6);
-        addEdge(4, 8);
-        addEdge(5, 8);
-        addEdge(6, 7);
-        addEdge(7, 8);
-        addEdge(8, 10);
+        System.out.print("Enter how many number of edges you want to enter: ");
+        int number = sc.nextInt();
 
-        // Function call
-        printOrder(n, m);
+        System.out.print("Enter the vertices name: ");
+        int v = sc.nextInt();
+
+        System.out.print("Enter weight of vertices: ");
+        int w = sc.nextInt();
+
+        Graph_Problem_13 g = new Graph_Problem_13(v);
+
+        for(int i = 0; i < number; i++)
+            g.addEdge(v, w);
+
+        System.out.println("Following is a Topological " + "sort of the given graph");
+
+        // Function Call
+        g.topological_Order();
     }
 }

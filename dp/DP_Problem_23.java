@@ -1,5 +1,5 @@
 package dp;
-// PROBLEM TITLE => Edd Dropping Problem
+// PROBLEM TITLE => Egg Dropping Problem
 public class DP_Problem_23 {
 
     /* Function to get minimum number of trials needed in worst case with n eggs and k floors */
