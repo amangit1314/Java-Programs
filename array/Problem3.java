@@ -4,8 +4,8 @@ package array;
  * TITLE ==> (Find K^th smallest element)
  *
  * Problem Statement ==>
- * Given an array array[] and a number K where K is smaller than size of array,
- * the task is to find the K^the smallest element in the given array.
+ * Given an array[] and a number K where K is smaller than size of array,
+ * the task is to find the K^th the smallest element in the given array.
  * It is given that all array elements are distinct.
  */
 
@@ -25,7 +25,7 @@ class Problem3{
         return arr[n/2]; // Return middle element
     }
 
-    // Returns k^th smallest element
+    // Returns k^th the smallest element
     // in arr[l..r] in worst case
     // linear time. ASSUMPTION: ALL
     // ELEMENTS IN ARR[] ARE DISTINCT
@@ -52,7 +52,7 @@ class Problem3{
 
             // Find median of all medians using recursive call.
             // IF median[] has only one element,
-            // then their is no need of recursive call
+            // then there is no need of recursive call
             int medOfMed = (i == 1)? median[i - 1]:
                     kthSmallest(median, 0, i - 1, i / 2);
 
