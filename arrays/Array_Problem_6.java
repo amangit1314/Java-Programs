@@ -3,7 +3,7 @@ package arrays;
 // A Java program to print union and intersection of two unsorted arrays
 import java.util.Arrays;
 
-/*
+/*a
  * Find the Union and Intersection of the two sorted arrays.
  */
 

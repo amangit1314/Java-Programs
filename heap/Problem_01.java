@@ -2,7 +2,7 @@ package heap;
 
 import java.util.Scanner;
 // Problem Title => Implement a Maxheap/MinHeap using arrays and recursion.
-public class Problem_1 {
+public class Problem_01 {
 
     // function to heapify the tree
     static void heapify(int[] a, int n, int i){

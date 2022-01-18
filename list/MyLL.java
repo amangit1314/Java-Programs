@@ -1,8 +1,6 @@
 package list;
 
 public class MyLL<E> {
-
-
 	//E is the Class defining the type of the inputs accepted
 	Node<E> head;
 
@@ -14,13 +12,13 @@ public class MyLL<E> {
 			return;
 		}
 
-//initialising temp as head to traverse the Linked list without breaking the chain
+		//initialising temp as head to traverse the Linked list without breaking the chain
 		Node<E> temp = head;
-		// control from loop exits as soon as next element becomes null
-		while (temp.next != null) {
 
+		// control from loop exits as soon as next element becomes null
+		while (temp.next != null)
 			temp = temp.next;
-		}
+
 		// adding the new node after reaching to the end of linked list
 		temp.next = toAdd;
 	}
@@ -54,7 +52,8 @@ public class MyLL<E> {
 			temp = temp.next;
 		}
 		Node<E> toRemove = temp.next;
-		temp.next = null; // changing the pointer of temp.next from toRemove to null,and garbage collection is done automatically
+		temp.next = null; // changing the pointer of temp.next from toRemove to null,
+		// and garbage collection is done automatically
 		return toRemove.data;
 	}
 

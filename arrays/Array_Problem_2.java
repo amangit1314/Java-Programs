@@ -11,7 +11,6 @@ public class Array_Problem_2 {
  
     static Pair getMinMax(int[] arr, int n) {
         Pair minmax = new  Pair();
-        int i;
  
         /*If there is only one element then return it as min and max both*/
         if (n == 1) {
@@ -29,7 +28,7 @@ public class Array_Problem_2 {
             minmax.min = arr[0];
         }
  
-        for (i = 2; i < n; i++) {
+        for (int i = 2; i < n; i++) {
             if (arr[i] > minmax.max)
                 minmax.max = arr[i];
             else if (arr[i] < minmax.min)
