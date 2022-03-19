@@ -29,11 +29,12 @@ public class Array_Problem_19 {
     /* Driver Code */
     public static void main(String[] args) {
 
+        Array_Problem_19 ob = new Array_Problem_19();
         int a1[] = { 1, 5, 10, 20, 40, 80 };
         int a2[] = { 6, 7, 20, 80, 100 };
         int a3[] = { 3, 4, 15, 20, 30, 70, 80, 120 };
 
-        Array_Problem_19 ob = new Array_Problem_19();
+
         System.out.print("Common elements are ");
         ob.findCommon(a1, a2, a3);
     }

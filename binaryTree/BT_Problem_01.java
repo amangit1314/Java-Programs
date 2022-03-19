@@ -29,7 +29,7 @@ public class BT_Problem_01 {
 			if(tempNode.left != null) 
 				queue.add(tempNode.left);
 			
-			if(tempNode.right != null) 
+			if(tempNode.right != null)
 				queue.add(tempNode.right);
 		}
 	}
@@ -48,3 +48,4 @@ public class BT_Problem_01 {
 	}
 
 }
+dss

@@ -1,7 +1,6 @@
 package matrix;
 // Problem Title => Search an element in a matrix
 public class Matrix_Problem_02 {
-
     static int R = 4;
     static int C = 4;
 
