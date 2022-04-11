@@ -16,7 +16,8 @@ program.java
 <--------------------------------------- hided or excluded directories --------------------------------->
 .class/
 .out/
-.vscode/
-.cph/
-.idea/
+.vscode
+.cph
+.idea
+
 
