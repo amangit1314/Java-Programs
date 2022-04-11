@@ -1,7 +1,7 @@
 package heap;
 // Problem Title => Convert min heap to max heap
 class Problem_16 {
-    // To heapify a subtree with root at given index
+    // To heap ify a subtree with root at given index
     static void MaxHeapify(int[] arr, int i, int n) {
         int l = 2*i + 1;
         int r = 2*i + 2;

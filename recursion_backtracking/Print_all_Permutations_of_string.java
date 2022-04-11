@@ -16,11 +16,11 @@ public class Print_all_Permutations_of_string {
             System.out.println(s);
             return;
         }
-        for(int i = l; i <= r; i++){
-            s = swap(s,l,i);
-            permute(s,l+1,r);
-            s=swap(s,l,i);
-        }
+//        for(int i = l; i <= r; i++){
+//            s = swap(s,l,i);
+//            permute(s,l+1,r);
+//            s=swap(s,l,i);
+//        }
     }
     public static void main(String[] args) {
 

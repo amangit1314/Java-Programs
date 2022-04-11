@@ -13,5 +13,10 @@ algorithm.java
 program.class
 program.java
 
-nothing added to commit but untracked files present (use "git add" to track)
-.class
+<--------------------------------------- hided or excluded directories --------------------------------->
+.class/
+.out/
+.vscode/
+.cph/
+.idea/
+
