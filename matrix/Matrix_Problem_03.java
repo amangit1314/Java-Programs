@@ -31,7 +31,7 @@ public class Matrix_Problem_03 {
 
                 get = Arrays.binarySearch(m[i],mid);
 
-                // If element is not found in the array the
+                // If element is not found in the arrays.array the
                 // binarySearch() method returns
                 // (-(insertion_point) - 1). So once we know
                 // the insertion point we can find elements
@@ -40,7 +40,7 @@ public class Matrix_Problem_03 {
                 if(get < 0)
                     get = Math.abs(get) - 1;
 
-                    // If element is found in the array it returns
+                    // If element is found in the arrays.array it returns
                     // the index(any index in case of duplicate). So we go to last
                     // index of element which will give  the number of
                     // elements smaller than the number including

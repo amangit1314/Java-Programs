@@ -15,7 +15,7 @@ public class Graph_Problem_01_i {
 		
 		for(int i = 0; i < adj.size(); i++) {
 			
-			System.out.println("\nAdjacency list of vertex " + i);
+			System.out.println("\nAdjacency linkedList.list of vertex " + i);
 			System.out.print("head");
 			
 			for(int j = 0; j < adj.get(i).size(); j++)

@@ -1,7 +1,7 @@
 package miscellaneous;
 import java.util.*;
 
-// Problem Title => First and last Occurrence of elements in array using arraylist
+// Problem Title => First and last Occurrence of elements in arrays.array using arraylist
 
 public class First_Last_Occurrence {
 
@@ -19,7 +19,7 @@ public class First_Last_Occurrence {
         int[] arr = { 1, 2, 2, 2, 2, 3, 4, 7, 8, 8 };
         ArrayList<Integer> cyclist = new ArrayList<>();
 
-        // adding elements of array to ArrayList
+        // adding elements of arrays.array to ArrayList
         for (int i : arr)
             cyclist.add(i);
 

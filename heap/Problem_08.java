@@ -7,7 +7,7 @@ public class Problem_08 {
     // function to calculate Kth large_st sum
     public static int KthLargestSum(int[] a, int n, int k){
 
-        // array to store predix sum
+        // arrays.array to store predix sum
         int[] sums = new int[n + 1];
         sums[0] = 0;
         sums[1] = a[0];
@@ -18,11 +18,11 @@ public class Problem_08 {
         // priority queue of min heap
         PriorityQueue<Integer> Q = new PriorityQueue<>();
 
-        // loop to calculate the contiguous sub array sum position wise
+        // loop to calculate the contiguous sub arrays.array sum position wise
         for(int i = 1; i <= n; i++){
             // loop to traverse all positions that form contiguous sub_array
             for(int j = 1; j <= n; j++){
-                // calculates the contiguous sub-array sum from j to i index
+                // calculates the contiguous sub-arrays.array sum from j to i index
                 int x = sums[j] - sums[i - 1];
 
                 // if queue has less than k elements, then simply push it

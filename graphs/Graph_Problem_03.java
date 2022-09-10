@@ -3,7 +3,7 @@ import java.util.*;
 
 /*
  * Problem Title :-> Implement Graph DFS Algorithm
- * This class represents a directed graph using adjacency list representation
+ * This class represents a directed graph using adjacency linkedList.list representation
  */
 public class Graph_Problem_03{
 
@@ -21,7 +21,7 @@ public class Graph_Problem_03{
 	
 	// Function to add an edge into the graph
 	void addEdge(int v, int w) {
-		// Add w to v's list.
+		// Add w to v's linkedList.list.
 		adj[v].add(w);		
 	}
 	

@@ -43,11 +43,11 @@ public class Problem_10 {
         if (carry > 0) 
             temp.next = new Node(carry);
         
-        // return head of the resultant list
+        // return head of the resultant linkedList.list
         return res;
     }
 
-    /* Utility function to print a linked list */
+    /* Utility function to print a linked linkedList.list */
 
     void printList(Node head) {
         while (head != null) {
@@ -68,7 +68,7 @@ public class Problem_10 {
         System.out.print("First List is ");
         list.printList(head1);
 
-        // creating seconnd list
+        // creating seconnd linkedList.list
         Problem_10.head2 = new Node(8);
         Problem_10.head2.next = new Node(4);
         System.out.print("Second List is ");

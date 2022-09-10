@@ -8,7 +8,7 @@ import java.util.*;
 public class Array_Problem_24 {
 	
 	static int findLogestSubseq(int[] a, int n) {
-		// Sort the array
+		// Sort the arrays.array
 		Arrays.sort(a);
 		int ans = 0, count = 0;
 		
@@ -20,7 +20,7 @@ public class Array_Problem_24 {
 			if(a[i] != a[i -1]) 	v.add(a[i]);
 		}
 		
-		// Find the max length by traversing the array
+		// Find the max length by traversing the arrays.array
 		for(int i = 0; i < v.size(); i++) {
 			// check if the current element is equal to previous element + 1
 			if(i > 0 && v.get(i) == v.get(i - 1) + 1)	count++;

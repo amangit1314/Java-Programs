@@ -1,6 +1,6 @@
 package heap;
 import java.util.*;
-// Problem Title => the maximum for each and every contiguous sub-array of size k.
+// Problem Title => the maximum for each and every contiguous sub-arrays.array of size k.
 public class Problem_03 {
 
     // function to printKMax

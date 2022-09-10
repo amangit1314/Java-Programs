@@ -47,7 +47,7 @@ public class Print_All_Permutations{
         // Making an object of Print_All_Permutations class
         Print_All_Permutations permutation = new Print_All_Permutations();
 
-        // Permute the array or printing the permutation's
+        // Permute the arrays.array or printing the permutation's
         permutation.permute(str, 0, n-1);
     }
 }

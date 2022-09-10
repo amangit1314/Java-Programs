@@ -1,6 +1,6 @@
 // Other Approaches
 
-Space Complex Solution: In the above-given method we require O(m x n) space. This will not be suitable if the length of strings is greater than 2000 as it can only create 2D array of 2000 x 2000. To fill a row in DP array we require only one row the upper row. For example, if we are filling the i = 10 rows in DP array we require only values of 9th row. So we simply create a DP array of 2 x str1 length. This approach reduces the space complexity. Here is the C++ implementation of the above-mentioned problem
+Space Complex Solution: In the above-given method we require O(m x n) space. This will not be suitable if the length of strings is greater than 2000 as it can only create 2D arrays.array of 2000 x 2000. To fill a row in DP arrays.array we require only one row the upper row. For example, if we are filling the i = 10 rows in DP arrays.array we require only values of 9th row. So we simply create a DP arrays.array of 2 x str1 length. This approach reduces the space complexity. Here is the C++ implementation of the above-mentioned problem
 
 // A Space efficient Dynamic Programming
 // based Java program to find minimum
@@ -14,7 +14,7 @@ static void EditDistDP(String str1, String str2)
     int len1 = str1.length();
     int len2 = str2.length();
 
-    // Create a DP array to memoize result
+    // Create a DP arrays.array to memoize result
     // of previous computations
     int [][]DP = new int[2][len1 + 1];
 
@@ -61,7 +61,7 @@ static void EditDistDP(String str1, String str2)
         }
     }
 
-    // after complete fill the DP array
+    // after complete fill the DP arrays.array
     // if the len2 is even then we end
     // up in the 0th row else we end up
     // in the 1th row so we take len2 % 2

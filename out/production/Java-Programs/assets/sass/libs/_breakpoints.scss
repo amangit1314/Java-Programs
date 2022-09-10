@@ -3,7 +3,7 @@
 // Vars.
 
 	/// Breakpoints.
-	/// @var {list}
+	/// @var {linkedList.list}
 	$breakpoints: () !global;
 
 // Mixins.
@@ -86,7 +86,7 @@
 				$a: map-get($breakpoints, $breakpoint);
 
 				// Range.
-					@if (type-of($a) == 'list') {
+					@if (type-of($a) == 'linkedList.list') {
 
 						$x: nth($a, 1);
 						$y: nth($a, 2);

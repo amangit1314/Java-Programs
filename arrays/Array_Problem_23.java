@@ -1,6 +1,6 @@
 package arrays;
 
-/* Problem Title :-> Java program for maximum product sub-array problem */
+/* Problem Title :-> Java program for maximum product sub-arrays.array problem */
 public class Array_Problem_23 {
 
 	    static void maxSubArraySum(int[] a, int size)

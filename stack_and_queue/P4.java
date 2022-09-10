@@ -42,13 +42,13 @@ public class P4 {
          */
         new_DLLNode.prev = null;
 
-        /* link the old list off the new DLLNode */
+        /* link the old linkedList.list off the new DLLNode */
         new_DLLNode.next = ms.head;
 
         /* Increment count of items in stack */
         ms.count += 1;
 
-        // Change mid_pointer in two cases 1) Linked List is empty 2) Number of nodes in linked list is odd
+        // Change mid_pointer in two cases 1) Linked List is empty 2) Number of nodes in linked linkedList.list is odd
         if (ms.count == 1) 
             ms.mid = new_DLLNode;
 
@@ -75,7 +75,7 @@ public class P4 {
         int item = head.data;
         ms.head = head.next;
 
-        // If linked list doesn't become empty,
+        // If linked linkedList.list doesn't become empty,
         // update prev of new head as NULL
         if (ms.head != null)
             ms.head.prev = null;

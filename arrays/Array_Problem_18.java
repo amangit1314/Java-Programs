@@ -1,6 +1,6 @@
 package arrays;
 
-/* Problem Title :->   find all pairs on integer array whose sum is equal to given number     OR	 Equal_Sum_Pairs_of_Array */
+/* Problem Title :->   find all pairs on integer arrays.array whose sum is equal to given number     OR	 Equal_Sum_Pairs_of_Array */
 public class Array_Problem_18 {
 
 	//function to find & print the sum & elements

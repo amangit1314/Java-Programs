@@ -1,5 +1,5 @@
 package arrays;
-/* Problem Title :-> Given an array of size n and a number k, fin all elements that appear more than " n/k " times.
+/* Problem Title :-> Given an arrays.array of size n and a number k, fin all elements that appear more than " n/k " times.
  */
 import java.util.*;
 

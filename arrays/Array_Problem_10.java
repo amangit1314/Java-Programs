@@ -4,14 +4,14 @@ import java.io.*;
 
 /*
  *  Problem :- 
- *   Minimum no of jumps to reach end of an array
+ *   Minimum no of jumps to reach end of an arrays.array
  */
 
 /* 
  * Understanding of The Problem: - 
  * 
- * Given an array of integers where each element represents the max number of steps that can be made forward from the element
- * Write a function to return the minimum no of jumps to reach the end of the array(starting from the first element).
+ * Given an arrays.array of integers where each element represents the max number of steps that can be made forward from the element
+ * Write a function to return the minimum no of jumps to reach the end of the arrays.array(starting from the first element).
  * If an element is 0, they cannot move through that element.
  */
 @SuppressWarnings("unused")
@@ -28,8 +28,8 @@ public class Array_Problem_10 {
 			return Integer.MAX_VALUE;
 		
 		/*
-		 * Traverse through all the points reachable from array[1].
-		 * Recursively get the minimum number of jumps needed to reach array[h] from these reachable points. 
+		 * Traverse through all the points reachable from arrays.array[1].
+		 * Recursively get the minimum number of jumps needed to reach arrays.array[h] from these reachable points.
 		 */
 		
 		int min = Integer.MAX_VALUE;

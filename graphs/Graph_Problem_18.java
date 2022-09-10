@@ -75,7 +75,7 @@ public class Graph_Problem_18 {
         // Step 1:  Sort all the edges in non-decreasing
         // order of their weight.  If we are not allowed to
         // change the given graph, we can create a copy of
-        // array of edges
+        // arrays.array of edges
         Arrays.sort(edge);
 
         // Allocate memory for creating V subsets

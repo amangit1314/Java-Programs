@@ -45,7 +45,7 @@ public class HeapSort {
 		     } 
 		 } 
 
-		 /* A utility function to print array of size n */
+		 /* A utility function to print arrays.array of size n */
 		 static void printArray(int A[]) 
 		 { 
 		     int n = A.length; 
@@ -69,7 +69,7 @@ public class HeapSort {
 		     HeapSort ob = new HeapSort(); 
 		     ob.sort(A); 
 
-		     System.out.println("Sorted array is"); 
+		     System.out.println("Sorted arrays.array is");
 		     printArray(A); 
 		 } 
 } 

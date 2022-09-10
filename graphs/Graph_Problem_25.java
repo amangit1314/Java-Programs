@@ -27,7 +27,7 @@ There can be other solutions as well like (2, 2, 6), (2, 4, 4), (2, 3, 5).. etc.
 * If any of the next six vertices has a snake or ladder,
 * then the edge from current vertex goes to the top of the ladder or tail of the snake. Since all edges are of equal weight, we can efficiently find shortest path using Breadth First Search of the graph.
 * Following is the implementation of the above idea.
-* The input is represented by two things, first is ‘N’ which is number of cells in the given board, second is an array ‘move[0…N-1]’ of size N. An entry move[i] is -1 if there is no snake and no ladder from i, otherwise move[i] contains index of destination cell for the snake or the ladder at i.
+* The input is represented by two things, first is ‘N’ which is number of cells in the given board, second is an arrays.array ‘move[0…N-1]’ of size N. An entry move[i] is -1 if there is no snake and no ladder from i, otherwise move[i] contains index of destination cell for the snake or the ladder at i.
 */
 
 import java.util.LinkedList;
@@ -42,7 +42,7 @@ public class Graph_Problem_25 {
 
     // This function returns minimum number of dice
     // throws required to Reach last cell from 0'th cell
-    // in a snake and ladder game. move[] is an array of
+    // in a snake and ladder game. move[] is an arrays.array of
     // size N where N is no. of cells on board If there
     // is no snake or ladder from cell i, then move[i]
     // is -1 Otherwise move[i] contains cell to which

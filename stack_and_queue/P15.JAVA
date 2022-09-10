@@ -39,7 +39,7 @@
 //        }
 //    }
 //
-//    // function to sort the array
+//    // function to sort the arrays.array
 //    static void printStack(Stack<Integer> s){
 //
 //        ListIterator<Integer> lt = s.listIterator();
@@ -57,10 +57,10 @@
 //        Scanner sc = new Scanner(System.in);
 //
 //        int n = sc.nextInt();
-//        int[] array = new int[n];
+//        int[] arrays.array = new int[n];
 //
 //        Stack<Integer> s = new Stack<>();
-//        for(int i= 0; i < array.length; i++){
+//        for(int i= 0; i < arrays.array.length; i++){
 //            System.out.println("Enter your number: ");
 //            int value = sc.nextInt();
 //            s.push(value);

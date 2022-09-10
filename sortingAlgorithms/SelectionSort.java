@@ -6,9 +6,9 @@ public class SelectionSort {
     {
         int n = arr.length;
 
-        // One by one move boundary of unsorted sub-array
+        // One by one move boundary of unsorted sub-arrays.array
         for (int i = 0; i < n-1; i++) {
-            // Find the minimum element in unsorted array
+            // Find the minimum element in unsorted arrays.array
             int min_idx = i;
             for (int j = i+1; j < n; j++)
                 if (arr[j] < arr[min_idx])
@@ -22,7 +22,7 @@ public class SelectionSort {
         }
     }
 
-    // Prints the array
+    // Prints the arrays.array
     void printArray(int arr[]) {
         int n = arr.length;
         for (int i=0; i<n; ++i)
@@ -35,7 +35,7 @@ public class SelectionSort {
         SelectionSort ob = new SelectionSort();
         int arr[] = {5,11,13,6,12};
         ob.sort(arr);
-        System.out.println("Sorted array");
+        System.out.println("Sorted arrays.array");
         ob.printArray(arr);
     }
 }

@@ -1,6 +1,6 @@
 package arrays;
 
-//Intro to multidimensional array
+//Intro to multidimensional arrays.array
 public class MultiDArray {
 	
 	public static void main(String args[]) {

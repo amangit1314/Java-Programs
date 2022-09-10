@@ -1,6 +1,6 @@
 package arrays;
 
-//Java program to reverse the given array 1/365
+//Java program to reverse the given arrays.array 1/365
 public class Array_Problem_1 {
 
 	public static void reverseArray(int[] arr, int start, int end) {
@@ -15,7 +15,7 @@ public class Array_Problem_1 {
 	}
 
 	/*
-	 * Utility that prints out an array on a line
+	 * Utility that prints out an arrays.array on a line
 	 */
 	public static void printArray(int[] arr, int size) {
 		for (int i = 0; i < size; i++)
@@ -30,7 +30,7 @@ public class Array_Problem_1 {
 		int[] arr = { 1, 2, 3, 4, 5, 6 };
 		printArray(arr, 6);
 		reverseArray(arr, 0, 5);
-		System.out.print("Reversed array is \n");
+		System.out.print("Reversed arrays.array is \n");
 		printArray(arr, 6);
 
 	}

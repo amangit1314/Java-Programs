@@ -15,7 +15,7 @@ public class Problem_06 {
     }
 
     public static void main(String[] args) {
-        //n= no of elements in each array
+        //n= no of elements in each arrays.array
         //k=no of arrays
         int n = 4;
         int k = 4;

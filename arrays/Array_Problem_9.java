@@ -4,7 +4,7 @@ import java.util.*;
 //Minimize the maximum difference between heights [V.IMP]
 public class Array_Problem_9 {
 
-	 // Modifies the array by subtracting/adding k to every element such that the difference 
+	 // Modifies the arrays.array by subtracting/adding k to every element such that the difference
     // between maximum and minimum is minimized 
     static int getMinDiff(int arr[], int n, int k) 
     { 

@@ -7,7 +7,7 @@ public class Problem_3 {
 
     static final int NO_OF_CHARS = 256;
 
-    /* Fills count array with
+    /* Fills count arrays.array with
    frequency of characters */
     static void fillCharCounts(String str, int[] count) {
         for (int i = 0; i < str.length(); i++)
@@ -15,7 +15,7 @@ public class Problem_3 {
     }
 
     static void printDups(String str){
-        // Create an array of size
+        // Create an arrays.array of size
         // 256 and fill count of
         // every character in it
         int[] count = new int[NO_OF_CHARS];

@@ -3,9 +3,9 @@ import java.util.*;
 
 /*
 <---------------------------------------------------------------------------------------------------------------------->
-Given - An array of integers and a sum B
-NTD   - Find all unique combination's int the array where the sum is equal to B
-Note  -  The same number may be chosen from the array any number of times to make B.
+Given - An arrays.array of integers and a sum B
+NTD   - Find all unique combination's int the arrays.array where the sum is equal to B
+Note  -  The same number may be chosen from the arrays.array any number of times to make B.
       1. All numbers will be positive integers.
       2. Elements in a combination (a1, a2, ..., ak) must be in ascending order i.e (a1 <= a2 <= ... <= ak).
       3. The combinations themselves must be stored in ascending order.

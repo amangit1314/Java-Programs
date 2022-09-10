@@ -1,20 +1,20 @@
 package heap;
 
-// Java program to find minimum sum of two numbers formed from digits of the array.
+// Java program to find minimum sum of two numbers formed from digits of the arrays.array.
 import java.util.Arrays;
 
 class Problem_18 {
 
-    // Function to find and return minimum sum of two numbers formed from digits of the array.
+    // Function to find and return minimum sum of two numbers formed from digits of the arrays.array.
     static int solve(int[] arr, int n) {
 
-        // sort the array
+        // sort the arrays.array
         Arrays.sort(arr);
 
         // let two numbers be a and b
         int a = 0, b = 0;
         for (int i = 0; i < n; i++) {
-            // fill a and b with every alternate digit of input array
+            // fill a and b with every alternate digit of input arrays.array
             if (i % 2 != 0)
                 a = a * 10 + arr[i];
             else

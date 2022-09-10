@@ -57,8 +57,8 @@ public class Problem_12 {
     }
 
     /*
-     * Takes head pointer of the linked list and returns the count of nodes in the
-     * list
+     * Takes head pointer of the linked linkedList.list and returns the count of nodes in the
+     * linkedList.list
      */
     int getCount(Node node) {
         Node current = node;
@@ -75,14 +75,14 @@ public class Problem_12 {
     public static void main(String[] args) {
         Problem_12 list = new Problem_12();
 
-        // creating first linked list
+        // creating first linked linkedList.list
         list.head1 = new Node(3);
         list.head1.next = new Node(6);
         list.head1.next.next = new Node(9);
         list.head1.next.next.next = new Node(15);
         list.head1.next.next.next.next = new Node(30);
 
-        // creating second linked list
+        // creating second linked linkedList.list
         list.head2 = new Node(10);
         list.head2.next = new Node(15);
         list.head2.next.next = new Node(30);

@@ -26,20 +26,20 @@ public class Graph_Problem_10 {
         // Stores whether a node is visited or not
         boolean[] visited = new boolean[N];
 
-        // Build the adjacency list
+        // Build the adjacency linkedList.list
         HashMap<Integer, ArrayList<Integer> > adj = new HashMap<>();
 
-        // Initialize the adjacency list
+        // Initialize the adjacency linkedList.list
         for (int i = 0; i < N; i++)
             adj.put(i, new ArrayList<>());
 
         // Stores count of edges
         int edges = 0;
 
-        // Building adjacency list from the given edges
+        // Building adjacency linkedList.list from the given edges
         for (int i = 0; i < M; ++i) {
 
-            // Get neighbours list
+            // Get neighbours linkedList.list
             ArrayList<Integer> l1 = adj.get(connections[i][0]);
             ArrayList<Integer> l2 = adj.get(connections[i][0]);
 

@@ -1,6 +1,6 @@
 package arrays;
 
-/* Problem Title :-> Rearrange the array in alternating positive and negative items with O(1) extra space
+/* Problem Title :-> Rearrange the arrays.array in alternating positive and negative items with O(1) extra space
  */
 public class Array_Problem_20 {
 
@@ -44,12 +44,12 @@ public class Array_Problem_20 {
         int[] a = { -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 };
         int n = a.length;
 
-        System.out.println("Given array is ");
+        System.out.println("Given arrays.array is ");
 
         rearrange.printArray(a, n);
         rearrange.rearrange(a, n);
 
-        System.out.println("RearrangeD array is ");
+        System.out.println("RearrangeD arrays.array is ");
 
         rearrange.printArray(a, n);
     }

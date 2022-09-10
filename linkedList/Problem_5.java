@@ -14,7 +14,7 @@ public class Problem_5 {
         return temp;
     }
 
-    // A utility function to print a linked list
+    // A utility function to print a linked linkedList.list
     static void printList(Node head) {
         while (head != null) {
             System.out.print(head.key + " ");
@@ -24,9 +24,9 @@ public class Problem_5 {
     }
 
     //Function to detect and remove loop
-    // in a linked list that may contain loop
+    // in a linked linkedList.list that may contain loop
     static Node detectAndRemoveLoop(Node head) {
-        // If list is empty or has
+        // If linkedList.list is empty or has
         // only one node without loop
         if (head == null || head.next == null)
             return null;

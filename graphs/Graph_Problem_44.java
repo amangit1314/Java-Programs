@@ -86,9 +86,9 @@ public class Graph_Problem_44 {
 // that G may not be connected.
     static boolean isBipartite(int G[][])
     {
-        // Create a color array to store colors assigned
+        // Create a color arrays.array to store colors assigned
         // to all vertices. Vertex number is used as index in
-        // this array. The value '-1' of  colorArr[i]
+        // this arrays.array. The value '-1' of  colorArr[i]
         // is used to indicate that no color is assigned to
         // vertex 'i'.  The value 1 is used to indicate first
         // color is assigned and value 0 indicates

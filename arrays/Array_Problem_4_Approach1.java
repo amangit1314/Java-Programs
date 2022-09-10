@@ -4,14 +4,14 @@ import java.io.*;
 
 /*
  * Java program to solve that,
- * Given an array A of size N containing 0s, 1s, and 2s; 
- * you need to sort the array in ascending order without using any sorting algorithm
+ * Given an arrays.array A of size N containing 0s, 1s, and 2s;
+ * you need to sort the arrays.array in ascending order without using any sorting algorithm
  */
 
 @SuppressWarnings("unused")
 public class Array_Problem_4_Approach1 {
 	  
-	    // Sort the input array, the array is assumed they have values in {0, 1, 2}
+	    // Sort the input arrays.array, the arrays.array is assumed they have values in {0, 1, 2}
 	    static void sort012(int[] arr, int arr_size) {
 	        int lo = 0; 
 	        int hi = arr_size - 1;
@@ -40,7 +40,7 @@ public class Array_Problem_4_Approach1 {
 	        } 
 	    } 
 	  
-	    /* Utility function to print array arr[] */
+	    /* Utility function to print arrays.array arr[] */
 	    static void printArray(int[] arr, int arr_size) {
 	        int i; 
 	        for (i = 0; i < arr_size; i++) 

@@ -3,17 +3,17 @@ package matrix;
 public class Matrix_Problem_09 {
 
     // A structure to store entry of heap.
-    // The entry contains value from 2D array,
+    // The entry contains value from 2D arrays.array,
     // row and column numbers of the value
     static class HeapNode {
 
         // Value to be stored
         int val;
 
-        // Row number of value in 2D array
+        // Row number of value in 2D arrays.array
         int r;
 
-        // Column number of value in 2D array
+        // Column number of value in 2D arrays.array
         int c;
 
         HeapNode(int val, int r, int c) {
@@ -46,14 +46,14 @@ public class Matrix_Problem_09 {
         }
     }
 
-    // This function returns kth small-est element in a 2D array mat[][]
+    // This function returns kth small-est element in a 2D arrays.array mat[][]
     public static int kthSmallest(int[][] mat,int n, int k) {
 
         // k must be greater than 0 and smaller than n*n
         if (k < 0 && k >= n * n)
             return Integer.MAX_VALUE;
 
-        // Create a min heap of elements from first row of 2D array
+        // Create a min heap of elements from first row of 2D arrays.array
         HeapNode[] harr = new HeapNode[n];
 
         for(int i = 0; i < n; i++) {

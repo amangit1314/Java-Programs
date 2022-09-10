@@ -1,5 +1,6 @@
 package dp;
 // Problem Title => Maximum Length of Pair Chain
+// Note - LIS PAttern
 public class DP_Problem_60 {
     int a, b;
 
@@ -9,12 +10,31 @@ public class DP_Problem_60 {
     }
 
     // This function assumes that arr[] is sorted in increasing order according the first(or smaller) values in pairs.
-    static int maxChainLength(DP_Problem_60[] arr, int n){
+    static void maxChainLength(DP_Problem_60[] arr, int n){
+
+    }
+
+    static void solve(DP_Problem_60[] arr, int n) {
+
+    }
+
+    static void solveMem(DP_Problem_60[] arr, int n) {
+
+    }
+
+    // Recursion + Tabulation (Bottom Up DP)
+    static void solveTab(DP_Problem_60[] arr, int n) {
+
+    }
+
+    // space optimized code if possible
+    static int solveTabSo(DP_Problem_60[] arr, int n) {
         int i, j, max = 0;
         int[] mcl = new int[n];
 
         // Initialize MCL(maximum chain length) values for all indexes
-        for(i = 0; i < n; i++)  mcl[i] = 1;
+        for(i = 0; i < n; i++)
+            mcl[i] = 1;
 
         // Compute optimized chain length values in bottom up manner
         for(i = 1; i < n; i++)
@@ -38,6 +58,7 @@ public class DP_Problem_60 {
                 new DP_Problem_60(27, 40),
                 new DP_Problem_60(50, 60),
         };
-        System.out.println("Length of maximum size chain is " + maxChainLength(arr, arr.length));
+//        System.out.println("Length of maximum size chain is " + maxChainLength(arr, arr.length));
     }
 }
+

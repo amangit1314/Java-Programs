@@ -37,12 +37,13 @@ public class TopologicalSort {
         stack.push(v);
     }
 
-    void topological_Order(){
+    void topological_Order() {
         Stack<Integer> stack = new Stack<>();
         boolean[] visited = new boolean[V];
         for(int i = 0; i < V; i++)
             if(!visited[i])
                 topological_Order_Util(i, visited, stack);
+
         while(!stack.empty())
             System.out.print(stack.pop() + " ");
     }

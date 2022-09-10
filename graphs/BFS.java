@@ -1,9 +1,13 @@
 package graphs;
 import java.util.*;
 
-// Problem Title => Java program to print BFS traversal from a given source vertex.
-// BFS(int s) traverses vertices reachable from s.
-// This class represents a directed graph using adjacency list representation
+// <------------------------------------------------------------------------------------------------->|
+// | Problem Title || Java program to print BFS traversal from a given source vertex.                 |
+// | <-------------||-------------------------------------------------------------------------------->|
+// | BFS(int s) traverses vertices reachable from s.                                                  |
+// | <-------------||-------------------------------------------------------------------------------->|
+// | This class represents a directed graph using adjacency linkedList.list representation            |
+// <------------------------------------------------------------------------------------------------->|
 class BFS{
     private int V; // No. of vertices
     private LinkedList<Integer>[] adj; //Adjacency Lists

@@ -76,7 +76,7 @@ class Graph {
             result[i] = new Edge();
 
         // Step 1: Sort all the edges in non-decreasing order of their weight.
-        // If we are not allowed to change the given graph, we can create a copy of array of edges
+        // If we are not allowed to change the given graph, we can create a copy of arrays.array of edges
         Arrays.sort(edge);
 
         // Allocate memory for creating V subsets

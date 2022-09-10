@@ -6,7 +6,7 @@ public class Array_Problem_30 {
 
         int res = 0;
 
-        //For every element of the array, except first and last element
+        //For every element of the arrays.array, except first and last element
         for(int i = 1; i < n - 1; i++) {
 
             //Find max element on its left

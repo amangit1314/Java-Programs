@@ -1,6 +1,6 @@
 package arrays;
 
-/* Problem Title :-> Three way partitioning of an array around a given value */
+/* Problem Title :-> Three way partitioning of an arrays.array around a given value */
 public class Array_Problem_33 {
 
 	// partition a[0..n-1] around [lowVal, highVal] 

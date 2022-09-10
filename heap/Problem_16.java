@@ -26,7 +26,7 @@ class Problem_16 {
             MaxHeapify(arr, i, n);
     }
 
-    // A utility function to print a given array of given size
+    // A utility function to print a given arrays.array of given size
     static void printArray(int[] arr, int size) {
         for (int i = 0; i < size; ++i)
             System.out.print(arr[i]+" ");
@@ -34,16 +34,16 @@ class Problem_16 {
 
     // driver program
     public static void main (String[] args) {
-        // array representing Min Heap
+        // arrays.array representing Min Heap
         int[] arr = {3, 5, 9, 6, 8, 20, 10, 12, 18, 9};
         int n = arr.length;
 
-        System.out.print("Min Heap array : ");
+        System.out.print("Min Heap arrays.array : ");
         printArray(arr, n);
 
         convertMaxHeap(arr, n);
 
-        System.out.print("\nMax Heap array : ");
+        System.out.print("\nMax Heap arrays.array : ");
         printArray(arr, n);
     }
 }

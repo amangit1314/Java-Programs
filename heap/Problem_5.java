@@ -5,7 +5,7 @@ public class Problem_5 {
     // A class for Max Heap
     static class MinHeap {
 
-        int[] harr; // pointer to array of elements in heap
+        int[] harr; // pointer to arrays.array of elements in heap
         int capacity; // maximum possible size of min heap
         int heap_size; // Current number of elements in min heap
 
@@ -23,7 +23,7 @@ public class Problem_5 {
         // Constructor
         MinHeap(int[] a, int size) {
             heap_size = size;
-            harr = a; // store address of array
+            harr = a; // store address of arrays.array
             int i = (heap_size - 1) / 2;
             while (i >= 0) {
                 minHeapify(i);
@@ -67,7 +67,7 @@ public class Problem_5 {
         }
     }
 
-    // Function to return kith the largest element in a given array
+    // Function to return kith the largest element in a given arrays.array
     int kthSmallest(int[] arr, int n, int k) {
 
         // Build a heap of first k elements: O(k) time

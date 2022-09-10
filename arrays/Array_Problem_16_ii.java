@@ -3,16 +3,16 @@ package arrays;
 import java.util.Arrays;
 
 /*
- *  Problem Title :-> Count Inversion's in array (By Method 2 : Using Enhance Merge Sort) 
+ *  Problem Title :-> Count Inversion's in arrays.array (By Method 2 : Using Enhance Merge Sort)
  */
 public class Array_Problem_16_ii {
 
 	private static int mergeAndCount(int[] a, int l, int m, int r) {
 		
-		// Left sub-array
+		// Left sub-arrays.array
 		int[] left = Arrays.copyOfRange(a, l, m + 1);
 		
-		// Right sub-array
+		// Right sub-arrays.array
 		int[] right = Arrays.copyOfRange(a, m + 1, r + 1);
 		
 		int i = 0, j = 0, k = 1, swaps = 0;
@@ -41,10 +41,10 @@ public class Array_Problem_16_ii {
 		
 		if(l < r) {
 			int m = (l + r)/2;
-			// Total inversion count = left sub-array count + right sub-array count + merge count
-			// Left sub-array count
+			// Total inversion count = left sub-arrays.array count + right sub-arrays.array count + merge count
+			// Left sub-arrays.array count
 			count += mergeSortAndCount(a, l, m);
-			// right sub-array count
+			// right sub-arrays.array count
 			count += mergeSortAndCount(a, m + 1, r);
 			// Merge count
 			count += mergeAndCount(a, l, m, r);

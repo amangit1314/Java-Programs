@@ -31,7 +31,7 @@ public class Graph_Problem_02 {
 		// Create a queue for BFS
 		LinkedList<Integer> queue = new LinkedList<>();
 
-		// mark visited array as true
+		// mark visited arrays.array as true
 		visited[s] = true;
 
 		// add it to queue

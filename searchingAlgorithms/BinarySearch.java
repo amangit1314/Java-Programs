@@ -21,7 +21,7 @@ public class BinarySearch {
 
         // checking if right is greater or equal to left
         if (right >= left) {
-            // mid-element of array
+            // mid-element of arrays.array
             int mid = left + (right - left) / 2;
 
             // If the element is present at the middle itself
@@ -30,18 +30,18 @@ public class BinarySearch {
                 return mid;
             }
 
-            // If element is smaller than mid, then it can only be present in left sub-array
+            // If element is smaller than mid, then it can only be present in left sub-arrays.array
             if (arr[mid] > element){
                 count++;
                 return binarySearch(arr, left, mid - 1, element);
             }
 
             count++;
-            // Else the element can only be present in right sub-array
+            // Else the element can only be present in right sub-arrays.array
             return binarySearch(arr, mid + 1, right, element);
         }
 
-        // We reach here when element is not present in array
+        // We reach here when element is not present in arrays.array
         return -1;
     }
 

@@ -48,10 +48,10 @@ public class P38 {
         // Scanner object for input
         Scanner sc = new Scanner(System.in);
 
-        // Taking Size of the array as input from user
+        // Taking Size of the arrays.array as input from user
         int n = sc.nextInt();
 
-        // Taking the elements of array as input from user
+        // Taking the elements of arrays.array as input from user
         int[] arr = new int[n];
         for(int i = 0; i < n; i++)
             arr[i] = sc.nextInt();

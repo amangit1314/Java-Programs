@@ -9,7 +9,7 @@ public class Problem_2 {
     public void sort(int[] arr){
         int n = arr.length;
 
-        // Build heap (rearrange array)
+        // Build heap (rearrange arrays.array)
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(arr, n, i);
 
@@ -50,7 +50,7 @@ public class Problem_2 {
         }
     }
 
-    // A utility function to print array of size n
+    // A utility function to print arrays.array of size n
     static void printArray(int[] arr) {
         for (int j : arr) System.out.print(j + " ");
         System.out.println();
@@ -68,7 +68,7 @@ public class Problem_2 {
         Problem_2 ob = new Problem_2();
         ob.sort(arr);
 
-        System.out.println("Sorted array is");
+        System.out.println("Sorted arrays.array is");
         printArray(arr);
     }
 }

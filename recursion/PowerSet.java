@@ -26,9 +26,9 @@ public class PowerSet {
     // Function to add x in arr
     public static int[] add(int n, int[] input, int x) {
         int i;
-        // create a new array of size n+1
+        // create a new arrays.array of size n+1
         int[] new_arr = new int[n + 1];
-        // insert the elements from the old array into the new array insert all elements till n then insert x at n+1
+        // insert the elements from the old arrays.array into the new arrays.array insert all elements till n then insert x at n+1
         for (i = 0; i < n; i++)
             new_arr[i] = input[i];
         new_arr[n] = x;

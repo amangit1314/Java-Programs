@@ -23,15 +23,15 @@ public class P21 {
             head = tail = null;
         }
 
-        // If list is empty
+        // If linkedList.list is empty
         boolean isEmpty() {
             return head == null;
         }
 
-        // count the number of nodes in list
+        // count the number of nodes in linkedList.list
         int size() {
 
-            // If list is not empty
+            // If linkedList.list is not empty
             if (!isEmpty()) {
                 DQueNode temp = head;
                 int len = 0;
@@ -88,7 +88,7 @@ public class P21 {
         // Remove element at the first position
         void remove_first() {
 
-            // If list is not empty
+            // If linkedList.list is not empty
             if (!isEmpty()) {
                 head = head.next;
                 head.prev = null;
@@ -101,7 +101,7 @@ public class P21 {
         // Remove element at the last position
         void remove_last() {
 
-            // If list is not empty
+            // If linkedList.list is not empty
             if (!isEmpty()) {
                 tail = tail.prev;
                 tail.next = null;
@@ -113,7 +113,7 @@ public class P21 {
 
         // Displays the elements in deque
         void display() {
-            // If list is not empty
+            // If linkedList.list is not empty
             if (!isEmpty()) {
                 DQueNode temp = head;
 

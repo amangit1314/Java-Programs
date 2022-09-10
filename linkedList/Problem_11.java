@@ -25,7 +25,7 @@ public class Problem_11 {
         System.out.println();
     }
 
-    // inserting elements into list
+    // inserting elements into linkedList.list
     void push(int data) {
         Node temp = new Node(data);
         if(dummy == null) {
@@ -38,14 +38,14 @@ public class Problem_11 {
         }
     }
 
-    // function for finding intersection and adding it to dummy list
+    // function for finding intersection and adding it to dummy linkedList.list
     void sortedIntersect() {
 
         // pointers for iterating
         Node p = a,q = b;
         while(p != null  &&  q != null) {
             if(p.data == q.data) {
-                // add to dummy list
+                // add to dummy linkedList.list
                 push(p.data);
                 p = p.next;
                 q = q.next;
@@ -60,14 +60,14 @@ public class Problem_11 {
     public static void main(String[] args) {
         Problem_11 list = new Problem_11();
 
-        // creating first linked list
+        // creating first linked linkedList.list
         list.a = new Node(1);
         list.a.next = new Node(2);
         list.a.next.next = new Node(3);
         list.a.next.next.next = new Node(4);
         list.a.next.next.next.next = new Node(6);
 
-        // creating second linked list
+        // creating second linked linkedList.list
         list.b = new Node(2);
         list.b.next = new Node(4);
         list.b.next.next = new Node(6);
@@ -77,7 +77,7 @@ public class Problem_11 {
         list.sortedIntersect();
 
         // print required intersection
-        System.out.println("Linked list containing common items of a & b");
+        System.out.println("Linked linkedList.list containing common items of a & b");
         list.printList(dummy);
     }
 }

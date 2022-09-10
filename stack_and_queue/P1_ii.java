@@ -1,12 +1,12 @@
 package stack_and_queue;
 import static java.lang.System.exit;
 
-//Java program to Implement a stack using singly linked list  
+//Java program to Implement a stack using singly linked linkedList.list
 
-//Create Stack Using Linked list 
+//Create Stack Using Linked linkedList.list
 class StackUsingLinkedlist {
 
-  // A linked list node
+  // A linked linkedList.list node
   private static class Node {
       int data; // integer data
       Node link; // reference variable Node type

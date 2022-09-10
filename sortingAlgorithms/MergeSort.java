@@ -38,7 +38,7 @@ public class MergeSort {
         // Initial indexes of first and second sub arrays
         int i = 0, j = 0;
 
-        // Initial index of merged sub array
+        // Initial index of merged sub arrays.array
         int k = l;
         while (i < n1 && j < n2) {
             if (L[i] <= R[j]) {
@@ -53,7 +53,7 @@ public class MergeSort {
             count++;
         }
 
-        // Copy remaining elements of L[] (Left array) if any
+        // Copy remaining elements of L[] (Left arrays.array) if any
         while (i < n1) {
             arr[k] = L[i];
             i++;
@@ -62,7 +62,7 @@ public class MergeSort {
 //251024
         }
 
-        // Copy remaining elements of R[] (Right array) if any
+        // Copy remaining elements of R[] (Right arrays.array) if any
         while (j < n2) {
             arr[k] = R[j];
             j++;
@@ -87,7 +87,7 @@ public class MergeSort {
         }
     }
 
-    // A utility function to print array of size n
+    // A utility function to print arrays.array of size n
     static void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
@@ -116,7 +116,7 @@ public class MergeSort {
         MergeSort ob = new MergeSort();
         ob.sort(arr, 0, arr.length - 1);
 
-        System.out.println("\nSorted array");
+        System.out.println("\nSorted arrays.array");
         printArray(arr);
         System.out.println();
 

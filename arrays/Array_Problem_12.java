@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 /*
  * Problem :-
- * Merge two sorted array without using extra space
+ * Merge two sorted arrays.array without using extra space
  */
 
 /*
  * Understanding of the Problem :-
  * 
- * We are given two sorted array.
+ * We are given two sorted arrays.array.
  * We need to merge these two arrays, 
- * such that the initial numbers(after complete sorting) are in the first array ,
- * and the remaining numbers are in the second array.
+ * such that the initial numbers(after complete sorting) are in the first arrays.array ,
+ * and the remaining numbers are in the second arrays.array.
  * Extra space allowed in O(1). 
  */
 

@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Graph {
 
-	private final LinkedList<Integer>[] adj;
+	final LinkedList<Integer>[] adj;
 
 	public Graph(int v) {
-		// array of Linked List
+		// arrays.array of Linked List
 		adj = new LinkedList[v];
 
 		for (int i = 0; i < v; i++) {

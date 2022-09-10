@@ -12,7 +12,7 @@ public class Graph_Problem_04_1 {
         // No. of vertices.
         int V;
 
-        // Pointer to an array containing adjacency list
+        // Pointer to an arrays.array containing adjacency linkedList.list
         Vector<Integer>[] adj;
 
         // Constructor

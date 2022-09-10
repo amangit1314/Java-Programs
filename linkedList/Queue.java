@@ -5,7 +5,7 @@ import java.util.*;
  * 	Code: Queue Using LL
  * 
  * 	Send Feedback:
- * 	You need to implement a Queue class using linked list.
+ * 	You need to implement a Queue class using linked linkedList.list.
  * 	All the required data members should be private.
  * 
  *  Implement the following public functions:

@@ -1,6 +1,6 @@
 package sortingAlgorithms;
 
-//Program Title => Java program to sort an array using bucket sort.
+//Program Title => Java program to sort an arrays.array using bucket sort.
 
 import java.util.*;
 import java.util.Collections;
@@ -19,7 +19,7 @@ class Bucket_Sort {
         for (int i = 0; i < n; i++)
             buckets[i] = new Vector<>();
 
-        // 2) Put array elements in different buckets
+        // 2) Put arrays.array elements in different buckets
         for (int i = 0; i < n; i++) {
             float idx = arr[i] * n;
             buckets[(int)idx].add(arr[i]);
@@ -49,7 +49,7 @@ class Bucket_Sort {
         int n = arr.length;
         bucketSort(arr, n);
 
-        System.out.println("Sorted array is ");
+        System.out.println("Sorted arrays.array is ");
         for (float el : arr)
             System.out.print(el + " ");
     }

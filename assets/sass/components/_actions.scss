@@ -9,7 +9,7 @@
 	ul.actions {
 		@include vendor('display', 'flex');
 		cursor: default;
-		list-style: none;
+		linkedList.list-style: none;
 		margin-left: (_size(element-margin) * -0.5);
 		padding-left: 0;
 

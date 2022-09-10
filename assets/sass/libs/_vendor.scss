@@ -3,7 +3,7 @@
 // Vars.
 
 	/// Vendor prefixes.
-	/// @var {list}
+	/// @var {linkedList.list}
 	$vendor-prefixes: (
 		'-moz-',
 		'-webkit-',
@@ -13,7 +13,7 @@
 
 	/// Properties that should be vendorized.
 	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
-	/// @var {list}
+	/// @var {linkedList.list}
 	$vendor-properties: (
 
 		// Animation.
@@ -194,7 +194,7 @@
 
 	/// Values that should be vendorized.
 	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
-	/// @var {list}
+	/// @var {linkedList.list}
 	$vendor-values: (
 
 		// Cross fade.
@@ -249,12 +249,12 @@
 
 // Functions.
 
-	/// Removes a specific item from a list.
+	/// Removes a specific item from a linkedList.list.
 	/// @author Hugo Giraudel
-	/// @param {list} $list List.
+	/// @param {linkedList.list} $linkedList.list List.
 	/// @param {integer} $index Index.
-	/// @return {list} Updated list.
-	@function remove-nth($list, $index) {
+	/// @return {linkedList.list} Updated linkedList.list.
+	@function remove-nth($linkedList.list, $index) {
 
 		$result: null;
 
@@ -264,18 +264,18 @@
 		@else if $index == 0 {
 			@warn "List index 0 must be a non-zero integer for `remove-nth`.";
 		}
-		@else if abs($index) > length($list) {
-			@warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
+		@else if abs($index) > length($linkedList.list) {
+			@warn "List index is #{$index} but linkedList.list is only #{length($linkedList.list)} item long for `remove-nth`.";
 		}
 		@else {
 
 			$result: ();
-			$index: if($index < 0, length($list) + $index + 1, $index);
+			$index: if($index < 0, length($linkedList.list) + $index + 1, $index);
 
-			@for $i from 1 through length($list) {
+			@for $i from 1 through length($linkedList.list) {
 
 				@if $i != $index {
-					$result: append($result, nth($list, $i));
+					$result: append($result, nth($linkedList.list, $i));
 				}
 
 			}
@@ -304,11 +304,11 @@
 
 	}
 
-	/// Replaces a substring within each string in a list.
-	/// @param {list} $strings List of strings.
+	/// Replaces a substring within each string in a linkedList.list.
+	/// @param {linkedList.list} $strings List of strings.
 	/// @param {string} $search Substring.
 	/// @param {string} $replace Replacement.
-	/// @return {list} Updated list of strings.
+	/// @return {linkedList.list} Updated linkedList.list of strings.
 	@function str-replace-all($strings, $search, $replace: '') {
 
 		@each $string in $strings {
@@ -334,7 +334,7 @@
 
 	/// Vendorizes a declaration's property and/or value(s).
 	/// @param {string} $property Property.
-	/// @param {mixed} $value String/list of value(s).
+	/// @param {mixed} $value String/linkedList.list of value(s).
 	@mixin vendor($property, $value) {
 
 		// Determine if property should expand.

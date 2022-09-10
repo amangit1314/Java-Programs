@@ -1,6 +1,6 @@
 package trie;
 /*
- * Problem Title :-Find shortest unique prefix for every word in a given list
+ * Problem Title :-Find shortest unique prefix for every word in a given linkedList.list
  */
 public class Trie_Problem_06 {
 

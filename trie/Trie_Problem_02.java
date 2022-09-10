@@ -1,6 +1,6 @@
 package trie;
 /*
- * Problem Title :-Find shortest unique prefix for every word in a given list
+ * Problem Title :-Find shortest unique prefix for every word in a given linkedList.list
  */
 public class Trie_Problem_02 {
 
@@ -88,7 +88,7 @@ public class Trie_Problem_02 {
         for (int i = 0; i<n; i++)
             insert(arr[i]);
        
-        // Create an array to store all prefixes
+        // Create an arrays.array to store all prefixes
         char[] prefix = new char[MAX_WORD_LEN];
           
         // Print all prefixes using Trie Traversal

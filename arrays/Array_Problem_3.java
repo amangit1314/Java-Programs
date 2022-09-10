@@ -4,20 +4,20 @@ import java.util.Arrays;
 
 /*
  * (Find K^the smallest element)
- * Given an array array[] and a number K where K is smaller than size of array, 
- * the task is to find the K^the smallest element in the given array. 
- * It is given that all array elements are distinct.
+ * Given an arrays.array arrays.array[] and a number K where K is smaller than size of arrays.array,
+ * the task is to find the K^the smallest element in the given arrays.array.
+ * It is given that all arrays.array elements are distinct.
  */
 public class Array_Problem_3 {
 	  
-	// int partition(int array[], int l, int r, int k); 
+	// int partition(int arrays.array[], int l, int r, int k);
 	  
 	// A simple function to find median of arr[]. This is called 
-	// only for an array of size 5 in this program. 
+	// only for an arrays.array of size 5 in this program.
 	static int findMedian(int[] arr, int i,int n)
 	{ 
 	    if(i <= n) 
-	        Arrays.sort(arr, i, n); // Sort the array 
+	        Arrays.sort(arr, i, n); // Sort the arrays.array
 	    else
 	        Arrays.sort(arr, n, i); 
 	    return arr[n/2]; // Return middle element 
@@ -30,14 +30,14 @@ public class Array_Problem_3 {
 	static int kthSmallest(int[] arr, int l, int r, int k)
 	{ 
 	    // If k is smaller than  
-	    // number of elements in array 
+	    // number of elements in arrays.array
 	    if (k > 0 && k <= r - l + 1) 
 	    { 
 	        int n = r - l + 1 ; // Number of elements in arr[l..r] 
 	  
 	        // Divide arr[] in groups of size 5,  
 	        // calculate median of every group 
-	        //  and store it in median[] array. 
+	        //  and store it in median[] arrays.array.
 	        int i; 
 	          
 	         // There will be floor((n+4)/5) groups; 
@@ -58,8 +58,8 @@ public class Array_Problem_3 {
 	        int medOfMed = (i == 1)? median[i - 1]: 
 	                                kthSmallest(median, 0, i - 1, i / 2); 
 	  
-	        // Partition the array around a random element and 
-	        // get position of pivot element in sorted array 
+	        // Partition the arrays.array around a random element and
+	        // get position of pivot element in sorted arrays.array
 	        int pos = partition(arr, l, r, medOfMed); 
 	  
 	        // If position is same as k 
@@ -68,11 +68,11 @@ public class Array_Problem_3 {
 	        if (pos-l > k - 1) // If position is more, recur for left 
 	            return kthSmallest(arr, l, pos - 1, k); 
 	  
-	        // Else recur for right sub array
+	        // Else recur for right sub arrays.array
 	        return kthSmallest(arr, pos + 1, r, k - pos + l - 1); 
 	    } 
 	  
-	    // If k is more than number of elements in array 
+	    // If k is more than number of elements in arrays.array
 	    return Integer.MAX_VALUE; 
 	} 
 	  
@@ -83,7 +83,7 @@ public class Array_Problem_3 {
 	}
 	  
 	// It searches for x in arr[l..r], and  
-	// partitions the array around x. 
+	// partitions the arrays.array around x.
 	static int partition(int[] arr, int l, int r, int x) {
 	    // Search for x in arr[l..r] and move it to end 
 	    int i; 

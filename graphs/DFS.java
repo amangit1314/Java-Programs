@@ -10,7 +10,7 @@ import java.util.*;
  */
 
 /*Algorithm:
-    1. Create a recursive function that takes the index of the node and a visited array.
+    1. Create a recursive function that takes the index of the node and a visited arrays.array.
     2. Mark the current node as visited and print the node.
     3. Traverse all the adjacent and unmarked nodes and call the recursive function with the index of the adjacent node.
 */

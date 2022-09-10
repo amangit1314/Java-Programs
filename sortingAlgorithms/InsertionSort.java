@@ -2,7 +2,7 @@ package sortingAlgorithms;
 
 public class InsertionSort {
 
-    /*Function to sort array using insertion sort*/
+    /*Function to sort arrays.array using insertion sort*/
     void sort(int arr[])
     {
         int n = arr.length;
@@ -18,7 +18,7 @@ public class InsertionSort {
         }
     }
 
-    /* A utility function to print array of size n*/
+    /* A utility function to print arrays.array of size n*/
     static void printArray(int arr[])
     {
         int n = arr.length;

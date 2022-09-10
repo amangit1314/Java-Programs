@@ -1,16 +1,16 @@
 package arrays;
 /* 
  * Problem Title :-> 
- * Find if there is any sub array with sum equal to 0
+ * Find if there is any sub arrays.array with sum equal to 0
  */
 
 import java.util.*;
 
 /*
  *  Generalisation
- *	a[2, 3, -1, -2, 4, 5]; -> The array
- * 	here their are n^2 + 1 sub arrays, in an array of any size n.
- * now the sub array of have a sum equal to zero is from index a[1] to index a[3] in this case.
+ *	a[2, 3, -1, -2, 4, 5]; -> The arrays.array
+ * 	here their are n^2 + 1 sub arrays, in an arrays.array of any size n.
+ * now the sub arrays.array of have a sum equal to zero is from index a[1] to index a[3] in this case.
  */
 
 public class Array_Problem_21 {
@@ -19,7 +19,7 @@ public class Array_Problem_21 {
 		Set<Integer> hs = new HashSet<>();
 		// Initialise sum of elements
 		int sum = 0;
-		// Traverse through the given array
+		// Traverse through the given arrays.array
 		for(int i = 0; i < a.length; i++) {
 			// Add current element to sum
 			sum += a[i];

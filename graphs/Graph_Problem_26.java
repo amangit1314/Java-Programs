@@ -2,7 +2,7 @@ package graphs;// A Java program to find bridges in a given undirected graph
 import java.util.*;
 import java.util.LinkedList;
 
-// This class represents a undirected graph using adjacency list representation
+// This class represents a undirected graph using adjacency linkedList.list representation
 public class Graph_Problem_26
 {
     private int V; // No. of vertices
@@ -25,8 +25,8 @@ public class Graph_Problem_26
     // Function to add an edge into the graph
     void addEdge(int v, int w)
     {
-        adj[v].add(w); // Add w to v's list.
-        adj[w].add(v); //Add v to w's list
+        adj[v].add(w); // Add w to v's linkedList.list.
+        adj[w].add(v); //Add v to w's linkedList.list
     }
 
     // A recursive function that finds and prints bridges

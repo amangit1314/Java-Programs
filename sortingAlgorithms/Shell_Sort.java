@@ -6,14 +6,14 @@ package sortingAlgorithms;
 * In insertion sort, we move elements only one position ahead.
 * When an element has to be moved far ahead, many movements are involved.
 * The idea of shellSort is to allow exchange of far items.
-* In shellSort, we make the array h-sorted for a large value of h.
+* In shellSort, we make the arrays.array h-sorted for a large value of h.
 * We keep reducing the value of h until it becomes
-* 1. An array is said to be h-sorted if all sub-list's of every h’th element is sorted.
+* 1. An arrays.array is said to be h-sorted if all sub-linkedList.list's of every h’th element is sorted.
 *
 * */
 
 public class Shell_Sort {
-    /* A utility function to print array of size n*/
+    /* A utility function to print arrays.array of size n*/
     static void printArray(int[] arr) {
         int n = arr.length;
         for (int j : arr) System.out.print(j + " ");
@@ -27,7 +27,7 @@ public class Shell_Sort {
         // Start with a big gap, then reduce the gap
         for (int gap = n/2; gap > 0; gap /= 2) {
             // Do a gaped insertion sort for this gap size.
-            // The first gap elements a[0..gap-1] are already in gaped order keep adding one more element until the entire array is gap sorted
+            // The first gap elements a[0..gap-1] are already in gaped order keep adding one more element until the entire arrays.array is gap sorted
             for (int i = gap; i < n; i += 1) {
                 // add a[i] to the elements that have been gap sorted save a[i] in temp and make a hole at position i
                 int temp = arr[i];

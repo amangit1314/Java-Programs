@@ -1,14 +1,14 @@
 package basic_idea_of_DS;
 
 //Java program to Implement a stack 
-//using singly linked list 
+//using singly linked linkedList.list
 //import package 
 import static java.lang.System.exit; 
 
-//Create Stack Using Linked list 
+//Create Stack Using Linked linkedList.list
 class StackUsingLinkedlist { 
 
- // A linked list node 
+ // A linked linkedList.list node
  private class Node { 
 
      int data; // integer data 

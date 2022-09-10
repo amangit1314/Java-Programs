@@ -7,7 +7,7 @@
 /* List */
 
 	ol {
-		list-style: decimal;
+		linkedList.list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1.25em;
 
@@ -17,7 +17,7 @@
 	}
 
 	ul {
-		list-style: disc;
+		linkedList.list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
 
@@ -26,7 +26,7 @@
 		}
 
 		&.alt {
-			list-style: none;
+			linkedList.list-style: none;
 			padding-left: 0;
 
 			li {

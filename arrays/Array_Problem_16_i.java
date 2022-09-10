@@ -1,6 +1,6 @@
 package arrays;
 /*
- *  Problem Title :-> Count Inversion's in array By Method 1 
+ *  Problem Title :-> Count Inversion's in arrays.array By Method 1
  */
 public class Array_Problem_16_i {
 	static int[] a = new int[] {1, 20, 30, 6, 4, 5};

@@ -1,6 +1,6 @@
 package arrays;
 
-//Java program to find the maximum & minimum element in given or array as user input
+//Java program to find the maximum & minimum element in given or arrays.array as user input
 public class Array_Problem_2 {
 /* Class Pair is used to return two values from getMinMax() */
     static class Pair {

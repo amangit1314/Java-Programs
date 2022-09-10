@@ -1,17 +1,17 @@
 package sortingAlgorithms;
 
 class DNF_Sort {
-    // Utility function to print the contents of an array
+    // Utility function to print the contents of an arrays.array
     static void printArr(int[] arr, int n) {
         for (int i = 0; i < n; i++)
             System.out.print(arr[i] + " ");
     }
 
-    // Function to sort the array of 0s, 1s and 2s
+    // Function to sort the arrays.array of 0s, 1s and 2s
     static void sortArr(int[] arr, int n) {
         int i, cnt0 = 0, cnt1 = 0, cnt2 = 0;
 
-        // Count the number of 0s, 1s and 2s in the array
+        // Count the number of 0s, 1s and 2s in the arrays.array
         for (i = 0; i < n; i++) {
             switch (arr[i]) {
                 case 0:
@@ -26,7 +26,7 @@ class DNF_Sort {
             }
         }
 
-        // Update the array
+        // Update the arrays.array
         i = 0;
 
         // Store all the 0s in the beginning
@@ -47,7 +47,7 @@ class DNF_Sort {
             cnt2--;
         }
 
-        // Print the sorted array
+        // Print the sorted arrays.array
         printArr(arr, n);
     }
 

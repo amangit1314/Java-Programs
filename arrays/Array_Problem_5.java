@@ -1,7 +1,7 @@
 package arrays;
 
 /*
- * Move all the negative elements to one side of the array 
+ * Move all the negative elements to one side of the arrays.array
  */
 
 public class Array_Problem_5 {
@@ -21,7 +21,7 @@ public class Array_Problem_5 {
         }
     }
  
-    // A utility function to print an array
+    // A utility function to print an arrays.array
     static void printArray(int arr[], int n)
     {
         for (int i = 0; i < n; i++)

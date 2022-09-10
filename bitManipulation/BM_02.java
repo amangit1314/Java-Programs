@@ -1,16 +1,16 @@
 package bitManipulation;
 /*	
- * Problem Title :- Find the two non-repeating elements in an array of repeating elements
+ * Problem Title :- Find the two non-repeating elements in an arrays.array of repeating elements
  */
 public class BM_02 {
 
 	/*
-	 * This function sets the values of *x & *y to non-repeating elements in an array a[] of size n
+	 * This function sets the values of *x & *y to non-repeating elements in an arrays.array a[] of size n
 	 */
 	public static void TwoUniqueNumbers(int[] a, int n) {
 		int sum = 0;
 		for(int i = 0; i < n; i++) {
-			// XOR all the elements of the array
+			// XOR all the elements of the arrays.array
 			// all the elements occur-ing twice will
 			// cancel out each other remaining
 			// two unique numbers will be xor'ed

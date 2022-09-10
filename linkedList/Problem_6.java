@@ -3,9 +3,9 @@ package linkedList;
 
 public class Problem_6 {
 
-    Node head; // head of list
+    Node head; // head of linkedList.list
 
-    /* Linked list Node */
+    /* Linked linkedList.list Node */
     class Node {
         int data;
         Node next;
@@ -20,7 +20,7 @@ public class Problem_6 {
         /* Another reference to head */
         Node curr = head;
 
-        /* Traverse list till the last node */
+        /* Traverse linkedList.list till the last node */
         while (curr != null) {
             Node temp = curr;
             /*
@@ -40,7 +40,7 @@ public class Problem_6 {
 
     /* Utility functions */
 
-    /* Inserts a new Node at front of the list. */
+    /* Inserts a new Node at front of the linkedList.list. */
     public void push(int new_data) {
         /*
          * 1 & 2: Allocate the Node & Put in the data
@@ -54,7 +54,7 @@ public class Problem_6 {
         head = new_node;
     }
 
-    /* Function to print linked list */
+    /* Function to print linked linkedList.list */
     void printList() {
         Node temp = head;
         while (temp != null) {

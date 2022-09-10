@@ -71,28 +71,28 @@ public class Insertion_in_Linked_List {
 	
 	public static void main(String[] args) {
 		Insertion_in_Linked_List llist = new Insertion_in_Linked_List();
-		/* Start with the empty list */ 
+		/* Start with the empty linkedList.list */
   
-        // Insert 6.  So linked list becomes 6->NUllist 
+        // Insert 6.  So linked linkedList.list becomes 6->NUllist
         llist.append(6); 
   
-        // Insert 7 at the beginning. So linked list becomes 
+        // Insert 7 at the beginning. So linked linkedList.list becomes
         // 7->6->NUllist 
         llist.push(7); 
   
-        // Insert 1 at the beginning. So linked list becomes 
+        // Insert 1 at the beginning. So linked linkedList.list becomes
         // 1->7->6->NUllist 
         llist.push(1); 
   
-        // Insert 4 at the end. So linked list becomes 
+        // Insert 4 at the end. So linked linkedList.list becomes
         // 1->7->6->4->NUllist 
         llist.append(4); 
   
-        // Insert 8, after 7. So linked list becomes 
+        // Insert 8, after 7. So linked linkedList.list becomes
         // 1->7->8->6->4->NUllist 
         llist.insertAfter(llist.head.next, 8); 
   
-        System.out.println("\nCreated Linked list is: "); 
+        System.out.println("\nCreated Linked linkedList.list is: ");
         llist.printList(); 
 	}
 

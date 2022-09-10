@@ -12,7 +12,7 @@ public class Array_Problem_36 {
 
         /* Since there are 2n elements ,
          * median will be average of elements at index n-1
-         * & n in the array obtained after merging a1[] & a2[]*/
+         * & n in the arrays.array obtained after merging a1[] & a2[]*/
 
         for(count = 0; count <= n; count++) {
 

@@ -163,7 +163,7 @@ public class Amans_LL {
         return null;
     }
 
-    // Question 6 - remove duplicates from sorted linked list
+    // Question 6 - remove duplicates from sorted linked linkedList.list
     public Node removeSortedDuplicates(){
         if(head == null)
             return null;
@@ -178,7 +178,7 @@ public class Amans_LL {
         return head;
     }
 
-    // Question 7 - remove duplicates from un-sorted linked list
+    // Question 7 - remove duplicates from un-sorted linked linkedList.list
     public Node removeUnsortedDuplicates(){
 
         if(head == null)
@@ -190,7 +190,7 @@ public class Amans_LL {
         return head;
     }
 
-    // Question 5 - find starting of the loop in the linked list
+    // Question 5 - find starting of the loop in the linked linkedList.list
     public Node startingOfLoop(){
         if(head == null || head.next == null)
             return null;

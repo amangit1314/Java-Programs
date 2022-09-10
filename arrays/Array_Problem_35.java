@@ -1,5 +1,5 @@
 package arrays;
-/* Problem Title :-> Minimum no. of operations required to make an array palindrome */
+/* Problem Title :-> Minimum no. of operations required to make an arrays.array palindrome */
 public class Array_Problem_35 {
 
     static int findMinOps(int[] a, int n) {

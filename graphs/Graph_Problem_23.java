@@ -26,7 +26,7 @@ public class Graph_Problem_23 {
                 {85, 5, 0, 43},
                 {92, 65, 13, 70}};
 
-        // Boolean array to check if a node has been visited or not
+        // Boolean arrays.array to check if a node has been visited or not
         boolean[] v = new boolean[n];
 
         // Mark 0th node as visited

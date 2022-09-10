@@ -55,7 +55,7 @@ public class Problem_3 {
             charArray[i] = sc.next().charAt(i);
         }
 
-        // Taking char_freq array as input from user
+        // Taking char_freq arrays.array as input from user
         int[] char_freq = new int[n];
         for(int i = 0; i < n; i++){
             char_freq[i] = sc.nextInt();

@@ -24,7 +24,7 @@ public class Problem_2 {
 
         int count = 0;
 
-        /* Reverse first k nodes of linked list */
+        /* Reverse first k nodes of linked linkedList.list */
         while (count < k && current != null) {
             next = current.next;
             current.next = prev;
@@ -34,19 +34,19 @@ public class Problem_2 {
         }
 
         /*
-         * next is now a pointer to (k+1)th node Recursively call for the list starting
-         * from current. And make rest of the list as next of first node
+         * next is now a pointer to (k+1)th node Recursively call for the linkedList.list starting
+         * from current. And make rest of the linkedList.list as next of first node
          */
         if (next != null)
             head.next = reverse(next, k);
 
-        // prev is now head of input list
+        // prev is now head of input linkedList.list
         return prev;
     }
 
     /* Utility functions */
 
-    /* Inserts a new Node at front of the list. */
+    /* Inserts a new Node at front of the linkedList.list. */
     public void push(int new_data) {
         /*
          * 1 & 2: Allocate the Node & Put in the data
@@ -58,7 +58,7 @@ public class Problem_2 {
         head = new_node;
     }
 
-    // Function to print linked list
+    // Function to print linked linkedList.list
     void printList() {
         Node temp = head;
         while (temp != null) {
@@ -88,7 +88,7 @@ public class Problem_2 {
 
         llist.head = llist.reverse(llist.head, 3);
 
-        System.out.println("Reversed list");
+        System.out.println("Reversed linkedList.list");
         llist.printList();
     }
 }

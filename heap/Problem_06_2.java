@@ -7,10 +7,10 @@ class MinHeapNode {
     // The element to be stored
     int element;
 
-    // index of the array from which the element is taken
+    // index of the arrays.array from which the element is taken
     int i;
 
-    // index of the next element to be picked from array
+    // index of the next element to be picked from arrays.array
     int j;
 
     public MinHeapNode(int element, int i, int j) {
@@ -29,7 +29,7 @@ public class Problem_06_2 {
     // Current number of elements in min heap
     int heap_size;
 
-    // Constructor: Builds a heap from a given array a[] of given size
+    // Constructor: Builds a heap from a given arrays.array a[] of given size
     public Problem_06_2(MinHeapNode[] a, int size) {
         heap_size = size;
         harr = a;
@@ -83,14 +83,14 @@ public class Problem_06_2 {
         arr[j] = temp;
     }
 
-    // A utility function to print array elements
+    // A utility function to print arrays.array elements
     static void printArray(int[] arr) {
         for(int i : arr)
             System.out.print(i + " ");
         System.out.println();
     }
 
-    // This function takes an array of arrays as an argument and All arrays are assumed to be sorted.
+    // This function takes an arrays.array of arrays as an argument and All arrays are assumed to be sorted.
     // It merges them together and prints the final sorted output.
     static void mergeKSortedArrays(int[][] arr, int k) {
         MinHeapNode[] hArr = new MinHeapNode[k];
@@ -102,27 +102,27 @@ public class Problem_06_2 {
         }
 
         // Create a min heap with k heap nodes.
-        // Every heap node has first element of an array
+        // Every heap node has first element of an arrays.array
         Problem_06_2 mh = new Problem_06_2(hArr, k);
 
-        // To store output array
+        // To store output arrays.array
         int[] result = new int[resultSize];
 
-        // Now one by one get the minimum element from min heap and replace it with next element of its array
+        // Now one by one get the minimum element from min heap and replace it with next element of its arrays.array
         for(int i = 0; i < resultSize; i++) {
             // Get the minimum element and store it in result
             MinHeapNode root = mh.getMin();
             result[i] = root.element;
 
             // Find the next element that will replace current root of heap.
-            // The next element belongs to same array as the current root.
+            // The next element belongs to same arrays.array as the current root.
             if(root.j < arr[root.i].length)
                 root.element = arr[root.i][root.j++];
-                // If root was the last element of its array
+                // If root was the last element of its arrays.array
             else
                 root.element = Integer.MAX_VALUE;
 
-            // Replace root with next element of array 
+            // Replace root with next element of arrays.array
             mh.replaceMin(root);
         }
 
@@ -137,7 +137,7 @@ public class Problem_06_2 {
                 {23, 34, 90, 2000}
         };
 
-        System.out.println("Merged array is :");
+        System.out.println("Merged arrays.array is :");
         mergeKSortedArrays(arr,arr.length);
     }
 }

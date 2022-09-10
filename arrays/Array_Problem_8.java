@@ -1,7 +1,7 @@
 package arrays;
 
 /*
- * find Largest sum contiguous Sub-array 
+ * find Largest sum contiguous Sub-arrays.array
  */
 
 public class Array_Problem_8 {

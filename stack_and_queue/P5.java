@@ -3,7 +3,7 @@ package stack_and_queue;
 // Problem Title => Implement "N" stack's in an Array
 public class P5 {
 
-    // A Java class to represent k stacks in a single array of size n
+    // A Java class to represent k stacks in a single arrays.array of size n
     static class KStack {
 
         // Array of size n to store actual content to be stored in stacks
@@ -12,15 +12,15 @@ public class P5 {
         // Array of size k to store indexes of top elements of stacks
         int[] top;
 
-        // Array of size n to store next entry in all stacks and free list
+        // Array of size n to store next entry in all stacks and free linkedList.list
         int[] next;
 
         int n, k;
 
-        // To store beginning index of free list
+        // To store beginning index of free linkedList.list
         int free;
 
-        // constructor to create k stacks in an array of size n
+        // constructor to create k stacks in an arrays.array of size n
         KStack(int k1, int n1) {
 
             // Initialize n and k, and allocate memory for all arrays
@@ -40,7 +40,7 @@ public class P5 {
             for (int i = 0; i < n - 1; i++)
                 next[i] = i + 1;
 
-            // -1 is used to indicate end of free list
+            // -1 is used to indicate end of free linkedList.list
             next[n - 1] = -1;
         }
 
@@ -60,14 +60,14 @@ public class P5 {
             // Store index of first free slot
             int i = free;
 
-            // Update index of free slot to index of next slot in free list
+            // Update index of free slot to index of next slot in free linkedList.list
             free = next[i];
 
             // Update next of top and then top for stack number 'sn'
             next[i] = top[sn];
             top[sn] = i;
 
-            // Put the item in array
+            // Put the item in arrays.array
             arr[i] = item;
         }
 
@@ -85,7 +85,7 @@ public class P5 {
             // Change top to store next of previous top
             top[sn] = next[i];
 
-            // Attach the previous top to the beginning of free list
+            // Attach the previous top to the beginning of free linkedList.list
             next[i] = free;
             free = i;
 
@@ -102,7 +102,7 @@ public class P5 {
 
     // Driver program
     public static void main(String[] args) {
-        // Let us create 3 stacks in an array of size 10
+        // Let us create 3 stacks in an arrays.array of size 10
         int k = 3, n = 10;
 
         KStack ks = new KStack(k, n);

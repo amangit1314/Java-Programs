@@ -1,7 +1,7 @@
 package arrays;
 
 /*
- * Write a program to cyclically rotate an array by one.
+ * Write a program to cyclically rotate an arrays.array by one.
  */
 
 import java.util.Arrays;

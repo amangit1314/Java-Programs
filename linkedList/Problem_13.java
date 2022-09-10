@@ -39,24 +39,24 @@ public class Problem_13 {
             return h;
         }
 
-        // get the middle of the list
+        // get the middle of the linkedList.list
         node middle = getMiddle(h);
         node nextofmiddle = middle.next;
 
         // set the next of middle node to null
         middle.next = null;
 
-        // Apply mergeSort on left list
+        // Apply mergeSort on left linkedList.list
         node left = mergeSort(h);
 
-        // Apply mergeSort on right list
+        // Apply mergeSort on right linkedList.list
         node right = mergeSort(nextofmiddle);
 
         // Merge the left and right lists
         return sortedMerge(left, right);
     }
 
-    // Utility function to get the middle of the linked list
+    // Utility function to get the middle of the linked linkedList.list
     public static node getMiddle(node head)
     {
         if (head == null)
@@ -76,14 +76,14 @@ public class Problem_13 {
         /* allocate node */
         node new_node = new node(new_data);
 
-        /* link the old list off the new node */
+        /* link the old linkedList.list off the new node */
         new_node.next = head;
 
         /* move the head to point to the new node */
         head = new_node;
     }
 
-    // Utility function to print the linked list
+    // Utility function to print the linked linkedList.list
     void printList(node headref)
     {
         while (headref != null) {
@@ -97,8 +97,8 @@ public class Problem_13 {
 
         Problem_13 li = new Problem_13();
         /*
-         * Let us create a unsorted linked list to test the functions
-         * created. The list shall be a: 2->3->20->5->10->15
+         * Let us create a unsorted linked linkedList.list to test the functions
+         * created. The linkedList.list shall be a: 2->3->20->5->10->15
          */
         li.push(15);
         li.push(10);

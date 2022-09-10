@@ -4,8 +4,8 @@ package dp;
 
 /*Algorithm:
 
-Create a DP array (matrix) of size M*N, where m is the size of the first string and n is the size of the second string. Initialize the matrix to false.
-If the sum of sizes of smaller strings is not equal to the size of the larger string then return false and break the array as they can't be the interleaved to form the larger string.
+Create a DP arrays.array (matrix) of size M*N, where m is the size of the first string and n is the size of the second string. Initialize the matrix to false.
+If the sum of sizes of smaller strings is not equal to the size of the larger string then return false and break the arrays.array as they can't be the interleaved to form the larger string.
 Run a nested loop the outer loop from 0 to m and the inner loop from 0 to n. Loop counters are i and j.
 If the values of i and j are both zeroes then mark dp[i][j] as true. If the value of i is zero and j is non-zero and the j-1 character of B is equal to j-1 character of C the assign dp[i][j] as dp[i][j-1] and similarly if j is 0 then match i-1 th character of C and A and if it matches then assign dp[i][j] as dp[i-1][j].
 Take three characters x, y, z as (i-1)th character of A and (j-1)th character of B and (i + j – 1)th character of C.

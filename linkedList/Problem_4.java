@@ -1,7 +1,7 @@
 package linkedList;
 
-// Problem Title => Write a program to Detect & Remove loop in a linked list.
-// Java program to detect and remove loop in linked list
+// Problem Title => Write a program to Detect & Remove loop in a linked linkedList.list.
+// Java program to detect and remove loop in linked linkedList.list
 
 public class Problem_4 {
 
@@ -17,7 +17,7 @@ public class Problem_4 {
         }
     }
 
-    // Function that detects loop in the list
+    // Function that detects loop in the linkedList.list
     void detectAndRemoveLoop(Node node) {
 
         Node slow = node, fast = node;
@@ -63,7 +63,7 @@ public class Problem_4 {
         ptr2.next = null;
     }
 
-    // Function to print the linked list
+    // Function to print the linked linkedList.list
     void printList(Node node) {
         while (node != null) {
             System.out.print(node.data + " ");

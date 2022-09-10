@@ -24,15 +24,15 @@ public class Array_Problem_6 {
 	        }
 	 
 	        // Now arr1[] is smaller
-	        // Sort the first array and print its elements
+	        // Sort the first arrays.array and print its elements
 	        // (these two steps can be swapped as order in
 	        // output is not important)
 	        Arrays.sort(arr1);
 	        for (int i = 0; i < m; i++)
 	            System.out.print(arr1[i] + " ");
 	 
-	        // Search every element of bigger array in smaller
-	        // array and print the element if not found
+	        // Search every element of bigger arrays.array in smaller
+	        // arrays.array and print the element if not found
 	        for (int i = 0; i < n; i++) {
 	            if (binarySearch(arr1, 0, m - 1, arr2[i]) == -1)
 	                System.out.print(arr2[i] + " ");
@@ -56,11 +56,11 @@ public class Array_Problem_6 {
 	        }
 	 
 	        // Now arr1[] is smaller
-	        // Sort smaller array arr1[0..m-1]
+	        // Sort smaller arrays.array arr1[0..m-1]
 	        Arrays.sort(arr1);
 	 
-	        // Search every element of bigger array in smaller
-	        // array and print the element if found
+	        // Search every element of bigger arrays.array in smaller
+	        // arrays.array and print the element if found
 	        for (int i = 0; i < n; i++) {
 	            if (binarySearch(arr1, 0, m - 1, arr2[i]) != -1)
 	                System.out.print(arr2[i] + " ");
@@ -68,7 +68,7 @@ public class Array_Problem_6 {
 	    }
 	 
 	    // A recursive binary search function. It returns
-	    // location of x in given array arr[l..r] is present,
+	    // location of x in given arrays.array arr[l..r] is present,
 	    // otherwise -1
 	    int binarySearch(int[] arr, int l, int r, int x) {
 	        if (r >= l) {
@@ -90,7 +90,7 @@ public class Array_Problem_6 {
 	        }
 	 
 	        // We reach here when element is not present in
-	        // array
+	        // arrays.array
 	        return -1;
 	    }
 	 

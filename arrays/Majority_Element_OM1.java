@@ -1,5 +1,5 @@
 package arrays;
-// Find majority element in array Using Binary Search Tree
+// Find majority element in arrays.array Using Binary Search Tree
 public class Majority_Element_OM1 {
 
     static class Node{

@@ -1,4 +1,4 @@
-//Java program for array implementation of queue
+//Java program for arrays.array implementation of queue
 package basic_idea_of_DS;
 //A class to represent a queue 
 class Queue{

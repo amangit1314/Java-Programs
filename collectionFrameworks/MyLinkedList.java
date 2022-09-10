@@ -3,10 +3,10 @@ import java.util.LinkedList;
 public class MyLinkedList {
 
 	public static void main(String[] args) {
-		// Create a linked list
+		// Create a linked linkedList.list
 		LinkedList<String> ll = new LinkedList<>();
 		
-		// Add elements to the linked list
+		// Add elements to the linked linkedList.list
 		ll.add("A");
 		ll.add("M");
 		ll.add("M");
@@ -17,7 +17,7 @@ public class MyLinkedList {
 		ll.add(1,"A1");
 		System.out.println("Original contents of ll:"+ll);
 		
-		//Remove elements from the linked list
+		//Remove elements from the linked linkedList.list
 		ll.remove("A1");
 		System.out.println("Content of ll after deletion:"+ll);
 		

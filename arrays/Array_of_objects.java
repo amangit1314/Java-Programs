@@ -1,6 +1,6 @@
 package arrays;
 
-//Program to demonstrate the array of objects
+//Program to demonstrate the arrays.array of objects
 
 //Cricketer class
 class Cricketer{
@@ -20,9 +20,9 @@ public class Array_of_objects {
 	//Driver Method
 	public static void main(String[] args) {
 		
-		// Declaring or making the array of type Cricketer , which is known as Array of Objects
+		// Declaring or making the arrays.array of type Cricketer , which is known as Array of Objects
 		Cricketer[] arr;
-		// array capacity is of storing 5 elements in it.
+		// arrays.array capacity is of storing 5 elements in it.
 		arr = new Cricketer[11];			
 		
 		arr[0 ]  = new Cricketer(1,   "Rohit Sharma(W.C)");

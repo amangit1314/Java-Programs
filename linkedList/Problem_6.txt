@@ -5,10 +5,10 @@ C++
 C
 Java
 // Java Program to remove duplicates
-// from a sorted linked list
+// from a sorted linked linkedList.list
 class GFG
 {
-/* Link list node */
+/* Link linkedList.list node */
 static class Node
 {
     int data;
@@ -16,18 +16,18 @@ static class Node
 };
  
 // The function removes duplicates
-// from a sorted list
+// from a sorted linkedList.list
 static Node removeDuplicates(Node head)
 {
     /* Pointer to store the pointer
     of a node to be deleted*/
     Node to_free;
      
-    /* do nothing if the list is empty */
+    /* do nothing if the linkedList.list is empty */
     if (head == null)
         return null;
  
-    /* Traverse the list till last node */
+    /* Traverse the linkedList.list till last node */
     if (head.next != null)
     {
          
@@ -53,7 +53,7 @@ static Node removeDuplicates(Node head)
  
 /* UTILITY FUNCTIONS */
 /* Function to insert a node at the beginning
-of the linked list */
+of the linked linkedList.list */
 static Node push(Node head_ref,
                  int new_data)
 {
@@ -63,7 +63,7 @@ static Node push(Node head_ref,
     /* put in the data */
     new_node.data = new_data;
                  
-    /* link the old list off the new node */
+    /* link the old linkedList.list off the new node */
     new_node.next = (head_ref);    
          
     /* move the head to point to the new node */
@@ -71,7 +71,7 @@ static Node push(Node head_ref,
     return head_ref;
 }
  
-/* Function to print nodes in a given linked list */
+/* Function to print nodes in a given linked linkedList.list */
 static void printList(Node node)
 {
     while (node != null)
@@ -84,12 +84,12 @@ static void printList(Node node)
 /* Driver code*/
 public static void main(String args[])
 {
-    /* Start with the empty list */
+    /* Start with the empty linkedList.list */
     Node head = null;
      
-    /* Let us create a sorted linked list
+    /* Let us create a sorted linked linkedList.list
     to test the functions
-    Created linked list will be 11.11.11.13.13.20 */
+    Created linked linkedList.list will be 11.11.11.13.13.20 */
     head = push(head, 20);
     head = push(head, 13);
     head = push(head, 13);
@@ -97,14 +97,14 @@ public static void main(String args[])
     head = push(head, 11);
     head = push(head, 11);                                    
  
-    System.out.println("Linked list before" +
+    System.out.println("Linked linkedList.list before" +
                       " duplicate removal ");
     printList(head);
  
-    /* Remove duplicates from linked list */
+    /* Remove duplicates from linked linkedList.list */
     head = removeDuplicates(head);
  
-    System.out.println("\nLinked list after" +
+    System.out.println("\nLinked linkedList.list after" +
                        " duplicate removal ");    
     printList(head);            
 }
@@ -115,8 +115,8 @@ Python3
 C#
 Javascript
 Output
-Linked list before duplicate removal  11 11 11 13 13 20
-Linked list after duplicate removal  11 13 20
+Linked linkedList.list before duplicate removal  11 11 11 13 13 20
+Linked linkedList.list after duplicate removal  11 13 20
 Another Approach: Create a pointer that will point towards the first occurrence of every element and another pointer temp which will iterate to every element and when the value of the previous pointer is not equal to the temp pointer, we will set the pointer of the previous pointer to the first occurrence of another node.
 
 Below is the implementation of the above approach:
@@ -124,13 +124,13 @@ Below is the implementation of the above approach:
 C++14
 Java
 // Java program to remove duplicates
-// from a sorted linked list
+// from a sorted linked linkedList.list
 class LinkedList
 {
-    // head of list
+    // head of linkedList.list
     Node head;
   
-    // Linked list Node
+    // Linked linkedList.list Node
     class Node
     {
         int data;
@@ -142,7 +142,7 @@ class LinkedList
     }
  
     // Function to remove duplicates
-    // from the given linked list
+    // from the given linked linkedList.list
     void removeDuplicates()
     {
         // Two references to head
@@ -152,7 +152,7 @@ class LinkedList
         // the first occurrence of every element
         Node temp = head,prev=head;
  
-        // Traverse list till the last node
+        // Traverse linkedList.list till the last node
         while (temp != null) {
             
            // Compare values of both pointers
@@ -180,7 +180,7 @@ class LinkedList
                      
     /* Utility functions */
  
-    /* Inserts a new Node at front of the list. */
+    /* Inserts a new Node at front of the linkedList.list. */
     public void push(int new_data)
     {
         /* 1 & 2: Allocate the Node &
@@ -194,7 +194,7 @@ class LinkedList
         head = new_node;
     }
  
-    /* Function to print linked list */
+    /* Function to print linked linkedList.list */
      void printList()
      {
          Node temp = head;
@@ -263,7 +263,7 @@ class GFG
      
     /* Function to insert a node at
    the beginning of the linked
- * list */
+ * linkedList.list */
     static Node push(Node head_ref, int new_data)
     {
        
@@ -273,7 +273,7 @@ class GFG
         /* put in the data */
         new_node.data = new_data;
          
-        /* link the old list off
+        /* link the old linkedList.list off
         the new node */
         new_node.next = (head_ref);
          
@@ -284,7 +284,7 @@ class GFG
     }
      
     /* Function to print nodes
-    in a given linked list */
+    in a given linked linkedList.list */
     static void printList(Node node)
     {
         while (node != null)
@@ -316,7 +316,7 @@ class GFG
     {
         Node head = null;
        
-        /* Created linked list will be
+        /* Created linked linkedList.list will be
         11->11->11->13->13->20 */
         head = push(head, 20);
         head = push(head, 13);
@@ -324,9 +324,9 @@ class GFG
         head = push(head, 11);
         head = push(head, 11);
         head = push(head, 11);
-        System.out.print("Linked list before duplicate removal ");
+        System.out.print("Linked linkedList.list before duplicate removal ");
         printList(head);
-        System.out.print("\nLinked list after duplicate removal  ");
+        System.out.print("\nLinked linkedList.list after duplicate removal  ");
         removeDuplicates(head);
     }
 }
@@ -335,8 +335,8 @@ class GFG
 C#
 Javascript
 Output
-Linked list before duplicate removal 11 11 11 13 13 20 
-Linked list after duplicate removal 11 13 20 
+Linked linkedList.list before duplicate removal 11 11 11 13 13 20
+Linked linkedList.list after duplicate removal 11 13 20
 Time Complexity: O(Number of Nodes)
 
 Space Complexity: O(Number of Nodes)

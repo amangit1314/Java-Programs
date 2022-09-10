@@ -2,12 +2,12 @@ package linkedList;
 
 class LinkedList 
 { 
-    Node head;  // head of list
+    Node head;  // head of linkedList.list
 
     public void detectAndRemoveLoop(Problem_4.Node head) {
     }
 
-    /* Linked list Node*/
+    /* Linked linkedList.list Node*/
     static class Node
     { 
         int data; 
@@ -19,7 +19,7 @@ class LinkedList
         } 
     } 
   
-    /* Inserts a new Node at front of the list. */
+    /* Inserts a new Node at front of the linkedList.list. */
     public void push(int new_data) 
     { 
         /* 1 & 2: Allocate the Node & 
@@ -33,11 +33,11 @@ class LinkedList
         head = new_node; 
     } 
   
-    /* Given a reference (pointer to pointer) to the head of a list 
+    /* Given a reference (pointer to pointer) to the head of a linkedList.list
        and a position, deletes the node at the given position */
     void deleteNode(int position) 
     { 
-        // If linked list is empty 
+        // If linked linkedList.list is empty
         if (head == null) 
             return; 
   
@@ -63,10 +63,10 @@ class LinkedList
         // Store pointer to the next of node to be deleted 
         Node next = temp.next.next; 
   
-        temp.next = next;  // Unlink the deleted node from list 
+        temp.next = next;  // Unlink the deleted node from linkedList.list
     } 
   
-    /* This function prints contents of linked list starting from 
+    /* This function prints contents of linked linkedList.list starting from
         the given node */
     public void printList() 
     { 
@@ -83,7 +83,7 @@ class LinkedList
        code compact */
     public static void main(String[] args) 
     { 
-        /* Start with the empty list */
+        /* Start with the empty linkedList.list */
         LinkedList llist = new LinkedList(); 
   
         llist.push(7); 
@@ -92,7 +92,7 @@ class LinkedList
         llist.push(2); 
         llist.push(8); 
   
-        System.out.println("\nCreated Linked list is: "); 
+        System.out.println("\nCreated Linked linkedList.list is: ");
         llist.printList(); 
   
         llist.deleteNode(4);  // Delete node at position 4 

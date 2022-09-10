@@ -3,11 +3,11 @@ package trie;
 import java.util.Arrays;
 import java.util.Comparator;
 public class Trie_Problem_04 {
-	// class for each word of duplicate array
+	// class for each word of duplicate arrays.array
 	static class Word {
 		String str; // to store word itself
 		int index; // index of the word in the
-		// original array
+		// original arrays.array
 
 		// constructor
 		Word(String str, int index)
@@ -17,10 +17,10 @@ public class Trie_Problem_04 {
 		}
 	}
 
-	// class to represent duplicate array.
+	// class to represent duplicate arrays.array.
 	static class DupArray {
 		Word[] array; // Array of words
-		int size; // Size of array
+		int size; // Size of arrays.array
 
 		// constructor
 		public DupArray(String str[], int size)
@@ -40,7 +40,7 @@ public class Trie_Problem_04 {
 	}
 
 	// Compare two words. Used in Arrays.sort() for
-	// sorting an array of words
+	// sorting an arrays.array of words
 	static class compStr implements Comparator<Word> {
 		public int compare(Word a, Word b)
 		{
@@ -48,7 +48,7 @@ public class Trie_Problem_04 {
 		}
 	}
 
-	// Given a list of words in wordArr[],
+	// Given a linkedList.list of words in wordArr[],
 	static void printAnagramsTogether(String wordArr[],
 									int size)
 	{
@@ -66,7 +66,7 @@ public class Trie_Problem_04 {
 			dupArray.array[i].str = new String(char_arr);
 		}
 
-		// Step 3: Now sort the array of words in
+		// Step 3: Now sort the arrays.array of words in
 		// dupArray
 		Arrays.sort(dupArray.array, new compStr());
 

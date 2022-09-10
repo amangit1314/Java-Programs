@@ -16,7 +16,7 @@ public class DP_Problem_01 {
 			
 			if(n - a[i] >= 0) {
 				int subAns = 0;
-				// If the value of array at this index is not empty then put the value in subAns variable. 
+				// If the value of arrays.array at this index is not empty then put the value in subAns variable.
 				if(dp[n-a[i]] != -1) 	subAns = dp[n-a[i]];
 				// else it will case minCoins function recursively for n-a[i] position
 				else 	subAns = minCoins(n-a[i],a, dp);

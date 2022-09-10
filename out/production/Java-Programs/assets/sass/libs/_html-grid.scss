@@ -3,8 +3,8 @@
 // Mixins.
 
 	/// Initializes the current element as an HTML grid.
-	/// @param {mixed} $gutters Gutters (either a single number to set both column/row gutters, or a list to set them individually).
-	/// @param {mixed} $suffix Column class suffix (optional; either a single suffix or a list).
+	/// @param {mixed} $gutters Gutters (either a single number to set both column/row gutters, or a linkedList.list to set them individually).
+	/// @param {mixed} $suffix Column class suffix (optional; either a single suffix or a linkedList.list).
 	@mixin html-grid($gutters: 1.5em, $suffix: '') {
 
 		// Initialize.
@@ -15,7 +15,7 @@
 			// Suffixes.
 				$suffixes: null;
 
-				@if (type-of($suffix) == 'list') {
+				@if (type-of($suffix) == 'linkedList.list') {
 					$suffixes: $suffix;
 				}
 				@else {
@@ -26,7 +26,7 @@
 				$guttersCols: null;
 				$guttersRows: null;
 
-				@if (type-of($gutters) == 'list') {
+				@if (type-of($gutters) == 'linkedList.list') {
 
 					$guttersCols: nth($gutters, 1);
 					$guttersRows: nth($gutters, 2);

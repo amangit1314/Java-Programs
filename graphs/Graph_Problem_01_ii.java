@@ -7,7 +7,7 @@ public class Graph_Problem_01_ii {
 
 	public Graph_Problem_01_ii(int v) {
 		
-		//array of Linked List
+		//arrays.array of Linked List
 		adj = new LinkedList[v];
 		
 		for(int i = 0; i < v; i++) 

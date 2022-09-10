@@ -11,9 +11,9 @@ public class Problem_15 {
         ar[j] = temp;
     }
 
-    // Given a number as a char array number[],
+    // Given a number as a char arrays.array number[],
     // this function finds the next greater number.
-    // It modifies the same array to store the result
+    // It modifies the same arrays.array to store the result
     static void findNext(char[] ar, int n){
         int i;
 

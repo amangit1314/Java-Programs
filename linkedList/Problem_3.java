@@ -2,7 +2,7 @@ package linkedList;
 
 import java.util.HashSet;
 
-// Problem Title => Write a program to Detect loop in a linked list.
+// Problem Title => Write a program to Detect loop in a linked linkedList.list.
 public class Problem_3 {
 
     static Node head;
@@ -17,14 +17,14 @@ public class Problem_3 {
         }
     }
 
-    // function to add linked list node
+    // function to add linked linkedList.list node
     public static void push(int new_data){
         Node new_node = new Node(new_data);
         new_node.next = head;
         head = new_node;
     }
 
-    // function to detect loop in linked list
+    // function to detect loop in linked linkedList.list
     static boolean detectLoop(Node head){
         HashSet<Node> hashSet = new HashSet<>();
         while(head != null){

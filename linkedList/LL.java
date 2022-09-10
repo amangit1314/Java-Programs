@@ -2,7 +2,7 @@ package  linkedList;
 
 class LL{
 
-    // class to create a node of linked list
+    // class to create a node of linked linkedList.list
     static class Node{
         int data;
         Node next;

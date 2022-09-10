@@ -54,12 +54,12 @@ public class Problem_1_2 {
 		push(15);
 		push(85);
 		
-		System.out.println("Given linked list");
+		System.out.println("Given linked linkedList.list");
 		print();
 		
 		head = reverse(head);
 		
-		System.out.println("Reversed Linked list");
+		System.out.println("Reversed Linked linkedList.list");
 		print();
 		
 	}

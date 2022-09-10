@@ -1,5 +1,18 @@
 package dp;
-// Problem Title => Mobile Numeric Keypad Problem
+
+/*
+ * <------------------------------------------------------------------------------------------------------------------->
+ * Problem Title :-  Mobile Numeric Keypad Problem.
+ *  <------------------------------------------------------------------------------------------------------------------>
+ * Given :- Given the mobile numeric keypad. You can only press buttons that are up, left, right,
+ *          or down to the current button or the current button itself (like 00,11, etc.).
+ *          You are not allowed to press the bottom row corner buttons (i.e. * and # ).
+ *  <------------------------------------------------------------------------------------------------------------------>
+ * Need To Do :- Given a number N, the task is to find out the number of possible numbers of the given length.
+ * <------------------------------------------------------------------------------------------------------------------->
+ * */
+
+// Problem Title =>
 public class DP_Problem_53 {
 
     static int[] row = {0, 0,-1, 0, 1};
@@ -13,9 +26,8 @@ public class DP_Problem_53 {
         for(move = 0; move < 5; move++){
             ro = i + row[move];
             co = j + col[move];
-            if(ro >= 0 && ro <= 3 && co >= 0 && co <= 2 && keypad[ro][co] != '*' && keypad[ro][co] != '#'){
+            if(ro >= 0 && ro <= 3 && co >= 0 && co <= 2 && keypad[ro][co] != '*' && keypad[ro][co] != '#')
                 totalCount += getCountUtil(keypad, ro, co, n-1);
-            }
         }
         return totalCount;
     }

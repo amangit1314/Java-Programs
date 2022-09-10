@@ -42,11 +42,11 @@ class Reverse_a_LL {
         Reverse_a_LL.head.next.next = new Node(4);
         Reverse_a_LL.head.next.next.next = new Node(20);
 
-        System.out.println("Given Linked list");
+        System.out.println("Given Linked linkedList.list");
         list.printList(head);
         head = list.reverse(head);
         System.out.println("");
-        System.out.println("Reversed linked list ");
+        System.out.println("Reversed linked linkedList.list ");
         list.printList(head);
 
     }

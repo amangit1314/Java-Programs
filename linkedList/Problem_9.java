@@ -17,7 +17,7 @@ public class Problem_9 {
 
     // Recursively add 1 from end to beginning and returns carry after all nodes are processed.
     static int addWithCarry(Node head) {
-        // If linked list is empty, then return carry
+        // If linked linkedList.list is empty, then return carry
         if (head == null)
             return 1;
 
@@ -32,11 +32,11 @@ public class Problem_9 {
     // This function mainly uses addWithCarry().
     static Node addOne(Node head) {
 
-        // Add 1 to linked list from end to beginning
+        // Add 1 to linked linkedList.list from end to beginning
         int carry = addWithCarry(head);
 
         // If there is carry after processing all nodes,
-        // then we need to add a new node to linked list
+        // then we need to add a new node to linked linkedList.list
         if (carry > 0) {
             Node newNode = newNode(carry);
             newNode.next = head;
@@ -46,7 +46,7 @@ public class Problem_9 {
         return head;
     }
 
-    // A utility function to print a linked list
+    // A utility function to print a linked linkedList.list
     static void printList(Node node) {
         while (node != null) {
             System.out.print(node.data);
@@ -67,7 +67,7 @@ public class Problem_9 {
 
         head = addOne(head);
         System.out.println();
-        System.out.print("Resultant list is");
+        System.out.print("Resultant linkedList.list is");
         printList(head);
     }
 

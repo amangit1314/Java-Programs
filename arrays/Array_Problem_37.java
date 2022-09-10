@@ -3,9 +3,9 @@ package arrays;
 public class Array_Problem_37 {
     static int getMedian(int[] a1, int[] a2, int n, int m) {
 
-        //Current index of input array a1[]
+        //Current index of input arrays.array a1[]
         int i = 0;
-        //Current index of input array a2[]
+        //Current index of input arrays.array a2[]
         int j = 0;
         int count;
         int m1 = -1, m2 = -1;
@@ -31,7 +31,7 @@ public class Array_Problem_37 {
         /*
         * median will be average of elements
         * at index (( m + n) / 2 - 1) and (m + n) / 2
-        * in the array obtained after merging a1 and a2.
+        * in the arrays.array obtained after merging a1 and a2.
         */
         else{
             for (count = 0; count <= (n + m) / 2; count++){

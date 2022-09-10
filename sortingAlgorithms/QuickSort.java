@@ -19,7 +19,7 @@ public class QuickSort {
 //        count++;
     }
 
-    // Function to do left and right partition in the array
+    // Function to do left and right partition in the arrays.array
     static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
 
@@ -47,7 +47,7 @@ public class QuickSort {
         }
     }
 
-    // A utility function to print array of size n
+    // A utility function to print arrays.array of size n
     static void printArray(int[] arr) {
         for (int j : arr) System.out.print(j + " ");
         System.out.println();
@@ -76,12 +76,12 @@ public class QuickSort {
         QuickSort qs = new QuickSort();
         qs.quickSort(arr, 0, n - 1);
 
-        System.out.println("Sorted array: ");
+        System.out.println("Sorted arrays.array: ");
         printArray(arr);
 
         System.out.println();
 
-        System.out.println("Sorted array as input: ");
+        System.out.println("Sorted arrays.array as input: ");
         printArray(arr);
 
         System.out.println();

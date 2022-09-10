@@ -1,11 +1,11 @@
 package arrays;
 
 /*
- * find duplicate in an array of N+1 Integers
+ * find duplicate in an arrays.array of N+1 Integers
  */
 public class Array_Problem_11 {
 	
-	// Implementing an array as a HashMap for finding duplicate elements	
+	// Implementing an arrays.array as a HashMap for finding duplicate elements
 	void printRepeating(int m[],int size) {		
 		int i;
 		System.out.print("The repeating elements are: ");

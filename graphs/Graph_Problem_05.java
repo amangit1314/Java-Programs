@@ -4,7 +4,7 @@ package graphs;
 // or Java Program to detect cycle in an undirected graph
 
 import java.util.*;
-// This class represents a // directed graph using adjacency list // representation
+// This class represents a // directed graph using adjacency linkedList.list // representation
 
 class Graph_Problem_05 {
 

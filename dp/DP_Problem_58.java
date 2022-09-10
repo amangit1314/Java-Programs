@@ -1,14 +1,17 @@
 package dp;
 /*
-* Problem Title =>  Maximum profit by buying and selling a share at most k times
-*
-* In share trading, a buyer buys shares and sells on a future date.
-* Given the stock price of n days,
-* the trader is allowed to make at most k transactions,
-* where a new transaction can only start after the previous transaction is complete,
-* find out the maximum profit that a share trader could have made.
-*
+* <-------------------------------------------------------------------------------------------------------------------->
+* Problem Title :-  Maximum profit by buying and selling a share at most k times
+*                   In share trading, a buyer buys shares and sells on a future date.
+*  <------------------------------------------------------------------------------------------------------------------->
+* Given :- the stock price of n days,
+*          the trader is allowed to make at most k transactions,
+*          where a new transaction can only start after the previous transaction is complete,
+*  <------------------------------------------------------------------------------------------------------------------->
+* Need To Do :- find out the maximum profit that a share trader could have made.
+* <-------------------------------------------------------------------------------------------------------------------->
 * */
+
 public class DP_Problem_58{
 
     // Function to find out maximum profit by buying & selling a share at-most k times given stock price of n days

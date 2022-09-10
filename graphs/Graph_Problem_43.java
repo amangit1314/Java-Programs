@@ -58,7 +58,7 @@ public class Graph_Problem_43 {
     // If amount[p] is positive, then i'th person will amount[i].
     // If amount[p] is negative, then i'th person will give -amount[i].
     static void minCashFlow(int[][] graph){
-        // Create an array amount[], initialize all value in it as 0.
+        // Create an arrays.array amount[], initialize all value in it as 0.
         int[] amount = new int[N];
         // Calculate the net amount to be paid to person 'p', and stores it in amount[p].
         // The value of amount[p] can be calculated by subtracting debts of 'p' from credits of 'p'.

@@ -4,7 +4,7 @@ import java.util.*;
 // Problem Title => Print all Subsequences of a string.
 public class Problem_11_1 {
 
-    // Declare a global list
+    // Declare a global linkedList.list
     static List<String> al = new ArrayList<>();
 
 

@@ -1,11 +1,12 @@
 package linkedList;
 
-// Problem Title => Remove Duplicates in a Un-sorted Linked List.
+// Problem Title => Remove Duplicates in an Un-sorted Linked List.
 
 public class Problem_7 {
 
     static Node head;
 
+    // structure of node of ll
     static class Node {
         int data;
         Node next;
@@ -16,13 +17,13 @@ public class Problem_7 {
         }
     }
 
+    // function to remove duplicates
     void remove_duplicates() {
-        Node ptr1 = null, ptr2 = null, dup = null;
+        Node ptr1 = null, ptr2;
         ptr2 = ptr1;
 
         while (ptr2.next != null && ptr1 != null) {
             ptr2 = ptr1;
-
             while (ptr2.next != null) {
                 if (ptr1.data == ptr2.next.data) {
                     dup = ptr2.next;

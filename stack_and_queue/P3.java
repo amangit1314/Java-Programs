@@ -1,6 +1,6 @@
 package stack_and_queue;
 
-//Implement two stack in an array
+//Implement two stack in an arrays.array
 
 public class P3 {
 
