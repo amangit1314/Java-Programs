@@ -1,6 +1,5 @@
 //? Problem Title => Why Quicksort is preferred for. Arrays and Merge Sort for LinkedLists ?
 
-
 //* Ans =>
 
     Quick Sort in its general form is an in-place sort (i.e. it doesn’t require any extra storage) whereas merge sort requires O(N) extra storage, N denoting the arrays.array size which may be quite expensive. Allocating and de-allocating the extra space used for merge sort increases the running time of the algorithm.
