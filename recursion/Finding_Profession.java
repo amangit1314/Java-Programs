@@ -41,6 +41,7 @@ public class Finding_Profession {
 
         if(par == 'e')
             return 'd';
+
         else
             return 'e';
     }
