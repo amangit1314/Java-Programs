@@ -18,6 +18,10 @@ program.java
 .out/
 .vscode
 .cph
-.idea
+.idea/
+
+/.idea
+/.github
+
 
 
