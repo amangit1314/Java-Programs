@@ -1,8 +1,11 @@
 package stack_and_queue;
+
+
+
 // Java program to reverse a Queue by recursion
+
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 // Java program to reverse a queue recursively
 public class P27 {

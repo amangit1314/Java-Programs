@@ -1,7 +1,9 @@
 package stack_and_queue;
 import java.util.*;
 
-class GFG
+// Implement queue using stack
+
+public class P23
 {
     static class Queue
     {

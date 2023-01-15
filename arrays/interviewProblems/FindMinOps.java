@@ -1,7 +1,7 @@
 package arrays;
 /* Problem Title :-> Minimum no. of operations required to make an arrays.array palindrome */
-public class Array_Problem_35 {
-
+// class Array_Problem_35 {
+class FindMinOps {
     static int findMinOps(int[] a, int n) {
 
         //Initialize result
