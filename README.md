@@ -35,4 +35,4 @@
 - [x] Dynamic Programming - (60 / 60)
 - [x] Bit Manipulation - (10 / 10)
   
-## Grand Total - [36+10+26+21+36+35+22+23+19+38+18+44+6+60+10 = 404 / 450]
+## Grand Total - [404 / 450]
