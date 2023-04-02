@@ -16,18 +16,17 @@ public class Problem_02 {
         this.profit = profit;
     }
 
-    void printJobScheduling(ArrayList<Problem_02> arr, int t){
-        int n = arr.size();
+    void printJobScheduling(ArrayList<Problem_02> arr){
 
-        Collections.sort(arr, (a,b) -> b.profit - a.profit);
-        boolean result[] = new boolean[t];
-        char job[] = new char[t];
+        arr.sort((a, b) -> b.profit - a.profit);
+        boolean[] result = new boolean[3];
+        char[] job = new char[3];
 
-        for(int i = 0; i < n; i++){
-            for(int j = Math.min(t - 1, arr.get(i).deadline - 1); j >= 0; j--){
-                if(result[j] == false){
+        for (Problem_02 problem_02 : arr) {
+            for (int j = Math.min(3 - 1, problem_02.deadline - 1); j >= 0; j--) {
+                if (!result[j]) {
                     result[j] = true;
-                    job[j] = arr.get(i).id;
+                    job[j] = problem_02.id;
                     break;
                 }
             }
@@ -38,8 +37,8 @@ public class Problem_02 {
         System.out.println();
     }
 
-    public static void main(String args[]) {
-        ArrayList<Problem_02> arr = new ArrayList<Problem_02>();
+    public static void main(String[] args) {
+        ArrayList<Problem_02> arr = new ArrayList<>();
 
         arr.add(new Problem_02('a', 2, 100));
         arr.add(new Problem_02('b', 1, 19));
@@ -53,6 +52,6 @@ public class Problem_02 {
         Problem_02 job = new Problem_02();
 
         // Calling function
-        job.printJobScheduling(arr, 3);
+        job.printJobScheduling(arr);
     }
 }

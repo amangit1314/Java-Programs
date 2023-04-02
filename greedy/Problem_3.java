@@ -42,6 +42,7 @@ public class Problem_3 {
 
         // recursive calls for left and
         // right sub-tree of the generated tree.
+        assert root.left != null;
         printCode(root.left, s + "0");
         printCode(root.right, s + "1");
     }
@@ -63,7 +64,7 @@ public class Problem_3 {
 
         // creating a priority queue q.
         // makes a min-priority queue(min-heap).
-        PriorityQueue<HuffmanNode> q = new PriorityQueue<HuffmanNode>(n, (Comparator<? super HuffmanNode>) new MyComparator());
+        PriorityQueue<HuffmanNode> q = new PriorityQueue<>(n, (Comparator<? super HuffmanNode>) new MyComparator());
 
         for (int i = 0; i < n; i++) {
 
@@ -100,6 +101,7 @@ public class Problem_3 {
             HuffmanNode f = new HuffmanNode();
 
             // to the sum of the frequency of the two nodes assigning values to the f node.
+            assert y != null;
             f.data = x.data + y.data;
             f.c = '-';
 

@@ -16,7 +16,7 @@ Example -
 <---------------------------------------------------------------------------------------------------------------------->
 * */
 
-class Fractional_Knapsack {
+class Problem_05 {
 
   //Function to get the maximum total value in the knapsack.
   private static double getMaxValue(int[] wt, int[] val, int capacity) {
@@ -27,17 +27,11 @@ class Fractional_Knapsack {
       iVal[i] = new ItemValue(wt[i], val[i], i);
 
     // sorting items by value;
-    Arrays.sort(iVal, new Comparator<ItemValue>() {
-      @Override
-      public int compare(ItemValue o1, ItemValue o2) {
-        return o2.cost.compareTo(o1.cost);
-      }
-    });
+    Arrays.sort(iVal, (o1, o2) -> o2.cost.compareTo(o1.cost));
 
     double totalValue = 0d;
 
     for (ItemValue i : iVal) {
-
       int curWt = (int)i.wt;
       int curVal = (int)i.val;
 
@@ -50,7 +44,6 @@ class Fractional_Knapsack {
         // item can't be picked whole
         double fraction = ((double)capacity / (double)curWt);
         totalValue += (curVal * fraction);
-        capacity = (int)(capacity - (curWt * fraction));
         break;
       }
     }
@@ -64,18 +57,16 @@ class Fractional_Knapsack {
     double wt, val, ind;
 
     // item value function
-    public ItemValue(int wt, int val, int ind)
-    {
+    public ItemValue(int wt, int val, int ind) {
       this.wt = wt;
       this.val = val;
       this.ind = ind;
-      cost = new Double((double)val / (double)wt);
+      cost = (double) val / (double) wt;
     }
   }
 
   // Driver code
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     int[] wt = { 10, 40, 20, 30 };
     int[] val = { 60, 40, 100, 120 };
     int capacity = 50;
@@ -88,7 +79,7 @@ class Fractional_Knapsack {
 }
 /*
 <---------------------------------------------------------------------------------------------------------------------->
-| Time Complexity ->  | O(n.logn)
+| Time Complexity ->  | O(n.log n)
 | Auxiliary Space ->  | O(1)
 <---------------------------------------------------------------------------------------------------------------------->
  */
