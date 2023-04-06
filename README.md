@@ -11,6 +11,8 @@
 
 ![cover](https://user-images.githubusercontent.com/65482419/230406982-62400f34-acc0-46e6-b67b-9c3f3c06819b.png)
 
+**Image Design Credits - [450dsa.com](https://450dsa.com/)**
+
 ## Additional Content -
 
 - [x] Pattern Questions
