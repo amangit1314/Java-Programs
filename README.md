@@ -15,6 +15,7 @@
 
 **Image Design Credits - [450dsa.com](https://450dsa.com/)**
 
+
 ## Additional Content -
 
 - [x] Pattern Questions
@@ -47,3 +48,19 @@
 
 - Just Started
 - Currently focusing on uploading solutions to all problems 👱‍♂️.
+
+## Dependencies 🗃 Planed to use
+
+- [Next.js] - **Frontend React Framework**
+- [Tailwind] - **CSS Framework**
+- [React-Reveal] - **React Based Animations**
+- [React-Table-2] - **Suite of table hooks**
+- [LocalBase] - **Firebase style DB for offline storage**
+
+## Planned Stuff 🛠
+
+- Dark Mode
+- Add `mark for review\fav` feature
+- Leader Board
+- Better Responsive CSS
+- Better State Management
