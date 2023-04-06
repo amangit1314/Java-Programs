@@ -3,12 +3,14 @@
 ☄ This is a full fled-ged repository for learning Java Language & DSA for Placement Preparation.
 
 ## Overview 👀
-💪 Here you can find the solution's of **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya.
 
-👊 You can also practice some beginner problems which are also included in it.
+💪 Solution's to **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya. 
 
-🎁 Along with 450 questions, I have also included OOP's Concept's Code in this repository.
+👊 Practice beginner problems also included.
 
+🎁 Along with 450 questions, OOPS.
+
+## 📷 Cover Image
 ![cover](https://user-images.githubusercontent.com/65482419/230406982-62400f34-acc0-46e6-b67b-9c3f3c06819b.png)
 
 **Image Design Credits - [450dsa.com](https://450dsa.com/)**
@@ -17,6 +19,7 @@
 
 - [x] Pattern Questions
 - [x] SEARCHING Algorithms
+- [x] Recursion Problems
 - [x] OOPS (Object Oriented Programming)
 
 
@@ -30,7 +33,6 @@
 - [x] Binary Trees - (35 / 35)
 - [x] Binary Search Trees - (22 / 22)
 - [] Greedy - (23 / 35)
-- [] Recursion
 - [x] Backtracking - (19 / 19)
 - [x] Stacks & Queues - (38 / 38)
 - [x] Heap - (18 / 18)
@@ -40,3 +42,8 @@
 - [x] Bit Manipulation - (10 / 10)
   
 ## Grand Total - [404 / 450]
+
+## Website Status 
+
+- Just Started
+- Currently focusing on uploading solutions to all problems 👱‍♂️.
