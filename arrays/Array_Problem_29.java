@@ -16,6 +16,7 @@ public class Array_Problem_29 {
 		}
 		return false;
 	}
+	
 	public static void main(String[] args) {
 		Array_Problem_29 triplet = new Array_Problem_29();
 		int[] A = {1, 4, 45, 6, 10, 8};

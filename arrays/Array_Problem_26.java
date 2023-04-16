@@ -1,18 +1,21 @@
 package arrays;
-/* Problem Title :->  Maximum profit by buying and selling a share atmost twice
-*/
+
+//? Problem Title :-> Maximum profit by buying and selling a share atmost twice
+
+// * You are allowed to buy and sell atmost twice
+
 public class Array_Problem_26 {
 	static int maxProfit(int[] price, int n) {
 		
 		int[] profit = new int[n];
 		
-		for(int i =0; i < n; i++) {
+		for(int i = 0; i < n; i++) {
 			profit[i] = 0;
 		}
 		
 		int max_price = price[n-1];
 		
-		for(int i = n -2; i >= 0; i--) {
+		for(int i = n - 2; i >= 0; i--) {
 			if(price[i] > max_price)
 				max_price = price[i];
 			
@@ -27,7 +30,7 @@ public class Array_Problem_26 {
 				min_price = price[i];
 			
 			profit[i]= Math.max(
-					profit[i-1],
+					profit[i - 1],
 					profit[i] + (price[i] - min_price)
 			);
 		}

@@ -1,5 +1,5 @@
 package linkedList;
-// Problem Title => Merge Sort For Linked lists.[Very Important]
+// Problem Title => Quick Sort For Linked lists.[Very Important]
 public class Problem_13 {
     node head = null;
     // node a, b;
@@ -32,7 +32,7 @@ public class Problem_13 {
         return result;
     }
 
-    node mergeSort(node h)
+    node quickSort(node h)
     {
         // Base case : if head is null
         if (h == null || h.next == null) {
@@ -40,47 +40,45 @@ public class Problem_13 {
         }
 
         // get the middle of the linkedList.list
-        node middle = getMiddle(h);
-        node nextofmiddle = middle.next;
+        node start = h;
+        node end = getEnd(h);
 
-        // set the next of middle node to null
-        middle.next = null;
+        sort(start, end);
 
-        // Apply mergeSort on left linkedList.list
-        node left = mergeSort(h);
-
-        // Apply mergeSort on right linkedList.list
-        node right = mergeSort(nextofmiddle);
-
-        // Merge the left and right lists
-        return sortedMerge(left, right);
+        return node;
     }
 
     // Utility function to get the middle of the linked linkedList.list
-    public static node getMiddle(node head)
+    public static node getEnd(node head)
     {
-        if (head == null)
-            return head;
-
-        node slow = head, fast = head;
-
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        return slow;
+        Node temp = node;
+        while(temp.next != null)
+            temp = temp.next;
+        return temp;
     }
 
-    void push(int new_data)
+    public static Node partition(Node start, Node end)
     {
         /* allocate node */
-        node new_node = new node(new_data);
+        Node prev  = start;
+        Node curr = start;
+        int pivot = end.data;
 
-        /* link the old linkedList.list off the new node */
-        new_node.next = head;
+        while(start != end) {
+            if(start.data < pivot) {
+                prev = curr;
+                int temp = curr.data;
+                curr.data = start.data;
+                start.data = temp;
+                curr = curr.next;
+            }
+            start = start.next;
+        }
 
-        /* move the head to point to the new node */
-        head = new_node;
+        int temp = curr.data;
+        curr.data = pivot;
+        end.data = temp;
+        return prev;
     }
 
     // Utility function to print the linked linkedList.list
@@ -96,19 +94,14 @@ public class Problem_13 {
     {
 
         Problem_13 li = new Problem_13();
-        /*
-         * Let us create a unsorted linked linkedList.list to test the functions
-         * created. The linkedList.list shall be a: 2->3->20->5->10->15
-         */
-        li.push(15);
-        li.push(10);
-        li.push(5);
-        li.push(20);
-        li.push(3);
-        li.push(2);
+        li.head = new node(30);
+        li.head.next = new node(3);
+        li.head.next.next = new node(4);
+        li.head.next.next.next = new node(20);
+        li.head.next.next.next.next = new node(5);
 
-        // Apply to merge Sort
-        li.head = li.mergeSort(li.head);
+        // Apply merge Sort
+        li.head = li.quickSort(li.head);
         System.out.print("\n Sorted Linked List is: \n");
         li.printList(li.head);
     }
