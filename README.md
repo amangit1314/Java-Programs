@@ -1,20 +1,20 @@
-# Java Placement Preparation DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[404/450]
+# Java Placement Preparation DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[421/450]
 
 ☄ This is a full fled-ged repository for learning Java Language & DSA for Placement Preparation.
 
 ## Overview 👀
 
-💪 Solution's to **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya. 
+💪 Solution's to **_450 Questions of (Data Structure & Algorithms Cracker Sheet)_** By **LOVE BABBAR** Bhaiya.
 
 👊 Practice beginner problems also included.
 
 🎁 Along with 450 questions, OOPS.
 
 ## 📷 Cover Image
+
 ![cover](https://user-images.githubusercontent.com/65482419/230406982-62400f34-acc0-46e6-b67b-9c3f3c06819b.png)
 
 **Image Design Credits - [450dsa.com](https://450dsa.com/)**
-
 
 ## Additional Content -
 
@@ -22,7 +22,6 @@
 - [x] SEARCHING Algorithms
 - [x] Recursion Problems
 - [x] OOPS (Object Oriented Programming)
-
 
 ## Topics
 
@@ -44,7 +43,7 @@
   
 ## Grand Total - [421 / 450]
 
-## Website Status 
+## Website Status
 
 - Just Started
 - Currently focusing on uploading solutions to all problems 👱‍♂️.
