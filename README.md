@@ -28,7 +28,7 @@
 
 - [x] Arrays - (36 / 36)
 - [x] Matrix - (10 / 10)
-- [] String - (26 / 43)
+- [x] String - (43 / 43)
 - [] Searching and Sorting - (21 / 36)
 - [x] LinkedList - (36 / 36)
 - [x] Binary Trees - (35 / 35)
@@ -42,7 +42,7 @@
 - [x] Dynamic Programming - (60 / 60)
 - [x] Bit Manipulation - (10 / 10)
   
-## Grand Total - [404 / 450]
+## Grand Total - [421 / 450]
 
 ## Website Status 
 
