@@ -1,13 +1,13 @@
-import java.util.*;
-import java.lang.*;
+package searchingSortingProblems;
+
 import java.util.Scanner;
 
 
 // Program Title => Searching in an arrays.array where adjacent differ at most k.
-/* example : 
+/* example :
  I/P = a[] = {4, 5, 6, 7, 6}, k = 1, x = 6.
  O/P = 2
- This first index of 6 is 2. 
+ This first index of 6 is 2.
 */
 
 public class SSP_Problem_09 {

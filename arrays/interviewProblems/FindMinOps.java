@@ -1,4 +1,4 @@
-package arrays;
+package arrays.interviewProblems;
 /* Problem Title :-> Minimum no. of operations required to make an arrays.array palindrome */
 // class Array_Problem_35 {
 class FindMinOps {

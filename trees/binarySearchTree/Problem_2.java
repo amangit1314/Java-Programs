@@ -1,4 +1,4 @@
-
+package trees.binarySearchTree;
 
 // Problem Title => Deletion_of_a_node_in_bst
 public class Problem_2 {

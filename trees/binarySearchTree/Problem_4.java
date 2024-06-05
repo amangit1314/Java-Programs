@@ -1,3 +1,4 @@
+package trees.binarySearchTree;
 // Problem Tiitle => Find inorder successor and inorder predecessor in a BST
 
 public class Problem_4 {
@@ -14,10 +15,10 @@ public class Problem_4 {
             this.left = this.right = null;
         }
     }
-    
+
     static Node pre = new Node(), suc = new Node();
 
-    // This function finds predecessor and successor of key in BST. 
+    // This function finds predecessor and successor of key in BST.
     // It sets pre and suc as predecessor and successor respectively
     static void findPreSuc(Node root, int key) {
 
@@ -65,6 +66,6 @@ public class Problem_4 {
     // A utility function to insert a
 
     public static void main(String[] args) {
-        
+
     }
 }

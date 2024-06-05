@@ -1,4 +1,6 @@
-// Problem Title => Check if a tree is a BST or not 
+package trees.binarySearchTree;
+
+// Problem Title => Check if a tree is a BST or not
 
 public class Problem_5 {
 

@@ -1,3 +1,5 @@
+package searchingSortingProblems;
+
 // Problem Title => find four elements that sum to a given value
 import java.util.*;
 

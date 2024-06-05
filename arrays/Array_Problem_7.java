@@ -1,34 +1,59 @@
-package arrays;
-
 /*
  * Write a program to cyclically rotate an arrays.array by one.
  */
+
+package arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array_Problem_7 {
 
-	static void rotate(int[] a){
-		int x = a[a.length-1], i;
-		for (i = a.length-1; i > 0; i--)
-			a[i] = a[i-1];
-		a[0] = x;
-	}
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int[] a = new int[n];
-		for (int i = 0; i < n; i++)
-			a[i] = sc.nextInt();
+        // Get the size of the array from the user
+        System.out.print("Enter the size of the array: ");
+        int arraySize = scanner.nextInt();
 
-		System.out.println("Given Array is");
-		System.out.println(Arrays.toString(a));
+        // Create an array to store the input elements
+        int[] inputArray = new int[arraySize];
 
-		rotate(a);
+        // Get the elements of the array from the user
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < arraySize; i++) {
+            inputArray[i] = scanner.nextInt();
+        }
 
-		System.out.println("Rotated Array is");
-		System.out.println(Arrays.toString(a));
-	}
+        // Print the original array
+        System.out.println("Original array:");
+        System.out.println(Arrays.toString(inputArray));
+
+        // Perform the cyclic rotation
+        rotateArray(inputArray);
+
+        // Print the rotated array
+        System.out.println("Rotated array:");
+        System.out.println(Arrays.toString(inputArray));
+
+        scanner.close(); // Close the scanner resource
+    }
+
+    // Function to cyclically rotate an array by one element
+    public static void rotateArray(int[] array) {
+        if (array.length == 0) {
+            return; // Handle empty array case
+        }
+
+        // Store the last element of the array
+        int lastElement = array[array.length - 1];
+
+        // Shift elements one position to the right
+        for (int i = array.length - 2; i >= 0; i--) {
+            array[i + 1] = array[i];
+        }
+
+        // Place the last element at the beginning
+        array[0] = lastElement;
+    }
 }

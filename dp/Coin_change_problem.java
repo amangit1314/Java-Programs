@@ -1,14 +1,14 @@
 package dp;
 
-class Coin_change_problem {
-    static int count(int[] S, int m, int n) {
+Class Coin_change_problem {
+    static int count(int[] array, int m, int n) {
         if (n == 0)
             return 1;
         if (n < 0)
             return 0;
         if (m <= 0)
             return 0;
-        return count(S, m - 1, n) + count(S, m, n - S[m - 1]);
+        return count(array, m - 1, n) + count(array, m, n - array[m - 1]);
     }
 
     public static void main(String[] args) {

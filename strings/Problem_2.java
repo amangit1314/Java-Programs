@@ -2,27 +2,46 @@ package strings;
 
 import java.util.Scanner;
 
-// Problem Title ==> Check String is Palindrome or not
+//* Problem Title ==> Check String is Palindrome or not
 public class Problem_2 {
 
-    static boolean isPalindrome(String str){
-        int i = 0, j = str.length() - 1;
-        while(i < j){
-            if(str.charAt(i) != str.charAt(j))
+    public static boolean isStringPalindrome(String inputString) {
+        int startIndex = 0;
+        int endIndex = inputString.length() - 1;
+
+        // Iterate through the string while start and end haven't met
+        while (startIndex < endIndex) {
+            char startChar = inputString.charAt(startIndex);
+            char endChar = inputString.charAt(endIndex);
+
+            // Convert characters to lowercase for case-insensitive comparison
+            startChar = Character.toLowerCase(startChar);
+            endChar = Character.toLowerCase(endChar);
+
+            // If characters are not the same (ignoring case), return false
+            if (startChar != endChar) {
                 return false;
-            i++;
-            j--;
+            }
+
+            startIndex++;
+            endIndex--;
         }
+
+        // If the loop completes, all characters matched (palindrome)
         return true;
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
 
-        if (isPalindrome(str))
-            System.out.print("Yes");
-        else
-            System.out.print("No");
+        if (isStringPalindrome(inputString)) {
+            System.out.println("Yes, it is a palindrome.");
+        } else {
+            System.out.println("No, it is not a palindrome.");
+        }
+
+        scanner.close();
     }
 }

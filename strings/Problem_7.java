@@ -1,52 +1,56 @@
 package strings;
-// Problem Title => Count and Say problem
+
+// * Problem Title: Count and Say
 public class Problem_7 {
 
-    static String countAndSay(int n){
-        if(n == 1) return "1";
-        if(n == 2) return "11";
+    public static String countAndSay(int n) {
+        if (n == 1) {
+            return "1"; // Base case: first term is "1"
+        } else if (n == 2) {
+            return "11"; // Base case: second term is "11"
+        }
 
-        // Find n'th term by generating
-        // all terms from 3 to n-1.
-        // Every term is generated using previous term Initialize previous term
-        String str = "11";
-        for (int i = 3; i <= n; i++) {
-            // In below for loop, previous character is processed in current iteration.
-            // That is why a dummy character is added to make sure that loop runs one extra iteration.
-            str += '$';
-            int len = str.length();
+        // Initialize result string with the base case
+        String result = "11";
 
-            int cnt = 1;
-            // Initialize count of matching chars
-            String tmp = ""; // Initialize i'th
+        // Generate terms from 3 to n based on previous terms
+        for (int termNumber = 3; termNumber <= n; termNumber++) {
+            StringBuilder nextTerm = new StringBuilder();
 
-            // term in series
-            char []arr = str.toCharArray();
+            // Process previous term character by character
+            char previousChar = result.charAt(0); // Initialize with first character
+            int currentCharCount = 1; // Count of consecutive occurrences of previous character
 
-            // Process previous term to find the next term
-            for (int j = 1; j < len; j++) {
-                // If current character does not match
-                if (arr[j] != arr[j - 1]) {
-                    // Append count of str[j-1] to temp
-                    tmp += cnt;
+            for (int charIndex = 1; charIndex < result.length(); charIndex++) {
+                char currentChar = result.charAt(charIndex);
 
-                    // Append str[j-1]
-                    tmp += arr[j - 1];
-
-                    // Reset count
-                    cnt = 1;
+                // If character changes, append count and character to next term
+                if (currentChar != previousChar) {
+                    nextTerm.append(currentCharCount);
+                    nextTerm.append(previousChar);
+                    previousChar = currentChar;
+                    currentCharCount = 1;
+                } else {
+                    // If character is same, increment count
+                    currentCharCount++;
                 }
-
-                // If matches, then increment count of matching characters
-                else cnt++;
             }
 
-            // Update str
-            str = tmp;
-        }
-        return str;
-    }
-    public static void main(String[] args) {
+            // Append the last character and its count (if applicable)
+            nextTerm.append(currentCharCount);
+            nextTerm.append(previousChar);
 
+            // Update result string with the generated next term
+            result = nextTerm.toString();
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // Example usage:
+        int n = 4;
+        String sequenceTerm = countAndSay(n);
+        System.out.println("Term " + n + ": " + sequenceTerm);
     }
 }

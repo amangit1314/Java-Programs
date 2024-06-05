@@ -1,4 +1,5 @@
 package strings;
+
 import java.util.*;
 
 // Problem Title => Print all subsequences of a String
@@ -7,29 +8,29 @@ public class Problem_10 {
 
     // str : Stores input string
     // n : Length of str.
-    // curr : Stores current permutation
-    // index : Index in current permutation, curr
-    static void printSubSeqRec(String str, int n, int idx, String curr){
-        if(idx == n)
+    // currentPermutation : Stores current Permutation
+    // index : Index in current Permutation
+    static void printSubSeqRec(String str, int n, int idx, String currentPermutation) {
+        if (idx == n)
             return;
 
-        if(curr != null && !curr.trim().isEmpty())
-            System.out.println(curr);
+        if (currentPermutation != null && !currentPermutation.trim().isEmpty())
+            System.out.println(currentPermutation);
 
         for (int i = idx + 1; i < n; i++) {
-            curr += str.charAt(i);
-            printSubSeqRec(str, n, i, curr);
+            currentPermutation += str.charAt(i);
+            printSubSeqRec(str, n, i, currentPermutation);
 
             // backtracking
-            curr = curr.substring(0, curr.length() - 1);
+            currentPermutation = currentPermutation.substring(0, currentPermutation.length() - 1);
         }
     }
 
     // Generates power set in lexicographic order.
-    static void printSubSeq(String str){
+    static void printSubSeq(String str) {
         int index = -1;
-        String curr = "";
-        printSubSeqRec(str, str.length(), index, curr);
+        String currentPermutation = "";
+        printSubSeqRec(str, str.length(), index, currentPermutation);
     }
 
     // Driver Code
@@ -37,5 +38,6 @@ public class Problem_10 {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         printSubSeq(str);
+        sc.close();
     }
 }

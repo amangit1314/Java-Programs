@@ -1,6 +1,6 @@
 package arrays;
-/* 
- * Problem Title :-> 
+/*
+ * Problem Title :->
  * Find if there is any sub arrays.array with sum equal to 0
  */
 
@@ -14,34 +14,43 @@ import java.util.*;
  */
 
 public class Array_Problem_21 {
-	static Boolean subArrayExists(int[] a) {
-		// Creates an empty hash set h_s
-		Set<Integer> hs = new HashSet<>();
-		// Initialise sum of elements
-		int sum = 0;
-		// Traverse through the given arrays.array
-		for(int i = 0; i < a.length; i++) {
-			// Add current element to sum
-			sum += a[i];
-			/*
-			 * Return true in following cases
-			 * a). Current element is 0
-			 * b). sum of elements from 0 to i is 0
-			 * c). sum is already present in hash map
-			 */
-			if(a[i] == 0 || sum == 0 || hs.contains(sum)) return true;
-			// Add sum to hash set
-			hs.add(sum);
-		}
-		// We reach here only when there is no sub_array with 0 sum
-		return false;
-	}
-	// Driver Code
-	public static void main(String[] args) {
-		int[] a = {2, 3, -1, -2, 4, 5};
-		if(subArrayExists(a))
-			System.out.println("Found a subarray with 0 sum");
-		else
-			System.out.println("No Such Sub Array Exists!");
-	}
+
+    static boolean subArrayExists(int[] array) {
+        // Create an empty HashSet to store seen sums
+        Set<Integer> seenSums = new HashSet<>();
+        // Initialize the sum of elements
+        int currentSum = 0;
+
+        // Traverse through the array
+        for (int i = 0; i < array.length; i++) {
+            // Add current element to the sum
+            currentSum += array[i];
+
+            /*
+             * Return true in the following cases:
+             * a) Current element is 0.
+             * b) Sum of elements from 0 to i is 0.
+             * c) Current sum is already present in the hash set.
+             */
+            if (array[i] == 0 || currentSum == 0 || seenSums.contains(currentSum)) {
+                return true;
+            }
+
+            // Add the current sum to the set
+            seenSums.add(currentSum);
+        }
+
+        // We reach here only when there is no subarray with 0 sum
+        return false;
+    }
+
+    // Driver Code
+    public static void main(String[] args) {
+        int[] array = {2, 3, -1, -2, 4, 5};
+        if (subArrayExists(array)) {
+            System.out.println("Found a subarray with 0 sum");
+        } else {
+            System.out.println("No such subarray exists!");
+        }
+    }
 }

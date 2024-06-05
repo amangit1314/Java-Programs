@@ -1,25 +1,25 @@
 package arrays;
 
-//? Problem Title :-> Best Time to buy and sell stocks [1] 
+//? Problem Title :-> Best Time to buy and sell stocks [1]
 
 // * You are allowed to buy and sell only once
-// ! You are not allowed to sell first and then buy, 
+// ! You are not allowed to sell first and then buy,
 // ! (you must buy first and then sell)
 
 public class Array_Problem_17 {
 
-  public int maxProfit(int[] prices) {
+  public static int maxProfit(int[] prices) {
     int mini = prices[0];
     int maxProfit = 0;
-    
-    int n = prices.size();
+
+    int n = prices.length;
 
     for(int i = 0; i < n; i++) {
       int cost = prices[i] - mini;
       maxProfit = Math.max(maxProfit, cost);
       mini = Math.min(mini, prices[i]);
     }
-    
+
     return maxProfit;
   }
 

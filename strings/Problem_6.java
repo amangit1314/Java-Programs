@@ -2,59 +2,45 @@ package strings;
 
 import java.util.Scanner;
 
+// * Check whether a string is valid shuffle of two strings or not
 public class Problem_6 {
-    static boolean compare(int []arr1, int []arr2) {
-        for(int i = 0; i < 256; i++)
-            if (arr1[i] != arr2[i])
+    // function to compareCharacterCounts
+    static boolean compareCharacterCounts(int[] charCount1, int[] charCount2) {
+        for (int i = 0; i < 256; i++)
+            if (charCount1[i] != charCount2[i])
                 return false;
 
         return true;
     }
 
-    // This function search for all
-    // permutations of pat[] in txt[]
-    static boolean search(String pat, String txt) {
-        int M = pat.length();
-        int N = txt.length();
+    // This function searchForPattern for all permutations of pat[] in txt[]
+    static boolean searchForPattern(String pattern, String text) {
+        int patternLength = pattern.length();
+        int textLength = text.length();
 
-        // countP[]: Store count of all
-        // characters of pattern
-        // countTW[]: Store count of
-        // current window of text
-        int []countP = new int [256];
-        int []countTW = new int [256];
-        for(int i = 0; i < 256; i++)
-        {
-            countP[i] = 0;
-            countTW[i] = 0;
+        int[] patternCharCount = new int[256];
+        int[] currentWindowCharCount = new int[256];
+
+        for (int i = 0; i < 256; i++) {
+            patternCharCount[i] = 0;
+            currentWindowCharCount[i] = 0;
         }
 
-        for(int i = 0; i < M; i++) {
-            (countP[pat.charAt(i)])++;
-            (countTW[txt.charAt(i)])++;
+        for (int i = 0; i < patternLength; i++) {
+            (patternCharCount[pattern.charAt(i)])++;
+            (currentWindowCharCount[text.charAt(i)])++;
         }
 
-        // Traverse through remaining
-        // characters of pattern
-        for(int i = M; i < N; i++) {
-
-            // Compare counts of current
-            // window of text with
-            // counts of pattern[]
-            if (compare(countP, countTW))
+        for (int i = patternLength; i < textLength; i++) {
+            if (compareCharacterCounts(patternCharCount, currentWindowCharCount))
                 return true;
 
-            // Add current character to
-            // current window
-            (countTW[txt.charAt(i)])++;
-
-            // Remove the first character
-            // of previous window
-            countTW[txt.charAt(i - M)]--;
+            (currentWindowCharCount[text.charAt(i)])++; // Add current character to current window
+            currentWindowCharCount[text.charAt(i - patternLength)]--; // Remove the first character of previous window
         }
 
         // Check for the last window in text
-        return compare(countP, countTW);
+        return compareCharacterCounts(patternCharCount, currentWindowCharCount);
     }
 
     // Driver code
@@ -63,9 +49,11 @@ public class Problem_6 {
         String txt = sc.nextLine();
         String pat = sc.nextLine();
 
-        if (search(pat, txt))
+        if (searchForPattern(pat, txt))
             System.out.println("Yes");
         else
             System.out.println("NO");
+
+        sc.close();
     }
 }

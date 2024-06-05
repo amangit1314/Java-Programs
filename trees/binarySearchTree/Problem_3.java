@@ -1,3 +1,5 @@
+package trees.binarySearchTree;
+
 // Problem Tiitle => Find min and max value in a BST
 
 public class Problem_3 {
@@ -27,7 +29,7 @@ public class Problem_3 {
             return node;
         }
     }
-    
+
     // Returns the min value in a binary tree
     int minValue(Node node) {
         Node current = node;

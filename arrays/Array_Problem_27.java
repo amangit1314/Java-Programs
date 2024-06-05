@@ -1,6 +1,6 @@
 package arrays;
 
-/* Problem Title :-> Find whether an arrays.array is a subset of another arrays.array
+/* Problem Title :-> Find whether an array is a subset of another array
  */
 public class Array_Problem_27 {
 
@@ -14,13 +14,13 @@ public class Array_Problem_27 {
 		}
 		return true;
 	}
-	
+
 	public static void main(String args[]) {
 		int[] a1 = {11, 1, 13, 21, 3, 7};
 		int[] a2 = {11, 3, 7, 1};
 		int m = a1.length;
 		int n = a2.length;
-		
+
 		if(isSubSet(a1, a2, m, n))
 			System.out.println("a2[] is " + "subset of a1[] ");
 		else

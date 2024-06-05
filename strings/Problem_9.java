@@ -1,21 +1,23 @@
 package strings;
+
 import java.util.*;
 
 // Problem Title => Find The Longest Recurring Subsequence in String
 
 public class Problem_9 {
 
-    // This function mainly returns LCS(str, str) with a condition that same characters at same index are not considered.
-    static  int[][] dp = new int[1000][1000];
+    // This function mainly returns LCS(str, str) with a condition that same
+    // characters at same index are not considered.
+    static int[][] dp = new int[1000][1000];
 
     // Longest Repeated Subsequence Problem
-    static int findLongestRepeatingSubSeq(char[] X, int m, int n){
+    static int findLongestRepeatingSubSeq(char[] X, int m, int n) {
 
-        if(dp[m][n] != -1)
+        if (dp[m][n] != -1)
             return dp[m][n];
 
         // return if we have reached the end of either string
-        if(m == 0 || n == 0)
+        if (m == 0 || n == 0)
             return dp[m][n] = 0;
 
         // if characters at index m and n matches and index is different
@@ -34,6 +36,9 @@ public class Problem_9 {
         for (int[] row : dp)
             Arrays.fill(row, -1);
 
-        System.out.println("The length of the largest subsequence that repeats itself is : " + findLongestRepeatingSubSeq(str.toCharArray(), m, m));
+        System.out.println("The length of the largest subsequence that repeats itself is : "
+                + findLongestRepeatingSubSeq(str.toCharArray(), m, m));
+
+        sc.close();
     }
 }
