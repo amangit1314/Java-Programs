@@ -1,7 +1,5 @@
 package stack_and_queue;
 
-
-
 // Java program to reverse a Queue by recursion
 
 import java.util.LinkedList;
@@ -13,18 +11,15 @@ public class P27 {
     static Queue<Integer> queue;
 
     // Utility function to print the queue
-    static void Print()
-    {
-        while (!queue.isEmpty())
-        {
+    static void Print() {
+        while (!queue.isEmpty()) {
             System.out.print(queue.peek() + " ");
             queue.remove();
         }
     }
 
     // Recurrsive function to reverse the queue
-    static Queue<Integer> reverseQueue(Queue<Integer> q)
-    {
+    static Queue<Integer> reverseQueue(Queue<Integer> q) {
         // Base case
         if (q.isEmpty())
             return q;
@@ -43,8 +38,7 @@ public class P27 {
     }
 
     // Driver code
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         queue = new LinkedList<Integer>();
         queue.add(56);
         queue.add(27);

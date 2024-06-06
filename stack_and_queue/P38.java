@@ -1,21 +1,21 @@
 package stack_and_queue;
+
 import java.util.*;
 import java.util.Stack;
-import java.lang.*;
 
 // Problem Title => Next Smaller Element
 public class P38 {
-    
+
     // prints element and NSE pair for all elements of arr[] of size n
-    public static void printNSE(int[] arr, int n){
+    public static void printNSE(int[] arr, int n) {
         Stack<Integer> s = new Stack<>();
 
         // push the first element to stack
         s.push(arr[0]);
 
         // iterate for rest of the elements
-        for(int i = 1; i < n; i++){
-            if(s.empty()){
+        for (int i = 1; i < n; i++) {
+            if (s.empty()) {
                 s.push(arr[i]);
                 continue;
             }
@@ -25,7 +25,7 @@ public class P38 {
             // If the popped element is greater than next, then
             // (a) print the pair,
             // (b) keep popping while elements are greater and stack is not empty.
-            while(!s.empty() && s.peek() > arr[i]){
+            while (!s.empty() && s.peek() > arr[i]) {
                 System.out.println(s.peek() + " --> " + arr[i]);
                 s.pop();
             }
@@ -37,8 +37,8 @@ public class P38 {
         // After iterating over the loop,
         // the remaining elements in stack do not have the next smaller element,
         // so print -1 for them
-        while(!s.empty()){
-            System.out.println(s.peek() + " --> " +  "-1");
+        while (!s.empty()) {
+            System.out.println(s.peek() + " --> " + "-1");
             s.pop();
         }
     }
@@ -53,8 +53,10 @@ public class P38 {
 
         // Taking the elements of arrays.array as input from user
         int[] arr = new int[n];
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
+
+        sc.close();
 
         // Printing the Next Smaller Element by calling printNSE method
         printNSE(arr, n);

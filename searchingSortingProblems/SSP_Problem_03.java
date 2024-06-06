@@ -52,6 +52,7 @@ public class SSP_Problem_03 {
         for(int i = 0; i < n; i++){
             a[i] = sc.nextInt();
         }
+        sc.close();
         int N = 3;
         System.out.println(countAndSay(N));
     }

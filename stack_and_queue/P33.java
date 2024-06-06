@@ -6,10 +6,10 @@ public class P33 {
 
     public long[] printFirstNegativeInteger(long[] a, int n, int k) {
         long[] list = new long[n - k + 1];
-        for(int i = 0; i < n - k +1; i++) {
+        for (int i = 0; i < n - k + 1; i++) {
             int c = 0, count = 0;
-            while(c < k) {
-                if((int)a[c + i] < 0) {
+            while (c < k) {
+                if ((int) a[c + i] < 0) {
                     list[i] = a[c + i];
                     count = count + 1;
                     break;
@@ -17,8 +17,8 @@ public class P33 {
                 c = c + 1;
             }
 
-            if(count == 0)
-                list[i] = (long)0;
+            if (count == 0)
+                list[i] = (long) 0;
 
             count = 0;
         }

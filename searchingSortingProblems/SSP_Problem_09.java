@@ -37,6 +37,8 @@ public class SSP_Problem_09 {
         for(int i = 0; i < n; i++)
             a[i] = sc.nextInt();
 
+        sc.close();
+
         System.out.println("Element " + x + " is present at index " + search(a, n, x, k));
     }
 }

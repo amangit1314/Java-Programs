@@ -36,6 +36,8 @@ public class SSP_Problem_10 {
         for(int i = 0; i < size; i++)
             arr[i] = sc.nextInt();
 
+        sc.close();
+
         // Sorting the arrays.array
         Arrays.sort(arr);
 

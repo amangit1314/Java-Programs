@@ -69,7 +69,7 @@ public class SSP_Problem_11 {
     // Driver Code
     public static void main(String args[]) {
         int[] arr = { 10, 20, 30, 40, 1, 2 };
-        int n = arr.length;
+        // int n = arr.length;
         int X = 91;
         Map<Integer, pair> map = twoSum(arr);
 

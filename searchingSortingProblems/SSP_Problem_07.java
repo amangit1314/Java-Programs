@@ -1,7 +1,6 @@
 package searchingSortingProblems;
 
 import java.util.*;
-import java.lang.*;
 
 // Problem Titile => Find the repeating and missing
  class SSP_Problem_07 {
@@ -37,6 +36,7 @@ import java.lang.*;
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        sc.close();
         printTwoElements(arr, n);
     }
 }

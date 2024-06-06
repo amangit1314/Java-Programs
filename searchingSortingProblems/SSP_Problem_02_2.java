@@ -24,6 +24,8 @@ public class SSP_Problem_02_2 {
         for(int i = 0; i < n; i++)
             a[i] = sc.nextInt();
 
+        sc.close();
+
         System.out.println("Fixed Point is " + binarySearch(a,0, n-1));
     }
 }

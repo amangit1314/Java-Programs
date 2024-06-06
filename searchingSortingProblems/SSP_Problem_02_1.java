@@ -17,6 +17,8 @@ public class SSP_Problem_02_1 {
         for(int i = 0; i < n; i++)
             a[i] = sc.nextInt();
 
+        sc.close();
+
         System.out.println("Fixed Point is " + linearSearch(a));
     }
 }

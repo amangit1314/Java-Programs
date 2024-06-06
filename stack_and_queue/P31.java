@@ -5,9 +5,9 @@ package stack_and_queue;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 class Pair {
     int row, col, time;
+
     Pair(int row, int col, int time) {
         this.row = row;
         this.col = col;
@@ -24,24 +24,23 @@ public class P31 {
         Queue<Pair> q = new LinkedList<>();
         int fresh = 0, tm = 0, count = 0;
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < m; j++) {
-                if(grid[i][j] == 2) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < m; j++) {
+                if (grid[i][j] == 2) {
                     visited[i][j] = 2;
                     q.add(new Pair(i, j, 0));
-                }
-                else {
+                } else {
                     visited[i][j] = 0;
                 }
-                if(grid[i][j] == 1)
+                if (grid[i][j] == 1)
                     fresh++;
             }
         }
 
-        int[] drow = {-1, 1, 0, 0};
-        int[] dcol = {0, 0, 1, -1};
+        int[] drow = { -1, 1, 0, 0 };
+        int[] dcol = { 0, 0, 1, -1 };
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             int r = q.peek().row;
             int c = q.peek().col;
             int t = q.peek().time;
@@ -49,18 +48,19 @@ public class P31 {
             tm = Math.max(tm, t);
 
             q.poll();
-            for(int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i++) {
                 int nRow = r + drow[i];
                 int nCol = c + dcol[i];
 
-                if(nRow >= 0 && nRow < m && nCol >= 0 && nCol < n && visited[nRow][nCol] == 0 && grid[nRow][nCol] == 1) {
+                if (nRow >= 0 && nRow < m && nCol >= 0 && nCol < n && visited[nRow][nCol] == 0
+                        && grid[nRow][nCol] == 1) {
                     q.add(new Pair(nRow, nCol, t + 1));
                     visited[nRow][nCol] = 2;
                     count++;
                 }
             }
         }
-        if(count != fresh)
+        if (count != fresh)
             return -1;
 
         return tm;

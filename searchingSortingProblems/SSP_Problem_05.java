@@ -59,6 +59,8 @@ public class SSP_Problem_05 {
             arr[i] = sc.nextInt();
         }
 
+        sc.close();
+
         Pair minmax = getMinMax(arr, 0, arr_size - 1);
         System.out.printf("\nMinimum element is %d", minmax.min);
         System.out.printf("\nMaximum element is %d", minmax.max);

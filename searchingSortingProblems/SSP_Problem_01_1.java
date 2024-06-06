@@ -1,4 +1,5 @@
 package searchingSortingProblems;
+
 import java.util.Scanner;
 //  Problem Title => Find first and last occurrence of an elements in given sorted arrays.array
 
@@ -33,8 +34,10 @@ public class SSP_Problem_01_1 {
         int x = sc.nextInt();
 
         int[] arr = new int[x];
-        for(int i = 0; i < x; i++)
+        for (int i = 0; i < x; i++)
             arr[i] = sc.nextInt();
+
+        sc.close();
 
         findFirstAndLast(arr, x);
     }

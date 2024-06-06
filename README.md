@@ -1,4 +1,4 @@
-# Java Placement Preparation DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[421/450]
+# Java Placement Preparation DSA CRACKER SHEET 💻🦸‍♂️🐱‍👤[436/450]
 
 ☄ This is a full fled-ged repository for learning Java Language & DSA for Placement Preparation.
 
@@ -28,7 +28,7 @@
 - [x] Arrays - (36 / 36)
 - [x] Matrix - (10 / 10)
 - [x] String - (43 / 43)
-- [] Searching and Sorting - (21 / 36)
+- [x] Searching and Sorting - (36 / 36)
 - [x] LinkedList - (36 / 36)
 - [x] Binary Trees - (35 / 35)
 - [x] Binary Search Trees - (22 / 22)
@@ -41,7 +41,7 @@
 - [x] Dynamic Programming - (60 / 60)
 - [x] Bit Manipulation - (10 / 10)
   
-## Grand Total - [421 / 450]
+## Grand Total - [436 / 450]
 
 ## Website Status
 

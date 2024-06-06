@@ -1,17 +1,16 @@
 package searchingSortingProblems;
 
-
-import java.util.*;
+import java.util.ArrayList;
 
 public class SSP_Problem_01_2 {
-    public static int first(ArrayList list, int x) {
+    public static int first(ArrayList<Integer> list, int x) {
         // return first occurrence index
         // of element x in ArrayList
         // using method indexOf()
         return list.indexOf(x);
     }
 
-    public static int last(ArrayList list, int x) {
+    public static int last(ArrayList<Integer> list, int x) {
         // return last occurrence index
         // of element x in ArrayList
         // using method lastIndexOf()
