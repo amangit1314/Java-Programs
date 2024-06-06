@@ -45,7 +45,8 @@ public class Path_more_than_k {
             if(k <= 0)
                 return true;
 
-            ArrayList<AdjListNode> it = adj.get(src);
+            adj.get(src);
+            @SuppressWarnings("unused")
             int index = 0;
 
             for(int i = 0; i < adj.get(src).size(); i++) {
@@ -72,7 +73,7 @@ public class Path_more_than_k {
     }
 
     public static void main(String[] args) {
-        int v = 1;
-        Graph g = new Graph(v);
+        // int v = 1;
+        // Graph g = new Graph(v);
     }
 }

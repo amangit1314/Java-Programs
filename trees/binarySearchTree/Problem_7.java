@@ -48,17 +48,17 @@ public class Problem_7 {
         tree.root.left.right.right = new Node(14);
 
         int n1 = 10, n2 = 14;
-        Node t = tree.lca(tree.root, n1, n2);
+        Node t = Problem_7.lca(tree.root, n1, n2);
         System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
 
         n1 = 14;
         n2 = 8;
-        t = tree.lca(tree.root, n1, n2);
+        t = Problem_7.lca(tree.root, n1, n2);
         System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
 
         n1 = 10;
         n2 = 22;
-        t = tree.lca(tree.root, n1, n2);
+        t = Problem_7.lca(tree.root, n1, n2);
         System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
     }
 }

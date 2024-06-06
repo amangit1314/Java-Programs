@@ -30,6 +30,7 @@ public class Problem_14 {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.nextLine();
         String str2 = sc.nextLine();
+        sc.close();
 
         System.out.println(editDistance(str1, str2, str1.length(), str2.length()));
     }

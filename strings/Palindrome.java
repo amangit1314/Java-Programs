@@ -18,6 +18,8 @@ public class Palindrome {
     public static void main(String[] args) {
         Scanner sx = new Scanner(System.in);
         String s = sx.nextLine();
+        sx.close();
+        
         if (isPalindrome(s))
             System.out.print("Yes");
         else

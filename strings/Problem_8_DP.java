@@ -72,6 +72,7 @@ public class Problem_8_DP {
         System.out.println("Enter the input string : ");
 
         String str = sc.nextLine();
+        sc.close();
         System.out.println("Length is : " + longestPalSubString(str));
     }
 }

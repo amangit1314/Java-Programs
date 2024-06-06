@@ -1,17 +1,14 @@
 package recursion;
 
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class PowerSet {
 
     static void printSubset(int[] input, int[] output, int idx){
-        int totalSubset = 0, n = 3;;
+        int n = 3;;
         if(idx >= input.length){
             for (int i: output)
                 System.out.print(i + " ");
             System.out.println();
-            totalSubset++;
             return;
         }
 

@@ -46,6 +46,7 @@ public class TreeDeserialize {
         Scanner input = new Scanner(System.in);
         int x = input.nextInt();
         TreeNode root = new TreeNode(x);
+        input.close();
 
         while(true) {
             String str = input.next();

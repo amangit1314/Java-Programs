@@ -40,6 +40,7 @@ public class Nth_Root_of_M {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(), m = sc.nextInt();
+        sc.close();
         System.out.print(getNthRoot(n, m));
     }
 }

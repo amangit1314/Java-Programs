@@ -2,7 +2,6 @@ package miscellaneous;
 
 // Problem Title => Java program for Kruskal's algorithm to find Minimum Spanning Tree of a given connected, undirected and weighted graph
 import java.util.*;
-import java.lang.*;
 
 class Graph {
     // A class to represent a graph edge

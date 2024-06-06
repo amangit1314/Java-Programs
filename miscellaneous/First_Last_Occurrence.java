@@ -6,12 +6,12 @@ import java.util.*;
 public class First_Last_Occurrence {
 
     // This function will return first index of element
-    public static int first(ArrayList list, int x){
+    public static int first(ArrayList<Integer> list, int x){
         return list.indexOf(x);
     }
 
     // This function will return last index of element
-    public static int last(ArrayList list, int x){
+    public static int last(ArrayList<Integer> list, int x){
         return list.lastIndexOf(x);
     }
 

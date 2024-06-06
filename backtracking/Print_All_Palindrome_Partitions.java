@@ -64,6 +64,7 @@ public class Print_All_Palindrome_Partitions {
         // Taking string as input
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
+        sc.close();
 
         //finding the result for
         System.out.println("All possible palindrome partitions for " + input + " are :");

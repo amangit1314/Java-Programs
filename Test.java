@@ -1,6 +1,7 @@
 import javax.swing.*;
 
 public class Test {
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
         JFrame f = new JFrame("Test");
         JButton b = new JButton("🚩");

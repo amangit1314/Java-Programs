@@ -50,13 +50,13 @@ public class P23
     // Driver code
     public static void main(String[] args)
     {
-        Queue q = new Queue();
-        q.enQueue(1);
-        q.enQueue(2);
-        q.enQueue(3);
+        // Queue q = new Queue();
+        Queue.enQueue(1);
+        Queue.enQueue(2);
+        Queue.enQueue(3);
 
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
+        System.out.println(Queue.deQueue());
+        System.out.println(Queue.deQueue());
+        System.out.println(Queue.deQueue());
     }
 }

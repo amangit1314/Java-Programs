@@ -67,7 +67,7 @@ public class TopologicalSort {
             g.addEdge(v, w);
 
         System.out.println("Following is a Topological " + "sort of the given graph");
-
+        sc.close();
         // Function Call
         g.topological_Order();
     }

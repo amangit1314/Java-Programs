@@ -25,6 +25,7 @@ public class Josephus_problem {
             int n, k;
             n = sc.nextInt();
             k = sc.nextInt();
+            sc.close();
 
             System.out.println(Josephus_problem.josephus(n, k));
         }

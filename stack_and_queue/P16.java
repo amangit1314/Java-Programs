@@ -1,6 +1,6 @@
 package stack_and_queue;
 import java.util.*;
-import java.util.Stack;
+
 // Merge Overlapping Intervals
 
 public class P16 {

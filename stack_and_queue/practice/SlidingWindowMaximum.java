@@ -13,7 +13,7 @@ public class SlidingWindowMaximum {
 
     static ArrayList < Integer > maxSlidingWindow(int[] arr, int k) {
         int left = 0, right = 0;
-        int i, j;
+        // int i, j;
         ArrayList < Integer > max = new ArrayList < > ();
 
         while (right < k - 1) {
@@ -29,7 +29,7 @@ public class SlidingWindowMaximum {
     }
 
     public static void main(String[] args) {
-        int i, k = 3, x;
+        int i, k = 3;
         int arr[] = {4,0,-1,3,5,3,6,8};
         ArrayList < Integer > ans;
         ans = maxSlidingWindow(arr, k);

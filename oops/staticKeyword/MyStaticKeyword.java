@@ -1,5 +1,4 @@
 package oops.staticKeyword;
-import oops.staticKeyword.A.C;
 
 public class MyStaticKeyword {
     static {
@@ -11,8 +10,8 @@ public class MyStaticKeyword {
 
     public static void main(String[] args) {
         A objA = new A();
-        A.B objB = objA.new B();
-        C objC = new A.C();
+        objA.new B();
+        new A.C();
         System.out.println("inside main");
     }
 }

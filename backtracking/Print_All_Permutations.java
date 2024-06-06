@@ -43,6 +43,7 @@ public class Print_All_Permutations{
         // Asking user for String str as input
         String str = sc.nextLine();
         int n = str.length();
+        sc.close();
 
         // Making an object of Print_All_Permutations class
         Print_All_Permutations permutation = new Print_All_Permutations();

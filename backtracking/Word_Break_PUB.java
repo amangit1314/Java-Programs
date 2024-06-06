@@ -31,9 +31,9 @@ public class Word_Break_PUB {
 		
 		String sentence = "I Like mango icecream and SamSung Mobile";
 		String A = null;
-		String[] result;
-		String[] dictionary = {"mobile", "samsung", "sam", "sung", "man", "mango", "icecream", "and", "go", "i", "like", 
-				"icecream"};
+		// String[] result;
+		// String[] dictionary = {"mobile", "samsung", "sam", "sung", "man", "mango", "icecream", "and", "go", "i", "like", 
+		// 		"icecream"};
 		
 		System.out.println(wordBreak(A,sentence));
 	}

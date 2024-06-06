@@ -66,6 +66,8 @@ public class P15 {
             s.push(value);
         }
 
+        sc.close();
+
         while (!(s.isEmpty()))
             System.out.println(s.pop());
 

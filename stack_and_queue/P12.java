@@ -51,6 +51,7 @@ public class P12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String exp = sc.nextLine();
+        sc.close();
         // String exp="231*+9-";
         System.out.println("postfix evaluation: "+evaluatePostfix(exp));
     }

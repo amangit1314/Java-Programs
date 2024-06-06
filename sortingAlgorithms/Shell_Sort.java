@@ -15,7 +15,7 @@ package sortingAlgorithms;
 public class Shell_Sort {
     /* A utility function to print arrays.array of size n*/
     static void printArray(int[] arr) {
-        int n = arr.length;
+        // int n = arr.length;
         for (int j : arr) System.out.print(j + " ");
         System.out.println();
     }

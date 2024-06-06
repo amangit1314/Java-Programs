@@ -33,8 +33,10 @@ public class P36 {
         }
 
         int sum = 0;
+        @SuppressWarnings("rawtypes")
         Iterator i = map.entrySet().iterator();
         while (i.hasNext()) {
+            @SuppressWarnings("rawtypes")
             Map.Entry e = (Map.Entry) i.next();
             sum += (int) Math.pow((int) e.getValue(), 2);
         }

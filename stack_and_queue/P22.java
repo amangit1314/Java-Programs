@@ -1,6 +1,6 @@
 package stack_and_queue;
 
-import java.util.LinkedList;
+
 import java.util.Stack;
 
 public class P22 {
