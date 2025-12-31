@@ -29,10 +29,10 @@ public class Graph_Problem_01_i {
 	public static void main(String[] args) {
 		
 		// Creating a graph with 5 vertices
-		int V = 5;
-		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(V);
+		int vertices = 5;
+		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(vertices);
 		
-		for(int i = 0; i < V; i++)
+		for(int i = 0; i < vertices; i++)
 			adj.add(new ArrayList<>());
 		
 		// Adding edges one by one 

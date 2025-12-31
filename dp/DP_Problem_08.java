@@ -1,4 +1,5 @@
 package dp;
+
 // Problem Title => Subset Sum Problem
 /*Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum. */
 public class DP_Problem_08 {
@@ -31,17 +32,19 @@ public class DP_Problem_08 {
             }
         }
 
-        /* uncomment this code to print table
-        for (int i = 0; i <= sum; i++)
-        {
-        for (int j = 0; j <= n; j++)
-            System.out.println (subset[i][j]);
-        } */
+        /*
+         * uncomment this code to print table
+         * for (int i = 0; i <= sum; i++)
+         * {
+         * for (int j = 0; j <= n; j++)
+         * System.out.println (subset[i][j]);
+         * }
+         */
 
         return subset[sum][n];
     }
 
-    /* Driver code*/
+    /* Driver code */
     public static void main(String[] args) {
         int[] set = { 3, 34, 4, 12, 5, 2 };
         int sum = 9;

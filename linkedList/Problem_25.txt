@@ -1,0 +1,7 @@
+Q. Can we reverse ll in less than O(n)
+Ans: 
+- It doesn't look possible.
+- A simple ll can only be reversed in o(n) time.
+- A memoty efficient dll with head & tail pointers can also be reveresd in O(1) by swapping head & tail pointers.
+- A DLL with head & tail pointers can also be reversed in O(1) time by swapping head & tail pointers;
+- But we would have to traverse the list in forward direction using prev pointer & reverse direction using next pointer which may not be considered valid.

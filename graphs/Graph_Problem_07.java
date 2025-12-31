@@ -22,7 +22,12 @@ In case you wish to attend live classes with experts, please refer DSA Live Clas
 Recommended: Please solve it on “PRACTICE ” first, before moving on to the solution.
 
 Approach:
-This problem can be seen as shortest path in unweighted graph. Therefore we use BFS to solve this problem. We try all 8 possible positions where a Knight can reach from its position. If reachable position is not already visited and is inside the board, we push this state into queue with distance 1 more than its parent state. Finally we return distance of target position, when it gets pop out from queue.
+This problem can be seen as shortest path in unweighted graph.
+-- Therefore we use BFS to solve this problem.
+-- We try all 8 possible positions where a Knight can reach from its position.
+-- If reachable position is not already visited and is inside the board, we push this state into queue with -
+   distance 1 more than its parent state.
+-- Finally we return distance of target position, when it gets pop out from queue.
 Below code implements BFS for searching through cells, where each cell contains its coordinate and distance from starting node. In worst case, below code visits all cells of board, making worst-case time complexity as O(N^2)
 
 * */

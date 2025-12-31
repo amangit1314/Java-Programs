@@ -1,7 +1,6 @@
 package dp;
 
-// Java program using memoization
-
+// Problem Title => Matrix chain multiplication
 import java.util.Arrays;
 
 class DP_Problem_06 {
@@ -18,7 +17,8 @@ class DP_Problem_06 {
 
         dp[i][j] = Integer.MAX_VALUE;
         for (int k = i; k < j; k++)
-            dp[i][j] = Math.min(dp[i][j], matrixChainMemoised(p, i, k) + matrixChainMemoised(p, k + 1, j) + p[i - 1] * p[k] * p[j]);
+            dp[i][j] = Math.min(dp[i][j],
+                    matrixChainMemoised(p, i, k) + matrixChainMemoised(p, k + 1, j) + p[i - 1] * p[k] * p[j]);
 
         return dp[i][j];
     }
@@ -29,10 +29,10 @@ class DP_Problem_06 {
     }
 
     // Driver Code
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 4 };
-        int n= arr.length;
+        int n = arr.length;
 
         for (int[] row : dp)
             Arrays.fill(row, -1);
@@ -40,4 +40,3 @@ class DP_Problem_06 {
         System.out.println("Minimum number of multiplications is " + MatrixChainOrder(arr, n));
     }
 }
-

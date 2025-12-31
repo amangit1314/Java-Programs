@@ -5,7 +5,7 @@ import java.util.*;
 // Problem Title => Common elements in all rows of a given matrix
 public class Matrix_Problem_10 {
     // Specify number of rows and columns
-    static int M = 4;
+    static int M =4;
     static int N =5;
 
     // prints common element in all rows of matrix

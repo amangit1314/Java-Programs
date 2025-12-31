@@ -23,6 +23,23 @@ public class Combination_Sum {
     // finally return the ans
     // <--------------------------------------------------------------------------------------------------------------->
 
+    /**
+     * Finds all unique combinations in the given list A where the numbers sum to B.
+     * Each number in A may be used unlimited times in the combination.
+     *
+     * @param A      The input list of integers to consider for combinations.
+     * @param ans    The list to store all valid combinations found.
+     * @param B      The target sum for the combinations.
+     * @param AL     The current combination being constructed (used during recursion).
+     * @param index  The current index in A being considered.
+     *
+     * Example:
+     * <pre>
+     * Input:  A = [2, 3, 6, 7], B = 7
+     * Output: ans = [[2, 2, 3], [7]]
+     * Explanation: 2+2+3 = 7 and 7 = 7 are the two possible combinations.
+     * </pre>
+     */
     public static void combination(ArrayList<Integer> A, ArrayList<ArrayList<Integer>> ans, int B, List<Integer> AL, int index){
         // base case
         if(index == A.size()){

@@ -11,7 +11,24 @@ public class Graph_Problem_11 {
         // If the target String is not present in the dictionary
         if (!D.contains(target))
             return 0;
-
+            /*
+             * This function finds the length of the shortest transformation sequence from 'start' to 'target',
+             * where each transformed word must exist in the given dictionary D and only one letter can be changed at a time.
+             *
+             * Approach:
+             * - Use Breadth-First Search (BFS) to explore all possible transformations level by level.
+             * - For each word, change every character (from 'a' to 'z') and check if the new word is in the dictionary.
+             * - If the new word is the target, return the current level + 1 (number of transformations).
+             * - Otherwise, add the new word to the queue and remove it from the dictionary to avoid revisiting.
+             * - If the target is not reachable, return 0.
+             *
+             * Example:
+             * Dictionary: ["poon", "plee", "same", "poie", "plie", "poin", "plea"]
+             * Start: "toon"
+             * Target: "plea"
+             * Shortest transformation: "toon" -> "poon" -> "poin" -> "poie" -> "plie" -> "plee" -> "plea"
+             * Output: 7
+             */
         // To store the current chain length and the length of the words
         int level = 0, wordlength = start.length();
 

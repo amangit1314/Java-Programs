@@ -7,13 +7,13 @@ public class Graph_Problem_14 {
 
     // Adjacency List to store the graph
     @SuppressWarnings("unchecked")
-    static Vector<Integer> []graph = new Vector[maxN];
+    static Vector<Integer>[] graph = new Vector[maxN];
 
     // Array to store the in-degree of node
     static int[] indegree = new int[maxN];
 
     // Array to store the time in which the job i can be done
-    static int []job = new int[maxN];
+    static int[] job = new int[maxN];
 
     // Function to add directed edge between two vertices
     static void addEdge(int u, int v) {

@@ -8,7 +8,8 @@ public class Problem_4 {
         int key;
         Node left, right;
 
-        public Node() {}
+        public Node() {
+        }
 
         public Node(int key) {
             this.key = key;

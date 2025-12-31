@@ -1,4 +1,5 @@
 package trees.binarySearchTree;
+
 // Problem Title -> The Lowest common ancestor in bst
 public class Problem_7 {
 
@@ -13,11 +14,12 @@ public class Problem_7 {
         }
     }
 
-
     Node root;
 
-    /* Function to find LCA of n1 and n2.
-    The function assumes that both n1 and n2 are present in BST */
+    /*
+     * Function to find LCA of n1 and n2.
+     * The function assumes that both n1 and n2 are present in BST
+     */
     static Node lca(Node root, int n1, int n2) {
         while (root != null) {
             // If both n1 and n2 are smaller than root, then LCA lies in left
@@ -30,7 +32,8 @@ public class Problem_7 {
                     root.data < n2)
                 root = root.right;
 
-            else break;
+            else
+                break;
         }
         return root;
     }

@@ -1,86 +1,112 @@
 package graphs;
+import java.util.*;
 
-/**
- * Problem Title ->
- * Given an undirected graph and a number m,
- * determine if the graph can be coloured with at most m colours
-   such that no two adjacent vertices of the graph are colored with the same color.
- * Here coloring of a graph means the assignment of colors to all vertices
- * */
-
+// Problem Title => Minimum edges to reverse to make path from source to destination
 public class Graph_Problem_37 {
+    private int V; // No. of vertices
+    private LinkedList<Edge>[] adj; // Adjacency list
 
-    // Number of vertices in the graph
-    static int V = 4;
-
-    /* A utility function to print solution */
-    static void printSolution(int[] color) {
-        System.out.println("Solution Exists:" + " Following are the assigned colors ");
-        for (int i = 0; i < V; i++)
-            System.out.print(" " + color[i]);
-        System.out.println();
+    // Edge class to represent a directed edge with a destination and weight
+    class Edge {
+        int dest, weight;
+        Edge(int dest, int weight) {
+            this.dest = dest;
+            this.weight = weight;
+        }
     }
 
-    // check if the colored graph is safe or not
-    static boolean isSafe(boolean[][] graph, int[] color) {
-        // check for every edge
-        for (int i = 0; i < V; i++)
-            for (int j = i + 1; j < V; j++)
-                if (graph[i][j] && color[j] == color[i])
-                    return false;
-        return true;
+    // Constructor
+    @SuppressWarnings("unchecked")
+    Graph_Problem_38(int v) {
+        V = v;
+        adj = new LinkedList[v];
+        for (int i = 0; i < v; ++i)
+            adj[i] = new LinkedList<>();
     }
 
-    /* This function solves the m Coloring problem using recursion.
-        It returns false if the m colours cannot be assigned,
-        otherwise, return true and prints assignments of colours to all vertices.
-        Please note that there may be more than one solution's,
-        this function prints one of the feasible solutions.*/
-    static boolean graphColoring(boolean[][] graph, int m, int i, int[] color) {
-        // if current index reached end
-        if (i == V) {
-            // if coloring is safe
-            if (isSafe(graph, color)) {
-                // Print the solution
-                printSolution(color);
-                return true;
+    // Function to add an edge into the graph
+    void addEdge(int src, int dest) {
+        adj[src].add(new Edge(dest, 0)); // Original edge with weight 0
+        adj[dest].add(new Edge(src, 1)); // Reverse edge with weight 1
+    }
+
+    // Function to find the minimum edges to reverse to make path from source to destination using BFS
+    int minEdgesToReverse(int src, int dest) {
+        int[] dist = new int[V];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(src);
+
+        while (!queue.isEmpty()) {
+            int u = queue.poll();
+
+            for (Edge edge : adj[u]) {
+                int v = edge.dest;
+                int weight = edge.weight;
+
+                if (dist[u] + weight < dist[v]) {
+                    dist[v] = dist[u] + weight;
+                    queue.add(v);
+                }
             }
-            return false;
         }
 
-        // Assign each color from 1 to m
-        for (int j = 1; j <= m; j++) {
-            color[i] = j;
-            // Recur of the rest vertices
-            if (graphColoring(graph, m, i + 1, color))
-                return true;
-            color[i] = 0;
-        }
-        return false;
+        return dist[dest] == Integer.MAX_VALUE ? -1 : dist[dest];
     }
 
-    // Driver code
     public static void main(String[] args) {
-	/* Create following graph and
-		test whether it is 3 colorable
-		(3)---(2)
-		| / |
-		| / |
-		| / |
-		(0)---(1)
-		*/
-        boolean[][] graph = {
-                { false, true, true, true },
-                { true, false, true, false },
-                { true, true, false, true },
-                { true, false, true, false },
-        };
-        int m = 3; // Number of colors
-        // Initialize all color values as 0. This initialization is needed correct functioning of isSafe()
-        int[] color = new int[V];
-        for (int i = 0; i < V; i++)
-            color[i] = 0;
-        if (!graphColoring(graph, m, 0, color))
-            System.out.println("Solution does not exist");
+        // Create a graph given in the above diagram
+        Graph_Problem_38 g = new Graph_Problem_38(6);
+        g.addEdge(0, 1);
+        g.addEdge(1, 2);
+        g.addEdge(2, 3);
+        g.addEdge(4, 3);
+        g.addEdge(5, 4);
+        g.addEdge(1, 5);
+
+        int src = 0;
+        int dest = 3;
+        int result = g.minEdgesToReverse(src, dest);
+        if (result != -1)
+            System.out.println("Minimum edges to reverse to make path from " + src + " to " + dest + ": " + result);
+        else
+            System.out.println("No path exists from " + src + " to " + dest);
     }
 }
+
+/*
+Approach:
+1. The problem is to find the minimum number of edges to reverse to make a path from a given source vertex to a destination vertex in a directed graph.
+2. This can be solved using Breadth-First Search (BFS) to explore all possible paths from the source vertex.
+3. The algorithm involves the following steps:
+   a. Initialize a distance array to keep track of the minimum number of edges to reverse to reach each vertex.
+   b. Add both the original edge (with weight 0) and the reverse edge (with weight 1) to the adjacency list.
+   c. Perform BFS from the source vertex, updating the distance array based on the weight of the edges traversed.
+   d. If the destination vertex is reached, return the distance value. If the queue is exhausted without reaching the destination, return -1.
+
+Notes:
+- The graph is represented as an adjacency list.
+- The function `minEdgesToReverse` finds the minimum edges to reverse to make a path from source to destination using BFS.
+- The function `addEdge` adds an edge to the graph, including both the original and reverse edges.
+
+Example:
+Input:
+Graph (Adjacency List):
+0 -> 1
+1 -> 2
+2 -> 3
+4 -> 3
+5 -> 4
+1 -> 5
+
+Source: 0
+Destination: 3
+
+Output:
+Minimum edges to reverse to make path from 0 to 3: 1
+
+Explanation:
+- The minimum number of edges to reverse to make a path from vertex 0 to vertex 3 is 1 (reverse edge 4 -> 3).
+*/

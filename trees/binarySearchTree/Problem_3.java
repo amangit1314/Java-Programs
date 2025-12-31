@@ -41,17 +41,17 @@ public class Problem_3 {
 
     // Returns the max value in a binary tree
     int maxValue(Node node) {
-        if(node == null)
+        if (node == null)
             return Integer.MIN_VALUE;
 
         int res = node.data;
         int lres = maxValue(node.left);
         int rres = maxValue(node.right);
 
-        if(lres > rres)
+        if (lres > rres)
             res = lres;
 
-        if(rres > res)
+        if (rres > res)
             res = rres;
 
         return res;
